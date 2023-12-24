@@ -1,4 +1,4 @@
-package nft.data.posts;
+package dataNFT.DataStorage.posts;
 
 public class Blog extends Post {
     private String title;

@@ -1,4 +1,4 @@
-package screen.controller;
+package screen.Controller;
 
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -7,14 +7,14 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import nft.data.NFT.BinanceNFT;
-import nft.data.NFT.OpenseaNFT;
-import nft.data.NFT.RaribleNFT;
-import nft.data.posts.Cointelegraph;
-import nft.data.posts.Decrypt;
-import nft.data.posts.Tweet;
+import dataNFT.DataStorage.NFT.BinanceNFT;
+import dataNFT.DataStorage.NFT.OpenseaNFT;
+import dataNFT.DataStorage.NFT.RaribleNFT;
+import dataNFT.DataStorage.posts.Cointelegraph;
+import dataNFT.DataStorage.posts.Decrypt;
+import dataNFT.DataStorage.posts.Tweet;
 
-import static nft.data.database.Database.*;
+import static dataNFT.DataProcessing.Database.*;
 
 public class MainScreenController {
     private TableView<?> curTable = new TableView<>();

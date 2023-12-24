@@ -1,4 +1,4 @@
-package nft.data.NFT;
+package dataNFT.DataStorage.NFT;
 
 public class BinanceNFT extends NFTToken {
     private String volume;
