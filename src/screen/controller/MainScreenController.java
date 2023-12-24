@@ -1,5 +1,8 @@
 package screen.controller;
 
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
+import javafx.collections.transformation.FilteredList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -15,6 +18,22 @@ import static nft.data.database.Database.*;
 
 public class MainScreenController {
     private TableView<?> curTable = new TableView<>();
+
+    private FilteredList<Tweet> tweetFilteredList;
+    private FilteredList<Decrypt> decryptFilteredList;
+    private FilteredList<Cointelegraph> cointelegraphFilteredList;
+    private FilteredList<RaribleNFT> raribleNFTFilteredList;
+    private FilteredList<OpenseaNFT> openseaNFTFilteredList;
+    private FilteredList<BinanceNFT> binanceNFTFilteredList;
+
+    public MainScreenController() {
+        this.tweetFilteredList = new FilteredList<>(itemsTwitter);
+        this.decryptFilteredList = new FilteredList<>(itemsDecrypt);
+        this.cointelegraphFilteredList = new FilteredList<>(itemsCointelegraph);
+        this.raribleNFTFilteredList = new FilteredList<>(itemsRaribleNFT);
+        this.openseaNFTFilteredList = new FilteredList<>(itemsOpenseaNFT);
+        this.binanceNFTFilteredList = new FilteredList<>(itemsBinanceNFT);
+    }
 
     @FXML
     private Button btnNFTToken;
@@ -125,34 +144,28 @@ public class MainScreenController {
     private MenuButton menuButtonSearch;
 
     @FXML
-    private MenuButton menuButtonSort;
-
-    @FXML
     private MenuButton menuButtonSource;
 
     @FXML
-    private TableView<BinanceNFT> tblBinance;
+    private TableView<BinanceNFT> tblBinance = new TableView<>(binanceNFTFilteredList);
 
     @FXML
-    private TableView<Cointelegraph> tblCointelegraph;
+    private TableView<Cointelegraph> tblCointelegraph = new TableView<>(cointelegraphFilteredList);
 
     @FXML
-    private TableView<Decrypt> tblDecrypt;
+    private TableView<Decrypt> tblDecrypt = new TableView<>(decryptFilteredList);
 
     @FXML
-    private TableView<OpenseaNFT> tblOpenSea;
+    private TableView<OpenseaNFT> tblOpenSea = new TableView<>(openseaNFTFilteredList);
 
     @FXML
-    private TableView<RaribleNFT> tblRarible;
+    private TableView<RaribleNFT> tblRarible = new TableView<>(raribleNFTFilteredList);
 
     @FXML
-    private TableView<Tweet> tblTwitter;
+    private TableView<Tweet> tblTwitter = new TableView<>(tweetFilteredList);
 
     @FXML
     private TextField tfSearch;
-
-    @FXML
-    private ToggleGroup toggleSortGroup;
 
     @FXML
     void btnNFTTokenPressed(ActionEvent event) {
@@ -161,11 +174,6 @@ public class MainScreenController {
 
     @FXML
     void btnUpdatePressed(ActionEvent event) {
-
-    }
-
-    @FXML
-    void menuItemAuthorChoose(ActionEvent event) {
 
     }
 
@@ -200,23 +208,8 @@ public class MainScreenController {
     }
 
     @FXML
-    void menuItemTitleChoose(ActionEvent event) {
-
-    }
-
-    @FXML
     void menuItemTwitterChoose(ActionEvent event) {
         ChangeSource("Twitter", tblTwitter);
-    }
-
-    @FXML
-    void radioBtnAscendingChoose(ActionEvent event) {
-
-    }
-
-    @FXML
-    void radioBtnDescendingChoose(ActionEvent event) {
-
     }
 
     @FXML
@@ -230,6 +223,7 @@ public class MainScreenController {
         colViewsTwitter.setCellValueFactory(new PropertyValueFactory<Tweet, String>("view"));
         colHashtagsTwitter.setCellValueFactory(new PropertyValueFactory<Tweet, String>("hashtag"));
         tblTwitter.setItems(itemsTwitter);
+        tblTwitter.setItems(tweetFilteredList);
 
         //Cointelegraph
         colDateCointelegraph.setCellValueFactory(new PropertyValueFactory<Cointelegraph, String>("date"));
@@ -238,6 +232,7 @@ public class MainScreenController {
         colViewsCointelegraph.setCellValueFactory(new PropertyValueFactory<Cointelegraph, String>("view"));
         colTagsCointelegraph.setCellValueFactory(new PropertyValueFactory<Cointelegraph, String>("hashtag"));
         tblCointelegraph.setItems(itemsCointelegraph);
+        tblCointelegraph.setItems(cointelegraphFilteredList);
 
         //Decrypt
         colTitleDecrypt.setCellValueFactory(new PropertyValueFactory<Decrypt, String>("title"));
@@ -245,6 +240,7 @@ public class MainScreenController {
         colDateDecrypt.setCellValueFactory(new PropertyValueFactory<Decrypt, String>("date"));
         colTagsDecrypt.setCellValueFactory(new PropertyValueFactory<Decrypt, String>("hashtag"));
         tblDecrypt.setItems(itemsDecrypt);
+        tblDecrypt.setItems(decryptFilteredList);
 
         //BinanceNFT
         colOrdinalNumBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("rank"));
@@ -256,6 +252,7 @@ public class MainScreenController {
         colOwnersBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("owner"));
         colItemsBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("item"));
         tblBinance.setItems(itemsBinanceNFT);
+        tblBinance.setItems(binanceNFTFilteredList);
 
         //OpenSeaNFT
         colVolumeOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("volume"));
@@ -265,12 +262,22 @@ public class MainScreenController {
         colSalesOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("sale"));
         colFloorPriceOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("price"));
         tblOpenSea.setItems(itemsOpenseaNFT);
+        tblOpenSea.setItems(openseaNFTFilteredList);
 
         //RaribleNFT
         colRankingRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("rank"));
         colNameRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("collection"));
         colFloorPriceRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("price"));
         tblRarible.setItems(itemsRaribleNFT);
+        tblRarible.setItems(raribleNFTFilteredList);
+
+        //Searchbox
+        tfSearch.textProperty().addListener(new ChangeListener<String>() {
+            @Override
+            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
+                showFilteredResult(newValue);
+            }
+        });
     }
 
     private void ChangeSource(String sourceName, TableView<?> nextTable){
@@ -280,5 +287,11 @@ public class MainScreenController {
         curTable = nextTable;
     }
 
+    void showFilteredResult(String string){
+        String filterText = string.toLowerCase();
+        tweetFilteredList.setPredicate(item -> item.getHashtag().toLowerCase().contains(filterText));
+        decryptFilteredList.setPredicate(item -> item.getHashtag().toLowerCase().contains(filterText));
+        cointelegraphFilteredList.setPredicate(item -> item.getHashtag().toLowerCase().contains(filterText));
+    }
 }
 
