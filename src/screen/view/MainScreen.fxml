@@ -53,10 +53,10 @@
                         <MenuButton fx:id="menuButtonSource" mnemonicParsing="false" text="Twitter">
                           <items>
                             <MenuItem mnemonicParsing="false" onAction="#menuItemTwitterChoose" text="Twitter" />
-                            <MenuItem mnemonicParsing="false" onAction="#menuItemOpenSeaChoose" text="OpenSea" />
-                              <MenuItem mnemonicParsing="false" onAction="#menuItemCointelegraphChoose" text="Cointelegraph" />
-                              <MenuItem mnemonicParsing="false" onAction="#menuItemBinanceChoose" text="Binance" />
                               <MenuItem mnemonicParsing="false" onAction="#menuItemDecryptChoose" text="Decrypt" />
+                              <MenuItem mnemonicParsing="false" onAction="#menuItemCointelegraphChoose" text="Cointelegraph" />
+                            <MenuItem mnemonicParsing="false" onAction="#menuItemOpenSeaChoose" text="OpenSea" />
+                              <MenuItem mnemonicParsing="false" onAction="#menuItemBinanceChoose" text="Binance" />
                               <MenuItem mnemonicParsing="false" onAction="#menuItemRaribleChoose" text="Rarible" />
                           </items>
                         </MenuButton>
