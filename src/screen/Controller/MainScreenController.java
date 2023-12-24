@@ -7,14 +7,14 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import dataNFT.DataStorage.NFT.BinanceNFT;
-import dataNFT.DataStorage.NFT.OpenseaNFT;
-import dataNFT.DataStorage.NFT.RaribleNFT;
-import dataNFT.DataStorage.posts.Cointelegraph;
-import dataNFT.DataStorage.posts.Decrypt;
-import dataNFT.DataStorage.posts.Tweet;
+import nftdata.datastorage.nft.BinanceNFT;
+import nftdata.datastorage.nft.OpenseaNFT;
+import nftdata.datastorage.nft.RaribleNFT;
+import nftdata.datastorage.posts.Cointelegraph;
+import nftdata.datastorage.posts.Decrypt;
+import nftdata.datastorage.posts.Tweet;
 
-import static dataNFT.DataProcessing.Database.*;
+import static nftdata.dataprocessing.Database.*;
 
 public class MainScreenController {
     private TableView<?> curTable = new TableView<>();

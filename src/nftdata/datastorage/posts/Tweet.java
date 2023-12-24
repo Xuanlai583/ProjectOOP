@@ -1,4 +1,4 @@
-package dataNFT.DataStorage.posts;
+package nftdata.datastorage.posts;
 
 public class Tweet extends Post {
     private String reply;

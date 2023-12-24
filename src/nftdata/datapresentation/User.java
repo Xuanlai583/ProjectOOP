@@ -1,11 +1,11 @@
-package dataNFT.DataPresentation;
+package nftdata.datapresentation;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import dataNFT.DataProcessing.ReadData;
+import nftdata.dataprocessing.ReadData;
 import screen.Controller.MainScreenController;
 
 import java.io.IOException;

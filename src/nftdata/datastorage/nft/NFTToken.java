@@ -1,4 +1,4 @@
-package dataNFT.DataStorage.NFT;
+package nftdata.datastorage.nft;
 
 public class NFTToken {
     private String collection;

@@ -1,13 +1,13 @@
-package dataNFT.DataProcessing;
+package nftdata.dataprocessing;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import dataNFT.DataStorage.NFT.BinanceNFT;
-import dataNFT.DataStorage.NFT.OpenseaNFT;
-import dataNFT.DataStorage.NFT.RaribleNFT;
-import dataNFT.DataStorage.posts.Cointelegraph;
-import dataNFT.DataStorage.posts.Decrypt;
-import dataNFT.DataStorage.posts.Tweet;
+import nftdata.datastorage.nft.BinanceNFT;
+import nftdata.datastorage.nft.OpenseaNFT;
+import nftdata.datastorage.nft.RaribleNFT;
+import nftdata.datastorage.posts.Cointelegraph;
+import nftdata.datastorage.posts.Decrypt;
+import nftdata.datastorage.posts.Tweet;
 
 public class Database {
     public static ObservableList<RaribleNFT> itemsRaribleNFT  = FXCollections.observableArrayList();

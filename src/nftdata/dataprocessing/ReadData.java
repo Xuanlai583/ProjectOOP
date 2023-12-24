@@ -1,11 +1,11 @@
-package dataNFT.DataProcessing;
+package nftdata.dataprocessing;
 
-import dataNFT.DataStorage.NFT.BinanceNFT;
-import dataNFT.DataStorage.NFT.OpenseaNFT;
-import dataNFT.DataStorage.NFT.RaribleNFT;
-import dataNFT.DataStorage.posts.Cointelegraph;
-import dataNFT.DataStorage.posts.Decrypt;
-import dataNFT.DataStorage.posts.Tweet;
+import nftdata.datastorage.nft.BinanceNFT;
+import nftdata.datastorage.nft.OpenseaNFT;
+import nftdata.datastorage.nft.RaribleNFT;
+import nftdata.datastorage.posts.Cointelegraph;
+import nftdata.datastorage.posts.Decrypt;
+import nftdata.datastorage.posts.Tweet;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -13,12 +13,12 @@ import org.json.simple.parser.JSONParser;
 import java.io.FileReader;
 import java.util.Iterator;
 
-import static dataNFT.DataProcessing.Database.*;
+import static nftdata.dataprocessing.Database.*;
 
 public class ReadData {
     public static void readRaribleData() {
         JSONParser jsonParser = new JSONParser();
-        try (FileReader reader = new FileReader("src/dataNFT/DataCollection/rarible.json")) {
+        try (FileReader reader = new FileReader("src/nftdata/datacollection/rarible.json")) {
             // Đọc và parse file JSON thành một đối tượng JSONArray
             Object obj = jsonParser.parse(reader);
             JSONArray jsonArray = (JSONArray) obj;
@@ -42,7 +42,7 @@ public class ReadData {
 
     public static void readBinanceData() {
         JSONParser jsonParser = new JSONParser();
-        try (FileReader reader = new FileReader("src/dataNFT/DataCollection/binance.json")) {
+        try (FileReader reader = new FileReader("src/nftdata/datacollection/binance.json")) {
             // Đọc và parse file JSON thành một đối tượng JSONArray
             Object obj = jsonParser.parse(reader);
             JSONArray jsonArray = (JSONArray) obj;
@@ -73,7 +73,7 @@ public class ReadData {
 
     public static void readOpenseaData() {
         JSONParser jsonParser = new JSONParser();
-        try (FileReader reader = new FileReader("src/dataNFT/DataCollection/opensea.json")) {
+        try (FileReader reader = new FileReader("src/nftdata/datacollection/opensea.json")) {
             // Đọc và parse file JSON thành một đối tượng JSONArray
             Object obj = jsonParser.parse(reader);
             JSONArray jsonArray = (JSONArray) obj;
@@ -98,7 +98,7 @@ public class ReadData {
 
     public static void readTweetData() {
         JSONParser jsonParser = new JSONParser();
-        try (FileReader reader = new FileReader("src/dataNFT/DataCollection/twitter.json")) {
+        try (FileReader reader = new FileReader("src/nftdata/datacollection/twitter.json")) {
             // Đọc và parse file JSON thành một đối tượng JSONArray
             Object obj = jsonParser.parse(reader);
             JSONArray jsonArray = (JSONArray) obj;
@@ -124,7 +124,7 @@ public class ReadData {
 
     public static void readDecryptData() {
         JSONParser jsonParser = new JSONParser();
-        try (FileReader reader = new FileReader("src/dataNFT/DataCollection/decrypt.json")) {
+        try (FileReader reader = new FileReader("src/nftdata/datacollection/decrypt.json")) {
             // Đọc và parse file JSON thành một đối tượng JSONArray
             Object obj = jsonParser.parse(reader);
             JSONArray jsonArray = (JSONArray) obj;
@@ -147,7 +147,7 @@ public class ReadData {
 
     public static void readCointelegraphData() {
         JSONParser jsonParser = new JSONParser();
-        try (FileReader reader = new FileReader("src/dataNFT/DataCollection/cointelegraph.json")) {
+        try (FileReader reader = new FileReader("src/nftdata/datacollection/cointelegraph.json")) {
             // Đọc và parse file JSON thành một đối tượng JSONArray
             Object obj = jsonParser.parse(reader);
             JSONArray jsonArray = (JSONArray) obj;
