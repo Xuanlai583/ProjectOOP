@@ -224,52 +224,52 @@ public class MainScreenController {
         //Twitter
         colAuthorTwitter.setCellValueFactory(new PropertyValueFactory<Tweet, String>("author"));
         colDateTwitter.setCellValueFactory(new PropertyValueFactory<Tweet, String>("date"));
-        colRepliesTwitter.setCellValueFactory(new PropertyValueFactory<Tweet, String>("replies"));
-        colRepostsTwitter.setCellValueFactory(new PropertyValueFactory<Tweet, String>("reposts"));
-        colLikesTwitter.setCellValueFactory(new PropertyValueFactory<Tweet, String>("likes"));
-        colViewsTwitter.setCellValueFactory(new PropertyValueFactory<Tweet, String>("views"));
-        colHashtagsTwitter.setCellValueFactory(new PropertyValueFactory<Tweet, String>("hashtags"));
+        colRepliesTwitter.setCellValueFactory(new PropertyValueFactory<Tweet, String>("reply"));
+        colRepostsTwitter.setCellValueFactory(new PropertyValueFactory<Tweet, String>("retweet"));
+        colLikesTwitter.setCellValueFactory(new PropertyValueFactory<Tweet, String>("like"));
+        colViewsTwitter.setCellValueFactory(new PropertyValueFactory<Tweet, String>("view"));
+        colHashtagsTwitter.setCellValueFactory(new PropertyValueFactory<Tweet, String>("hashtag"));
         tblTwitter.setItems(itemsTwitter);
 
         //Cointelegraph
         colDateCointelegraph.setCellValueFactory(new PropertyValueFactory<Cointelegraph, String>("date"));
         colAuthorCointelegraph.setCellValueFactory(new PropertyValueFactory<Cointelegraph, String>("author"));
         colTitleCointelegraph.setCellValueFactory(new PropertyValueFactory<Cointelegraph, String>("title"));
-        colViewsCointelegraph.setCellValueFactory(new PropertyValueFactory<Cointelegraph, String>("views"));
-        colTagsCointelegraph.setCellValueFactory(new PropertyValueFactory<Cointelegraph, String>("tags"));
+        colViewsCointelegraph.setCellValueFactory(new PropertyValueFactory<Cointelegraph, String>("view"));
+        colTagsCointelegraph.setCellValueFactory(new PropertyValueFactory<Cointelegraph, String>("hashtag"));
         tblCointelegraph.setItems(itemsCointelegraph);
 
         //Decrypt
         colTitleDecrypt.setCellValueFactory(new PropertyValueFactory<Decrypt, String>("title"));
         colAuthorDecrypt.setCellValueFactory(new PropertyValueFactory<Decrypt, String>("author"));
         colDateDecrypt.setCellValueFactory(new PropertyValueFactory<Decrypt, String>("date"));
-        colTagsDecrypt.setCellValueFactory(new PropertyValueFactory<Decrypt, String>("tags"));
+        colTagsDecrypt.setCellValueFactory(new PropertyValueFactory<Decrypt, String>("hashtag"));
         tblDecrypt.setItems(itemsDecrypt);
 
         //BinanceNFT
-        colOrdinalNumBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("#"));
+        colOrdinalNumBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("rank"));
         colCollectionBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("collection"));
         colVolumeBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("volume"));
-        colVolumeChangeBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("volume change"));
-        colFloorPriceBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("floor price"));
-        colPriceChangeBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("price change"));
-        colOwnersBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("owners"));
-        colItemsBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("items"));
+        colVolumeChangeBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("volumeChange"));
+        colFloorPriceBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("price"));
+        colPriceChangeBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("priceChange"));
+        colOwnersBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("owner"));
+        colItemsBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("item"));
         tblBinance.setItems(itemsBinanceNFT);
 
         //OpenSeaNFT
         colVolumeOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("volume"));
-        colOrdinalNumOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("#"));
+        colOrdinalNumOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("rank"));
         colChangeOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("change"));
         colCollectionOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("collection"));
-        colSalesOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("sales"));
-        colFloorPriceOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("floor price"));
+        colSalesOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("sale"));
+        colFloorPriceOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("price"));
         tblOpenSea.setItems(itemsOpenseaNFT);
 
         //RaribleNFT
-        colRankingRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("ranking"));
-        colNameRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("name"));
-        colFloorPriceRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("floor price"));
+        colRankingRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("rank"));
+        colNameRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("collection"));
+        colFloorPriceRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("price"));
         tblRarible.setItems(itemsRaribleNFT);
     }
 

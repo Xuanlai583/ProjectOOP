@@ -28,6 +28,9 @@ public class User extends Application {
         ReadData.readRaribleData();
         ReadData.readBinanceData();
         ReadData.readOpenseaData();
+        ReadData.readTweetData();
+        ReadData.readDecryptData();
+        ReadData.readCointelegraphData();
         launch(args);
     }
 }
