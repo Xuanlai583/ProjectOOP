@@ -1,14 +1,31 @@
 package nft.data.database;
 
-import nft.data.NFTToken;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import nft.data.NFT.BinanceNFT;
+import nft.data.NFT.OpenseaNFT;
+import nft.data.NFT.RaribleNFT;
+import nft.data.posts.Cointelegraph;
+import nft.data.posts.Decrypt;
 import nft.data.posts.Post;
+import nft.data.posts.Tweet;
 
 import java.util.ArrayList;
 
 public class Database {
-    protected static ArrayList<NFTToken> NFTDatabase = new ArrayList<>();
-    protected static ArrayList<Post> PostDatabase = new ArrayList<>();
+    public static ObservableList<RaribleNFT> itemsRaribleNFT  = FXCollections.observableArrayList();
+    public static ObservableList<BinanceNFT> itemsBinanceNFT  = FXCollections.observableArrayList();
+    public static ObservableList<OpenseaNFT> itemsOpenseaNFT   = FXCollections.observableArrayList();
+    public static ObservableList<Tweet> itemsTwitter = FXCollections.observableArrayList();
+    public static ObservableList<Cointelegraph> itemsCointelegraph  = FXCollections.observableArrayList();
+    public static ObservableList<Decrypt> itemsDecrypt  = FXCollections.observableArrayList();
 
-//    method
-
+    public static void main(String[] args) {
+        ReadData.readRaribleData();
+        ReadData.readBinanceData();
+        ReadData.readOpenseaData();
+        ReadData.readTweetData();
+        ReadData.readDecryptData();
+        ReadData.readCointelegraphData();
+    }
 }
