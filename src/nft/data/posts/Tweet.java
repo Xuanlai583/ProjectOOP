@@ -6,8 +6,6 @@ public class Tweet extends Post {
     private String like;
     private String view;
 
-// getter
-
     public String getReply() {
         return reply;
     }
