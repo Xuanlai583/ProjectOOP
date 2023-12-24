@@ -59,7 +59,7 @@ public class ReadData {
                 String priceChange = (String) jsonObject.get("price change");
                 Object ownersObj = jsonObject.get("owners");
                 String owner = (ownersObj != null) ? ownersObj.toString() : "";
-                Object itemObj = jsonObject.get("item");
+                Object itemObj = jsonObject.get("items");
                 String item = (itemObj != null) ? itemObj.toString() : "";
 
 
