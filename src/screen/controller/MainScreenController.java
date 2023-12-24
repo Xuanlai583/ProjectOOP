@@ -125,9 +125,6 @@ public class MainScreenController {
     private MenuButton menuButtonSearch;
 
     @FXML
-    private MenuButton menuButtonSort;
-
-    @FXML
     private MenuButton menuButtonSource;
 
     @FXML
@@ -152,20 +149,12 @@ public class MainScreenController {
     private TextField tfSearch;
 
     @FXML
-    private ToggleGroup toggleSortGroup;
-
-    @FXML
     void btnNFTTokenPressed(ActionEvent event) {
 
     }
 
     @FXML
     void btnUpdatePressed(ActionEvent event) {
-
-    }
-
-    @FXML
-    void menuItemAuthorChoose(ActionEvent event) {
 
     }
 
@@ -200,23 +189,8 @@ public class MainScreenController {
     }
 
     @FXML
-    void menuItemTitleChoose(ActionEvent event) {
-
-    }
-
-    @FXML
     void menuItemTwitterChoose(ActionEvent event) {
         ChangeSource("Twitter", tblTwitter);
-    }
-
-    @FXML
-    void radioBtnAscendingChoose(ActionEvent event) {
-
-    }
-
-    @FXML
-    void radioBtnDescendingChoose(ActionEvent event) {
-
     }
 
     @FXML
