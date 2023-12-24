@@ -1,8 +1,5 @@
 package nft.data.NFT;
 
-import javax.print.attribute.standard.Media;
-import java.util.ArrayList;
-
 public class NFTToken {
     private String collection;
     private String rank;

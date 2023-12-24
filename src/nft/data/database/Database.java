@@ -7,10 +7,7 @@ import nft.data.NFT.OpenseaNFT;
 import nft.data.NFT.RaribleNFT;
 import nft.data.posts.Cointelegraph;
 import nft.data.posts.Decrypt;
-import nft.data.posts.Post;
 import nft.data.posts.Tweet;
-
-import java.util.ArrayList;
 
 public class Database {
     public static ObservableList<RaribleNFT> itemsRaribleNFT  = FXCollections.observableArrayList();
