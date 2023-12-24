@@ -1,4 +1,4 @@
-package screen.Controller;
+package screen.controller;
 
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
