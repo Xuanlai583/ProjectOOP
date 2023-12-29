@@ -1,26 +1,16 @@
 package nftdata.dataprocessing.datacollector;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonParser;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.edge.EdgeOptions;
 
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.List;
 
 public class BinanceDataCollector extends DataCollector{
     public static void binanceDataCollector() {
-        System.setProperty("webdriver.edge.driver", "browserDrivers/msedgedriver.exe");
-        EdgeOptions options = new EdgeOptions();
-        options.addArguments("--start-maximized ", "--disable-extensions");
-        WebDriver driver = new EdgeDriver(options);
+        WebDriver driver = openBrowser();
         int count = 1;
         try{
             driver.get("https://www.binance.com/en/nft/ranking?tab=trend");
@@ -60,14 +50,8 @@ public class BinanceDataCollector extends DataCollector{
                 jsonArray.add(binanceObject);
             }
             //JSON File Create
-            Gson gson = new GsonBuilder().setPrettyPrinting().create();
-            String formattedJson = gson.toJson(JsonParser.parseString(jsonArray.toString()));
+            exportJSON(jsonArray, "src/nftdata/datacollection/binance.json");
 
-            try (FileWriter fileWriter = new FileWriter("src/nftdata/datacollection/binance.json")) {
-                fileWriter.write(formattedJson);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
         }catch (InterruptedException e){
             e.printStackTrace();
         } finally {

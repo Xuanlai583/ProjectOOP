@@ -1,27 +1,16 @@
 package nftdata.dataprocessing.datacollector;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonParser;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.edge.EdgeOptions;
 
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.List;
-import java.util.NoSuchElementException;
 
 public class CointelegraphDataCollector extends DataCollector{
     public static void cointelegraphDataCollector(){
-        System.setProperty("webdriver.edge.driver", "browserDrivers/msedgedriver.exe");
-        EdgeOptions options = new EdgeOptions();
-        options.addArguments("--start-maximized ", "--disable-extensions");
-        WebDriver driver = new EdgeDriver(options);
+        WebDriver driver = openBrowser();
 
         String nftTag = "https://cointelegraph.com/tags/nft";
         String bitcoinTag = "https://cointelegraph.com/tags/bitcoin";
@@ -44,14 +33,7 @@ public class CointelegraphDataCollector extends DataCollector{
         dataCollect(driver, ethereumTag, jsonArray, "Ethereum");
 
         //JSON File Create
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        String formattedJson = gson.toJson(JsonParser.parseString(jsonArray.toString()));
-
-        try (FileWriter fileWriter = new FileWriter("src/nftdata/datacollection/cointelegraph.json")) {
-            fileWriter.write(formattedJson);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        exportJSON(jsonArray, "src/nftdata/datacollection/cointelegraph.json");
 
         driver.quit();
     }

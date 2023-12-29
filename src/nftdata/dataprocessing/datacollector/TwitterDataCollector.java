@@ -1,29 +1,17 @@
 package nftdata.dataprocessing.datacollector;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonParser;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.edge.EdgeOptions;
 
-import java.io.FileWriter;
-import java.io.IOException;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 public class TwitterDataCollector extends DataCollector{
     public static void twitterDataCollector() {
-        System.setProperty("webdriver.edge.driver", "browserDrivers/msedgedriver.exe");
-        EdgeOptions options = new EdgeOptions();
-        options.addArguments("--start-maximized ", "--disable-extensions");
-        WebDriver driver = new EdgeDriver(options);
+        WebDriver driver = openBrowser();
         try{
             driver.get("https://twitter.com/explore");
             Thread.sleep(5000);
@@ -52,7 +40,6 @@ public class TwitterDataCollector extends DataCollector{
             searchBox.sendKeys(Keys.RETURN);
             Thread.sleep(8000);
 
-
             //Data Collect
             JSONArray jsonArray = new JSONArray();
             for (int i = 0; i < SCROLL_TURNS; i++) {
@@ -64,7 +51,12 @@ public class TwitterDataCollector extends DataCollector{
                     String replies = postElement.findElement(By.xpath(".//div[@data-testid=\"reply\"]")).getText();
                     String reposts = postElement.findElement(By.xpath(".//div[@data-testid=\"retweet\"]")).getText();
                     String likes = postElement.findElement(By.xpath(".//div[@data-testid=\"like\"]")).getText();
-                    String views = postElement.findElement(By.xpath("(.//div[@class=\"css-175oi2r r-xoduu5 r-1udh08x\"])[4]")).getText();
+                    String views;
+                    try {
+                        views = postElement.findElement(By.xpath("(.//div[@class=\"css-175oi2r r-xoduu5 r-1udh08x\"])[4]")).getText();
+                    }catch (org.openqa.selenium.NoSuchElementException e){
+                        views = "";
+                    }
                     String hashtags = extractHashtags(postElement);
 
                     JSONObject tweetObject = new JSONObject();
@@ -81,14 +73,10 @@ public class TwitterDataCollector extends DataCollector{
 
                 scrollDown(driver);
             }
-            Gson gson = new GsonBuilder().setPrettyPrinting().create();
-            String formattedJson = gson.toJson(JsonParser.parseString(jsonArray.toString()));
 
-            try (FileWriter fileWriter = new FileWriter("src/nftdata/datacollection/twitter.json")) {
-                fileWriter.write(formattedJson);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            //Export JSON
+            exportJSON(jsonArray, "src/nftdata/datacollection/twitter.json");
+
         }catch (InterruptedException e){
             e.printStackTrace();
         } finally {
