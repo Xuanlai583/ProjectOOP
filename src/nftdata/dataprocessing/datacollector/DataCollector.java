@@ -4,6 +4,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -30,5 +32,10 @@ public class DataCollector {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    static String dateFormat(String inputDate){
+        LocalDate dateFormat = LocalDate.parse(inputDate, DateTimeFormatter.ISO_LOCAL_DATE);
+        return dateFormat.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
     }
 }

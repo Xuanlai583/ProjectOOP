@@ -1,821 +1,842 @@
 [
-    {
-        "date": "09/12/2023",
-        "author": "William Suberg",
-        "title": "Bitcoin dominance threatens 'likely top' despite BTC price eyeing $45K",
-        "views": "2982",
-        "tags": "bitcoin"
-    },
-    {
-        "date": "09/12/2023",
-        "author": "Amaka Nwaokocha",
-        "title": "VanEck files 5th amendment to spot Bitcoin ETF under 'HODL'",
-        "views": "2600",
-        "tags": "bitcoin"
-    },
-    {
-        "date": "09/12/2023",
-        "author": "Ciaran Lyons",
-        "title": "Less than 2% of El Salvador's population holds crypto: Report",
-        "views": "1892",
-        "tags": "bitcoin"
-    },
-    {
-        "date": "09/12/2023",
-        "author": "Ciaran Lyons",
-        "title": "Fidelity and SEC meet to discuss spot Bitcoin ETF application",
-        "views": "8155",
-        "tags": "bitcoin"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Kyle White",
-        "title": "Why is the crypto market up today?",
-        "views": "134735",
-        "tags": "bitcoin"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Serge Egon Ostman",
-        "title": "Here's what happened in crypto today",
-        "views": "693382",
-        "tags": "bitcoin"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Rakesh Upadhyay",
-        "title": "Price analysis 12/8: BTC, ETH, BNB, XRP, SOL, ADA, DOGE, AVAX, LINK, MATIC",
-        "views": "6757",
-        "tags": "bitcoin"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "William Suberg",
-        "title": "Markets rethink Fed rate cuts as Bitcoin circles $44K on US jobs data",
-        "views": "3312",
-        "tags": "bitcoin"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Gracy Chen",
-        "title": "BRC-20 tokens are presenting new opportunities for Bitcoin buyers",
-        "views": "4803",
-        "tags": "bitcoin"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Stephen Katte",
-        "title": "Bitcoin's many deaths: Is crypto market past 'point of no return?'",
-        "views": "5983",
-        "tags": "bitcoin"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Zhiyuan Sun",
-        "title": "Developers of Bitcoin sidechain MVC prepare for BRC-20 DEX launch",
-        "views": "3337",
-        "tags": "bitcoin"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Anatol Hooper",
-        "title": "How does the crypto market benefit from Binance's turbulent November?",
-        "views": "4738",
-        "tags": "bitcoin"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "William Suberg",
-        "title": "Bitcoin may hit $50K on altcoin 'FUD' as Ethereum, Solana beat gains",
-        "views": "10249",
-        "tags": "bitcoin"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Tom Mitchelhill",
-        "title": "Investment firm floats yield-bearing ETF based on MicroStrategy stock",
-        "views": "5061",
-        "tags": "bitcoin"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Jesse Coghlan",
-        "title": "El Salvador unveils BTC 'Freedom Visa' - but it's 10x the cost of others",
-        "views": "11952",
-        "tags": "bitcoin"
-    },
-    {
-        "date": "09/12/2023",
-        "author": "Amaka Nwaokocha",
-        "title": "FTX and Alameda move $23.59M in assets to Binance, Coinbase, OKX",
-        "views": "3777",
-        "tags": "blockchain"
-    },
-    {
-        "date": "09/12/2023",
-        "author": "Prashant Jha",
-        "title": "Kyberswap comes to the rescue of hack victims, Platypus hacker walks free: Finance Redefined",
-        "views": "1277",
-        "tags": "blockchain"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Ana Paula Pereira",
-        "title": "Web3 protocol Blast reaches $823M TVL despite bugs and controversy",
-        "views": "3276",
-        "tags": "blockchain"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Cointelegraph Accelerator",
-        "title": "Chainlink Labs enters into a strategic collaboration with Cointelegraph Accelerator to support Web3 startups",
-        "views": "3671",
-        "tags": "blockchain"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Savannah Fortis",
-        "title": "Armenian cultural heritage sites tokenized on Solana blockchain",
-        "views": "4031",
-        "tags": "blockchain"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Zhiyuan Sun",
-        "title": "Developers of Bitcoin sidechain MVC prepare for BRC-20 DEX launch",
-        "views": "3337",
-        "tags": "blockchain"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Arijit Sarkar",
-        "title": "ERC-2771 integration introduces address spoofing vulnerability - OpenZeppelin",
-        "views": "11418",
-        "tags": "blockchain"
-    },
-    {
-        "date": "07/12/2023",
-        "author": "Ana Paula Pereira",
-        "title": "Babylon Chain closes $18M funding round for Bitcoin staking",
-        "views": "6282",
-        "tags": "blockchain"
-    },
-    {
-        "date": "07/12/2023",
-        "author": "Zhiyuan Sun",
-        "title": "Jack Dorsey's Block Inc. launches self-custody Bitcoin wallet",
-        "views": "4861",
-        "tags": "blockchain"
-    },
-    {
-        "date": "07/12/2023",
-        "author": "Robert D. Knight",
-        "title": "Changpeng Zhao's next move could involve decentralized science",
-        "views": "5628",
-        "tags": "blockchain"
-    },
-    {
-        "date": "07/12/2023",
-        "author": "Gareth Jenkinson",
-        "title": "Web3 can benefit from adopting Web2 optimization: NBX Berlin",
-        "views": "6440",
-        "tags": "blockchain"
-    },
-    {
-        "date": "07/12/2023",
-        "author": "Ezra Reguerra",
-        "title": "COP28: Blockchain projects make push to decentralize climate markets",
-        "views": "1361",
-        "tags": "blockchain"
-    },
-    {
-        "date": "07/12/2023",
-        "author": "Amaka Nwaokocha",
-        "title": "FTX to submit revised reorganization plan in mid-December",
-        "views": "5932",
-        "tags": "blockchain"
-    },
-    {
-        "date": "09/12/2023",
-        "author": "Amaka Nwaokocha",
-        "title": "EU officials reach 'historic' AI regulation deal",
-        "views": "2122",
-        "tags": "ai"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Serge Egon Ostman",
-        "title": "Here's what happened in crypto today",
-        "views": "693382",
-        "tags": "ai"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Tristan Greene",
-        "title": "Nirvana bassist Krist Novoselic led failed shareholder proposal asking Microsoft to study AI safety",
-        "views": "1237",
-        "tags": "ai"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Amaka Nwaokocha",
-        "title": "Microsoft faces UK antitrust probe over OpenAI deal structure",
-        "views": "13538",
-        "tags": "ai"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Savannah Fortis",
-        "title": "Google's Gemini, OpenAI's ChatGPT go head-to-head in Cointelegraph test",
-        "views": "3445",
-        "tags": "ai"
-    },
-    {
-        "date": "07/12/2023",
-        "author": "Tristan Greene",
-        "title": "Harvard scientists claim quantum computing breakthrough",
-        "views": "6992",
-        "tags": "ai"
-    },
-    {
-        "date": "07/12/2023",
-        "author": "Tristan Greene",
-        "title": "Meta releases 'Purple Llama' AI security suite to meet White House commitments",
-        "views": "4109",
-        "tags": "ai"
-    },
-    {
-        "date": "07/12/2023",
-        "author": "Savannah Fortis",
-        "title": "Is Google's Gemini smarter than OpenAI's Chatgpt? Community sleuths find out",
-        "views": "4259",
-        "tags": "ai"
-    },
-    {
-        "date": "07/12/2023",
-        "author": "Amaka Nwaokocha",
-        "title": "AI regulations in global focus as EU approaches regulation deal",
-        "views": "1924",
-        "tags": "ai"
-    },
-    {
-        "date": "07/12/2023",
-        "author": "Arijit Sarkar",
-        "title": "Meta to fight AI-generated fake news with 'invisible watermarks'",
-        "views": "2451",
-        "tags": "ai"
-    },
-    {
-        "date": "07/12/2023",
-        "author": "Martin Young",
-        "title": "Google's 'GPT-4 killer' Gemini is out, here's how you can try it",
-        "views": "36881",
-        "tags": "ai"
-    },
-    {
-        "date": "06/12/2023",
-        "author": "Tristan Greene",
-        "title": "Moody's launches quantum-as-a-service platform for finance",
-        "views": "2079",
-        "tags": "ai"
-    },
-    {
-        "date": "06/12/2023",
-        "author": "Shiraz Jagati",
-        "title": "Artists aim to thwart AI with data-poisoning software and legal action",
-        "views": "772",
-        "tags": "ai"
-    },
-    {
-        "date": "06/12/2023",
-        "author": "Tristan Greene",
-        "title": "IBM announces global Call for Code artificial intelligence hackathon winners",
-        "views": "2309",
-        "tags": "ai"
-    },
-    {
-        "date": "06/12/2023",
-        "author": "Amaka Nwaokocha",
-        "title": "IBM, Meta and others form 'AI Alliance' to advance AI development",
-        "views": "1493",
-        "tags": "ai"
-    },
-    {
-        "date": "09/12/2023",
-        "author": "Yashu Gola",
-        "title": "Why is Cardano price up today?",
-        "views": "21278",
-        "tags": "altcoin"
-    },
-    {
-        "date": "09/12/2023",
-        "author": "William Suberg",
-        "title": "Bitcoin dominance threatens 'likely top' despite BTC price eyeing $45K",
-        "views": "2999",
-        "tags": "altcoin"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Marcel Pechman",
-        "title": "Why is Solana (SOL) price up this week?",
-        "views": "38165",
-        "tags": "altcoin"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Kyle White",
-        "title": "Why is the crypto market up today?",
-        "views": "134735",
-        "tags": "altcoin"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Rakesh Upadhyay",
-        "title": "Price analysis 12/8: BTC, ETH, BNB, XRP, SOL, ADA, DOGE, AVAX, LINK, MATIC",
-        "views": "6757",
-        "tags": "altcoin"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "William Suberg",
-        "title": "Markets rethink Fed rate cuts as Bitcoin circles $44K on US jobs data",
-        "views": "3312",
-        "tags": "altcoin"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "William Suberg",
-        "title": "Bitcoin may hit $50K on altcoin 'FUD' as Ethereum, Solana beat gains",
-        "views": "10251",
-        "tags": "altcoin"
-    },
-    {
-        "date": "07/12/2023",
-        "author": "Kyle White",
-        "title": "Why is Ether (ETH) price up today?",
-        "views": "43434",
-        "tags": "altcoin"
-    },
-    {
-        "date": "07/12/2023",
-        "author": "Yashu Gola",
-        "title": "Why is XRP price up today?",
-        "views": "92994",
-        "tags": "altcoin"
-    },
-    {
-        "date": "07/12/2023",
-        "author": "Brayden Lindrea",
-        "title": "Crypto is for criminals? JPMorgan has been fined $39B and has its own token",
-        "views": "28732",
-        "tags": "altcoin"
-    },
-    {
-        "date": "06/12/2023",
-        "author": "Rakesh Upadhyay",
-        "title": "Price analysis 12/6: BTC, ETH, BNB, XRP, SOL, ADA, DOGE, AVAX, LINK, TON",
-        "views": "7115",
-        "tags": "altcoin"
-    },
-    {
-        "date": "06/12/2023",
-        "author": "Tom Mitchelhill",
-        "title": "Bitcoin Ordinals ORDI token tops $1B market cap after 850% monthly gain",
-        "views": "7843",
-        "tags": "altcoin"
-    },
-    {
-        "date": "06/12/2023",
-        "author": "Brayden Lindrea",
-        "title": "Debt Box urges judge to toss suit, says SEC got case 'badly wrong'",
-        "views": "4805",
-        "tags": "altcoin"
-    },
-    {
-        "date": "05/12/2023",
-        "author": "Brayden Lindrea",
-        "title": "Coinbase rolls out crypto transfers via links sent on WhatsApp, Telegram",
-        "views": "9349",
-        "tags": "altcoin"
-    },
-    {
-        "date": "05/12/2023",
-        "author": "Kyle White",
-        "title": "Why is Bitcoin price up today?",
-        "views": "240604",
-        "tags": "altcoin"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Serge Egon Ostman",
-        "title": "Here's what happened in crypto today",
-        "views": "693382",
-        "tags": "ethereum"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Rakesh Upadhyay",
-        "title": "Price analysis 12/8: BTC, ETH, BNB, XRP, SOL, ADA, DOGE, AVAX, LINK, MATIC",
-        "views": "6759",
-        "tags": "ethereum"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "William Suberg",
-        "title": "Markets rethink Fed rate cuts as Bitcoin circles $44K on US jobs data",
-        "views": "3312",
-        "tags": "ethereum"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Arijit Sarkar",
-        "title": "Polygon CDK to power Web3 loyalty program for Indian e-commerce Flipkart",
-        "views": "2231",
-        "tags": "ethereum"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "William Suberg",
-        "title": "Bitcoin may hit $50K on altcoin 'FUD' as Ethereum, Solana beat gains",
-        "views": "10251",
-        "tags": "ethereum"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Arijit Sarkar",
-        "title": "ERC-2771 integration introduces address spoofing vulnerability - OpenZeppelin",
-        "views": "11419",
-        "tags": "ethereum"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Martin Young",
-        "title": "Bitcoin new high set for late 2024, Binance to lose top spot - VanEck",
-        "views": "16589",
-        "tags": "ethereum"
-    },
-    {
-        "date": "07/12/2023",
-        "author": "Kyle White",
-        "title": "Why is Ether (ETH) price up today?",
-        "views": "43434",
-        "tags": "ethereum"
-    },
-    {
-        "date": "07/12/2023",
-        "author": "Victoria Li",
-        "title": "Navigating DePIN: Emerging trends and growth opportunities - Interview with IoTeX",
-        "views": "9670",
-        "tags": "ethereum"
-    },
-    {
-        "date": "07/12/2023",
-        "author": "Gareth Jenkinson",
-        "title": "Polygon 2.0: 2024 to see unified ZK-powered L2 chains",
-        "views": "5014",
-        "tags": "ethereum"
-    },
-    {
-        "date": "06/12/2023",
-        "author": "Rakesh Upadhyay",
-        "title": "Price analysis 12/6: BTC, ETH, BNB, XRP, SOL, ADA, DOGE, AVAX, LINK, TON",
-        "views": "7115",
-        "tags": "ethereum"
-    },
-    {
-        "date": "05/12/2023",
-        "author": "Turner Wright",
-        "title": "SEC pushes deadline to decide on Grayscale spot Ether ETF",
-        "views": "25648",
-        "tags": "ethereum"
-    },
-    {
-        "date": "05/12/2023",
-        "author": "Jesse Coghlan",
-        "title": "Hashdex tips spot Bitcoin ETFs to trade by Q2, followed by Ethereum",
-        "views": "7803",
-        "tags": "ethereum"
-    },
-    {
-        "date": "04/12/2023",
-        "author": "Rakesh Upadhyay",
-        "title": "Price analysis 12/4: SPX, DXY, BTC, ETH, BNB, XRP, SOL, ADA, DOGE, LINK",
-        "views": "6164",
-        "tags": "ethereum"
-    },
-    {
-        "date": "04/12/2023",
-        "author": "Marco Castrovilli",
-        "title": "How to prepare for the next crypto bull market: 5 simple steps",
-        "views": "16397",
-        "tags": "ethereum"
-    },
-    {
-        "date": "09/12/2023",
-        "author": "Janina Winter",
-        "title": "Tackling market volatility, liquidity issues, and DeFi complexity - Interview with Nolus",
-        "views": "860",
-        "tags": "defi"
-    },
-    {
-        "date": "09/12/2023",
-        "author": "Amaka Nwaokocha",
-        "title": "FTX and Alameda move $23.59M in assets to Binance, Coinbase, OKX",
-        "views": "3806",
-        "tags": "defi"
-    },
-    {
-        "date": "09/12/2023",
-        "author": "Prashant Jha",
-        "title": "Kyberswap comes to the rescue of hack victims, Platypus hacker walks free: Finance Redefined",
-        "views": "1277",
-        "tags": "defi"
-    },
-    {
-        "date": "06/12/2023",
-        "author": "Ezra Reguerra",
-        "title": "Michael Jackson on the blockchain, Web3 gaming trends in 2024: Nifty Newsletter",
-        "views": "3680",
-        "tags": "defi"
-    },
-    {
-        "date": "05/12/2023",
-        "author": "Serkan Keskin",
-        "title": "Journey to the center of DeFi: MetaMask creator introduces Linea Voyage",
-        "views": "14475",
-        "tags": "defi"
-    },
-    {
-        "date": "05/12/2023",
-        "author": "Zhiyuan Sun",
-        "title": "Bitcoin custodian Nostr Assets pauses deposits after reaching 'maximum capacity'",
-        "views": "5419",
-        "tags": "defi"
-    },
-    {
-        "date": "04/12/2023",
-        "author": "Zhiyuan Sun",
-        "title": "ParaSpace to continue NFT lending as it rebrands to Parallel Finance",
-        "views": "18554",
-        "tags": "defi"
-    },
-    {
-        "date": "04/12/2023",
-        "author": "Tom Blackstone",
-        "title": "Cosmos-based networks Umee and Osmosis to merge, creating 'DeFi Hub'",
-        "views": "17282",
-        "tags": "defi"
-    },
-    {
-        "date": "03/12/2023",
-        "author": "Janina Winter",
-        "title": "Addressing the barriers to DeFi adoption - Interview with Velvet Capital",
-        "views": "11129",
-        "tags": "defi"
-    },
-    {
-        "date": "03/12/2023",
-        "author": "Amaka Nwaokocha",
-        "title": "FTX and Alameda transfers another $22M worth of crypto asset",
-        "views": "34464",
-        "tags": "defi"
-    },
-    {
-        "date": "02/12/2023",
-        "author": "Amaka Nwaokocha",
-        "title": "KyberSwap announces treasury grants for hack victims",
-        "views": "3675",
-        "tags": "defi"
-    },
-    {
-        "date": "01/12/2023",
-        "author": "Ezra Reguerra",
-        "title": "KyberSwap hacker wants control, law firm says Aussie DeFi tax rules 'non-binding': Finance Redefined",
-        "views": "4704",
-        "tags": "defi"
-    },
-    {
-        "date": "01/12/2023",
-        "author": "Jesse Coghlan",
-        "title": "OPNX token spikes 50% after Su Zhu unexpectedly posts a 'gm' on Twitter",
-        "views": "6125",
-        "tags": "defi"
-    },
-    {
-        "date": "01/12/2023",
-        "author": "Brayden Lindrea",
-        "title": "Australia's confusing new crypto tax guidance is 'toilet paper,' says law firm",
-        "views": "7705",
-        "tags": "defi"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Ana Paula Pereira",
-        "title": "Crypto Biz: BlackRock Bitcoin ETF seed capital, HashKey targets market makers, and more",
-        "views": "9908",
-        "tags": "business"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Ana Paula Pereira",
-        "title": "Web3 protocol Blast reaches $823M TVL despite bugs and controversy",
-        "views": "3276",
-        "tags": "business"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Tristan Greene",
-        "title": "Nirvana bassist Krist Novoselic led failed shareholder proposal asking Microsoft to study AI safety",
-        "views": "1237",
-        "tags": "business"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "David Attlee",
-        "title": "BBVA migrates crypto custody service to Ripple-owned Metaco's Harmonize",
-        "views": "3586",
-        "tags": "business"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Tom Mitchelhill",
-        "title": "Investment firm floats yield-bearing ETF based on MicroStrategy stock",
-        "views": "5062",
-        "tags": "business"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Tom Mitchelhill",
-        "title": "Hive Digital says BTC miners bought last Dec. have already paid themselves off",
-        "views": "11366",
-        "tags": "business"
-    },
-    {
-        "date": "07/12/2023",
-        "author": "Jesse Coghlan",
-        "title": "Binance founder CZ must stay in US until sentencing, judge orders",
-        "views": "7221",
-        "tags": "business"
-    },
-    {
-        "date": "07/12/2023",
-        "author": "Turner Wright",
-        "title": "Binance says decision to pull Abu Dhabi licensing bid unrelated to US settlement",
-        "views": "2028",
-        "tags": "business"
-    },
-    {
-        "date": "07/12/2023",
-        "author": "Ana Paula Pereira",
-        "title": "Babylon Chain closes $18M funding round for Bitcoin staking",
-        "views": "6288",
-        "tags": "business"
-    },
-    {
-        "date": "07/12/2023",
-        "author": "Ana Paula Pereira",
-        "title": "Phoenix seals $380M deal with WhatsMiner for green Bitcoin mining",
-        "views": "2845",
-        "tags": "business"
-    },
-    {
-        "date": "07/12/2023",
-        "author": "Robert D. Knight",
-        "title": "Changpeng Zhao's next move could involve decentralized science",
-        "views": "5631",
-        "tags": "business"
-    },
-    {
-        "date": "07/12/2023",
-        "author": "Amaka Nwaokocha",
-        "title": "FTX to submit revised reorganization plan in mid-December",
-        "views": "5932",
-        "tags": "business"
-    },
-    {
-        "date": "07/12/2023",
-        "author": "Ezra Reguerra",
-        "title": "Web3 firms to support ecosystem development through grants amid market uptick",
-        "views": "3201",
-        "tags": "business"
-    },
-    {
-        "date": "07/12/2023",
-        "author": "Prashant Jha",
-        "title": "Robinhood launches crypto trading services in Europe",
-        "views": "6018",
-        "tags": "business"
-    },
-    {
-        "date": "07/12/2023",
-        "author": "Arijit Sarkar",
-        "title": "Meta to fight AI-generated fake news with 'invisible watermarks'",
-        "views": "2451",
-        "tags": "business"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Ezra Reguerra",
-        "title": "NFT trading volume nears $1B as markets turn bullish: Report",
-        "views": "3554",
-        "tags": "nft"
-    },
-    {
-        "date": "08/12/2023",
-        "author": "Savannah Fortis",
-        "title": "Armenian cultural heritage sites tokenized on Solana blockchain",
-        "views": "4032",
-        "tags": "nft"
-    },
-    {
-        "date": "06/12/2023",
-        "author": "Ana Paula Pereira",
-        "title": "VC Roundup: Investors pick games, collectibles and creator economy",
-        "views": "1571",
-        "tags": "nft"
-    },
-    {
-        "date": "06/12/2023",
-        "author": "Ezra Reguerra",
-        "title": "Michael Jackson on the blockchain, Web3 gaming trends in 2024: Nifty Newsletter",
-        "views": "3680",
-        "tags": "nft"
-    },
-    {
-        "date": "06/12/2023",
-        "author": "Savannah Fortis",
-        "title": "Thrash-metal band Megadeth launches NFT collection and metaverse community",
-        "views": "8086",
-        "tags": "nft"
-    },
-    {
-        "date": "06/12/2023",
-        "author": "Ezra Reguerra",
-        "title": "Web3 gaming trends in 2024: Execs weigh in on blockchain gaming future",
-        "views": "10552",
-        "tags": "nft"
-    },
-    {
-        "date": "06/12/2023",
-        "author": "Gareth Jenkinson",
-        "title": "Animoca's Yat Siu bullish on TON partnership as Bitcoin sets strong foundation for 2024",
-        "views": "3799",
-        "tags": "nft"
-    },
-    {
-        "date": "04/12/2023",
-        "author": "Zhiyuan Sun",
-        "title": "ParaSpace to continue NFT lending as it rebrands to Parallel Finance",
-        "views": "18554",
-        "tags": "nft"
-    },
-    {
-        "date": "04/12/2023",
-        "author": "Anatol Hooper",
-        "title": "Reviving economic confidence with blockchain and gold",
-        "views": "22440",
-        "tags": "nft"
-    },
-    {
-        "date": "02/12/2023",
-        "author": "Chris Jones",
-        "title": "Gotta save them all! A new NFT-powered game aims to continue Pokémon's incredible legacy",
-        "views": "11148",
-        "tags": "nft"
-    },
-    {
-        "date": "01/12/2023",
-        "author": "Ezra Reguerra",
-        "title": "Tiger Global marks down stakes in BAYC and OpenSea: Report",
-        "views": "3640",
-        "tags": "nft"
-    },
-    {
-        "date": "30/11/2023",
-        "author": "Ezra Reguerra",
-        "title": "Rarible's RARI Foundation taps Arbitrum for royalty-embedded EVM chain",
-        "views": "7060",
-        "tags": "nft"
-    },
-    {
-        "date": "29/11/2023",
-        "author": "Ezra Reguerra",
-        "title": "Square Enix auction dates, Azuki DAO rebrands to Bean: Nifty Newsletter",
-        "views": "3243",
-        "tags": "nft"
-    },
-    {
-        "date": "29/11/2023",
-        "author": "Tristan Greene",
-        "title": "NFT sales and pricing driven by luck, scarcity and optimism, according to studies",
-        "views": "1642",
-        "tags": "nft"
-    },
-    {
-        "date": "29/11/2023",
-        "author": "Gareth Jenkinson",
-        "title": "Bitcoin NFT marketplace Bioniq eyes lofty goal of alleviating network congestion",
-        "views": "1733",
-        "tags": "nft"
-    }
+  {
+    "date": "29/12/2023",
+    "author": "Ezra Reguerra",
+    "title": "NFT predictions for 2024: Trends and challenges coming next year",
+    "views": "645",
+    "tags": "NFT"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Tom Blackstone",
+    "title": "ZachXBT alleges Gamegear dev \u0027scaredofboobs\u0027 is scammer NFT Machine",
+    "views": "669",
+    "tags": "NFT"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Tom Blackstone",
+    "title": "Decentralized storage platform CESS raises $8M from 13 VC funds",
+    "views": "6299",
+    "tags": "NFT"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Brayden Lindrea",
+    "title": "Nifty News: Trump cashing out NFT earnings, Ordinals debate goes to ‘shit’ and more",
+    "views": "3709",
+    "tags": "NFT"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Ezra Reguerra",
+    "title": "Dev enables haters to reject Ordinals, Sotheby’s 2023 digital art sales hit $35M: Nifty Newsletter",
+    "views": "31726",
+    "tags": "NFT"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Jonathan DeYoung",
+    "title": "The future of NFTs is bright, says RARI Foundation strategy head",
+    "views": "574",
+    "tags": "NFT"
+  },
+  {
+    "date": "26/12/2023",
+    "author": "Serkan Keskin",
+    "title": "New protocol launches for cross-chain trading of inscription tokens",
+    "views": "10019",
+    "tags": "NFT"
+  },
+  {
+    "date": "26/12/2023",
+    "author": "Ezra Reguerra",
+    "title": "NFT recap 2023: What happened in the NFT space this year?",
+    "views": "10248",
+    "tags": "NFT"
+  },
+  {
+    "date": "25/12/2023",
+    "author": "David Attlee",
+    "title": "Sotheby’s sold $35 million worth of digital art in 2023",
+    "views": "3113",
+    "tags": "NFT"
+  },
+  {
+    "date": "23/12/2023",
+    "author": "Anatol Hooper",
+    "title": "How AI and machine learning help NFT market combat wash trading and counterfeits",
+    "views": "26594",
+    "tags": "NFT"
+  },
+  {
+    "date": "21/12/2023",
+    "author": "Victoria Li",
+    "title": "AI to detect fake NFTs and find NFT’s true value: bitsCrunch AMA recap",
+    "views": "19711",
+    "tags": "NFT"
+  },
+  {
+    "date": "20/12/2023",
+    "author": "Ezra Reguerra",
+    "title": "NFT Trader recovers stolen Apes, Line’s NFT arm raises $140M: Nifty Newsletter",
+    "views": "11729",
+    "tags": "NFT"
+  },
+  {
+    "date": "20/12/2023",
+    "author": "Sarah Jansen",
+    "title": "Play-to-earn game inspired by Bitcoin generates authentic value with gemstone NFTs",
+    "views": "31061",
+    "tags": "NFT"
+  },
+  {
+    "date": "20/12/2023",
+    "author": "Victoria Li",
+    "title": "Next-gen gaming experience is coming: AMA with Undeads",
+    "views": "25613",
+    "tags": "NFT"
+  },
+  {
+    "date": "20/12/2023",
+    "author": "Savannah Fortis",
+    "title": "Base blockchain gets its own song and mints first single as NFT",
+    "views": "14507",
+    "tags": "NFT"
+  },
+  {
+    "date": "29/12/2023",
+    "author": "Helen Partz",
+    "title": "SEC’s Bitcoin ETF update deadline today: Cash-create vs. in-kind",
+    "views": "1847",
+    "tags": "Bitcoin"
+  },
+  {
+    "date": "29/12/2023",
+    "author": "William Suberg",
+    "title": "Bitcoin miners reduce BTC holdings as ‘miner price’ nears $65K",
+    "views": "2457",
+    "tags": "Bitcoin"
+  },
+  {
+    "date": "29/12/2023",
+    "author": "Ezra Reguerra",
+    "title": "NFT predictions for 2024: Trends and challenges coming next year",
+    "views": "645",
+    "tags": "Bitcoin"
+  },
+  {
+    "date": "29/12/2023",
+    "author": "Helen Partz",
+    "title": "China calls for crackdown on Tether stablecoin over illegal forex trading",
+    "views": "2109",
+    "tags": "Bitcoin"
+  },
+  {
+    "date": "29/12/2023",
+    "author": "Martin Young",
+    "title": "ARK Invest kicks off Bitcoin ETF ‘amendment-athon’ ahead of deadline",
+    "views": "4708",
+    "tags": "Bitcoin"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Ana Paula Pereira",
+    "title": "Celsius scraps Fahrenheit consortium, gets court approval for Bitcoin mining company",
+    "views": "1306",
+    "tags": "Bitcoin"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Nancy Lubale",
+    "title": "5 data points suggest a crypto bull market began in 2023 — What’s next for 2024",
+    "views": "2651",
+    "tags": "Bitcoin"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Turner Wright",
+    "title": "FTX debtors propose $16,871 Bitcoin price for creditor claims",
+    "views": "6455",
+    "tags": "Bitcoin"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Zhiyuan Sun",
+    "title": "Canadian Bitcoin miner Hive Digital completes $22M financing deal",
+    "views": "2205",
+    "tags": "Bitcoin"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Serkan Keskin",
+    "title": "‘We aim to be the utility supplier for crypto users’ — Interview with CoinEx CEO",
+    "views": "12034",
+    "tags": "Bitcoin"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "William Suberg",
+    "title": "BTC price dives $1.5K as Bitcoin analysts watch support levels",
+    "views": "4019",
+    "tags": "Bitcoin"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Turner Wright",
+    "title": "Hashdex drops new ad spot ahead of potential spot Bitcoin ETF approval",
+    "views": "6004",
+    "tags": "Bitcoin"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "William Suberg",
+    "title": "Why is Bitcoin price stuck?",
+    "views": "35112",
+    "tags": "Bitcoin"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Prashant Jha",
+    "title": "ARK sells remainder of GBTC holdings, invests $100M in Bitcoin ETF",
+    "views": "8245",
+    "tags": "Bitcoin"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Ezra Reguerra",
+    "title": "Crypto landscape: ten years of growth, change, advances and retreats",
+    "views": "1342",
+    "tags": "Bitcoin"
+  },
+  {
+    "date": "29/12/2023",
+    "author": "Onkar Singh",
+    "title": "Turing completeness in blockchain, explained",
+    "views": "",
+    "tags": "Blockchain"
+  },
+  {
+    "date": "29/12/2023",
+    "author": "Ezra Reguerra",
+    "title": "Trader hits $2M jackpot after putting $62 into a Solana memecoin",
+    "views": "5450",
+    "tags": "Blockchain"
+  },
+  {
+    "date": "29/12/2023",
+    "author": "Brayden Lindrea",
+    "title": "Vitalik Buterin wants to ‘make Ethereum cypherpunk again’",
+    "views": "5462",
+    "tags": "Blockchain"
+  },
+  {
+    "date": "29/12/2023",
+    "author": "Tom Mitchelhill",
+    "title": "Solana retraces back to pre-Xmas prices as BNB retakes 4th spot",
+    "views": "3696",
+    "tags": "Blockchain"
+  },
+  {
+    "date": "29/12/2023",
+    "author": "Felix Ng",
+    "title": "Hacking group Pink Drainer strikes again, pilfering $4.4M from just 1 victim",
+    "views": "2242",
+    "tags": "Blockchain"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Tom Blackstone",
+    "title": "Decentralized storage platform CESS raises $8M from 13 VC funds",
+    "views": "6302",
+    "tags": "Blockchain"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Zhiyuan Sun",
+    "title": "Coinbase International Exchange caps perpetual futures leverage at 10x",
+    "views": "3373",
+    "tags": "Blockchain"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Ezra Reguerra",
+    "title": "China discloses details behind ‘OTC King’ Zhao Dong’s 7-year prison sentence",
+    "views": "3621",
+    "tags": "Blockchain"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Elisha Owusu Akyaw",
+    "title": "Hashing It Out: 2024 narratives — Layer-2 networks",
+    "views": "1176",
+    "tags": "Blockchain"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Anatol Hooper",
+    "title": "How user-friendly Web3 wallets bridge the gap between TradFi and DeFi",
+    "views": "5154",
+    "tags": "Blockchain"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Prashant Jha",
+    "title": "ARK sells remainder of GBTC holdings, invests $100M in Bitcoin ETF",
+    "views": "8245",
+    "tags": "Blockchain"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Ezra Reguerra",
+    "title": "Crypto landscape: ten years of growth, change, advances and retreats",
+    "views": "1342",
+    "tags": "Blockchain"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Zhiyuan Sun",
+    "title": "PancakeSwap seeks 300M CAKE token supply revamp",
+    "views": "2258",
+    "tags": "Blockchain"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Tom Blackstone",
+    "title": "Ledger Live tracks users, says app developer and privacy advocate",
+    "views": "5799",
+    "tags": "Blockchain"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Zhiyuan Sun",
+    "title": "Chinese Web3 VC to launch $10B accelerator fund: Report",
+    "views": "2809",
+    "tags": "Blockchain"
+  },
+  {
+    "date": "29/12/2023",
+    "author": "Amaka Nwaokocha",
+    "title": "How Nigeria stepped up its AI game in 2023",
+    "views": "1796",
+    "tags": "AI"
+  },
+  {
+    "date": "29/12/2023",
+    "author": "Savannah Fortis",
+    "title": "Council of Europe adopts new guidelines for responsible AI use in journalism",
+    "views": "255",
+    "tags": "AI"
+  },
+  {
+    "date": "29/12/2023",
+    "author": "Savannah Fortis",
+    "title": "Nvidia to release special chip for China, subverts US export controls",
+    "views": "5196",
+    "tags": "AI"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Savannah Fortis",
+    "title": "NYT AI case vs OpenAI, Microsoft could be \u0027watershed moment\u0027 — community responds",
+    "views": "7186",
+    "tags": "AI"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Serge Egon Ostman",
+    "title": "Here’s what happened in crypto today",
+    "views": "4339",
+    "tags": "AI"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Marco Castrovilli",
+    "title": "Fixing money means fixing global inequality, David Chaum says",
+    "views": "689",
+    "tags": "AI"
+  },
+  {
+    "date": "26/12/2023",
+    "author": "Savannah Fortis",
+    "title": "The buzz of 2023: Top 10 most popular news stories of the year",
+    "views": "2418",
+    "tags": "AI"
+  },
+  {
+    "date": "26/12/2023",
+    "author": "Savannah Fortis",
+    "title": "The ultimate 2023 AI guide: Here’s what happened and why",
+    "views": "4391",
+    "tags": "AI"
+  },
+  {
+    "date": "26/12/2023",
+    "author": "Felix Ng",
+    "title": "Searches for ‘AI’ on Google smashes Bitcoin and crypto this year",
+    "views": "6855",
+    "tags": "AI"
+  },
+  {
+    "date": "25/12/2023",
+    "author": "Savannah Fortis",
+    "title": "Bill Gates says AI can make the world a ‘more equitable place’",
+    "views": "3250",
+    "tags": "AI"
+  },
+  {
+    "date": "25/12/2023",
+    "author": "Savannah Fortis",
+    "title": "India to build AI climate models for severe weather forecasting",
+    "views": "33335",
+    "tags": "AI"
+  },
+  {
+    "date": "24/12/2023",
+    "author": "Jesse Coghlan",
+    "title": "AI-powered NPCs could live forever and exist in multiple games — Yat Siu",
+    "views": "18408",
+    "tags": "AI"
+  },
+  {
+    "date": "23/12/2023",
+    "author": "Anatol Hooper",
+    "title": "How AI and machine learning help NFT market combat wash trading and counterfeits",
+    "views": "26594",
+    "tags": "AI"
+  },
+  {
+    "date": "23/12/2023",
+    "author": "Ciaran Lyons",
+    "title": "OpenAI eyes potential funding round exceeding $100B: Report",
+    "views": "4892",
+    "tags": "AI"
+  },
+  {
+    "date": "21/12/2023",
+    "author": "Elisha Owusu Akyaw",
+    "title": "Hashing It Out: 2024 narratives — AI and Web3",
+    "views": "2062",
+    "tags": "AI"
+  },
+  {
+    "date": "29/12/2023",
+    "author": "Helen Partz",
+    "title": "OKX crypto exchange to delist privacy tokens in early 2024",
+    "views": "1685",
+    "tags": "Altcoin"
+  },
+  {
+    "date": "29/12/2023",
+    "author": "Tom Mitchelhill",
+    "title": "Avalanche Foundation is about to start buying memecoins for the ‘culture’",
+    "views": "3231",
+    "tags": "Altcoin"
+  },
+  {
+    "date": "29/12/2023",
+    "author": "Tom Mitchelhill",
+    "title": "Solana retraces back to pre-Xmas prices as BNB retakes 4th spot",
+    "views": "3697",
+    "tags": "Altcoin"
+  },
+  {
+    "date": "29/12/2023",
+    "author": "Felix Ng",
+    "title": "Hacking group Pink Drainer strikes again, pilfering $4.4M from just 1 victim",
+    "views": "2242",
+    "tags": "Altcoin"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Marcel Pechman",
+    "title": "3 reasons why Ethereum (ETH) price nearly broke the $2.5K resistance this week",
+    "views": "4869",
+    "tags": "Altcoin"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Brayden Lindrea",
+    "title": "US judge sides with SEC in Terraform Labs case over unregistered securities",
+    "views": "10764",
+    "tags": "Altcoin"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Yashu Gola",
+    "title": "Why is Solana (SOL) price down today?",
+    "views": "27586",
+    "tags": "Altcoin"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Elisha Owusu Akyaw",
+    "title": "Hashing It Out: 2024 narratives — Layer-2 networks",
+    "views": "1176",
+    "tags": "Altcoin"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Tanuj Surve",
+    "title": "How do inflationary vs. deflationary token models affect market liquidity?",
+    "views": "",
+    "tags": "Altcoin"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Tom Mitchelhill",
+    "title": "‘Revenge of the ETH’ — Is Ethereum’s 9% jump the start of something big?",
+    "views": "7827",
+    "tags": "Altcoin"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Brayden Lindrea",
+    "title": "Critics yell ‘hypocrisy’ as Ordinals website suffers from DDoS spam attack",
+    "views": "7431",
+    "tags": "Altcoin"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Rakesh Upadhyay",
+    "title": "Price analysis 12/27: BTC, ETH, SOL, BNB, XRP, ADA, AVAX, DOGE, DOT, MATIC",
+    "views": "6191",
+    "tags": "Altcoin"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Yashu Gola",
+    "title": "Solana is up 95% in December — But why are AVAX, INJ, NEAR surging even higher?",
+    "views": "5464",
+    "tags": "Altcoin"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Brayden Lindrea",
+    "title": "Taproot Wizards launches script so haters can now reject Ordinals on Bitcoin",
+    "views": "4200",
+    "tags": "Altcoin"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Brayden Lindrea",
+    "title": "Kyber Network axes workforce by 50% one month after $49M exploit",
+    "views": "2097",
+    "tags": "Altcoin"
+  },
+  {
+    "date": "29/12/2023",
+    "author": "Savannah Fortis",
+    "title": "Council of Europe adopts new guidelines for responsible AI use in journalism",
+    "views": "255",
+    "tags": "Business"
+  },
+  {
+    "date": "29/12/2023",
+    "author": "Tom Mitchelhill",
+    "title": "Avalanche Foundation is about to start buying memecoins for the ‘culture’",
+    "views": "3233",
+    "tags": "Business"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Tom Mitchelhill",
+    "title": "Canadian crypto exchange halts withdrawals, trading after \u0027security breach\u0027",
+    "views": "6009",
+    "tags": "Business"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Brayden Lindrea",
+    "title": "US judge sides with SEC in Terraform Labs case over unregistered securities",
+    "views": "10764",
+    "tags": "Business"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Turner Wright",
+    "title": "Monex Group to acquire majority stake in asset manager 3iQ",
+    "views": "3015",
+    "tags": "Business"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Ana Paula Pereira",
+    "title": "Celsius scraps Fahrenheit consortium, gets court approval for Bitcoin mining company",
+    "views": "1306",
+    "tags": "Business"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Turner Wright",
+    "title": "FTX debtors propose $16,871 Bitcoin price for creditor claims",
+    "views": "6456",
+    "tags": "Business"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Ana Paula Pereira",
+    "title": "India takes steps to block Binance, Huobi, other global crypto exchange URLs",
+    "views": "3929",
+    "tags": "Business"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Zhiyuan Sun",
+    "title": "Coinbase International Exchange caps perpetual futures leverage at 10x",
+    "views": "3373",
+    "tags": "Business"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Turner Wright",
+    "title": "Hashdex drops new ad spot ahead of potential spot Bitcoin ETF approval",
+    "views": "6004",
+    "tags": "Business"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Brayden Lindrea",
+    "title": "Nifty News: Trump cashing out NFT earnings, Ordinals debate goes to ‘shit’ and more",
+    "views": "3709",
+    "tags": "Business"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Brayden Lindrea",
+    "title": "Critics yell ‘hypocrisy’ as Ordinals website suffers from DDoS spam attack",
+    "views": "7431",
+    "tags": "Business"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Tom Mitchelhill",
+    "title": "Marathon Digital becomes most traded stock of the day, $327M in volume",
+    "views": "7922",
+    "tags": "Business"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Felix Ng",
+    "title": "Bitzlato suspends withdrawals weeks after founder agrees to dissolve exchange",
+    "views": "6882",
+    "tags": "Business"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Robert D. Knight",
+    "title": "Top 5 weirdest crypto stories of 2023",
+    "views": "2040",
+    "tags": "Business"
+  },
+  {
+    "date": "29/12/2023",
+    "author": "Brayden Lindrea",
+    "title": "Vitalik Buterin wants to ‘make Ethereum cypherpunk again’",
+    "views": "5464",
+    "tags": "DeFi"
+  },
+  {
+    "date": "29/12/2023",
+    "author": "Tom Mitchelhill",
+    "title": "Solana retraces back to pre-Xmas prices as BNB retakes 4th spot",
+    "views": "3697",
+    "tags": "DeFi"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Serkan Keskin",
+    "title": "‘We aim to be the utility supplier for crypto users’ — Interview with CoinEx CEO",
+    "views": "12038",
+    "tags": "DeFi"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Tom Blackstone",
+    "title": "$1.8B was lost to Web3 hackers and fraudsters in 2023: Immunefi",
+    "views": "2321",
+    "tags": "DeFi"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Anatol Hooper",
+    "title": "How user-friendly Web3 wallets bridge the gap between TradFi and DeFi",
+    "views": "5154",
+    "tags": "DeFi"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Zhiyuan Sun",
+    "title": "PancakeSwap seeks 300M CAKE token supply revamp",
+    "views": "2258",
+    "tags": "DeFi"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Robert D. Knight",
+    "title": "Top 5 weirdest crypto stories of 2023",
+    "views": "2040",
+    "tags": "DeFi"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Jonathan DeYoung",
+    "title": "The future of NFTs is bright, says RARI Foundation strategy head",
+    "views": "574",
+    "tags": "DeFi"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Serkan Keskin",
+    "title": "How blockchain helps to bring gold to digital markets — Interview with DAO.Link",
+    "views": "10358",
+    "tags": "DeFi"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Tom Mitchelhill",
+    "title": "Thunder Terminal claims funds safe after $240K attack, hacker says otherwise",
+    "views": "8666",
+    "tags": "DeFi"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Brayden Lindrea",
+    "title": "Kyber Network axes workforce by 50% one month after $49M exploit",
+    "views": "2097",
+    "tags": "DeFi"
+  },
+  {
+    "date": "26/12/2023",
+    "author": "Serkan Keskin",
+    "title": "New protocol launches for cross-chain trading of inscription tokens",
+    "views": "10019",
+    "tags": "DeFi"
+  },
+  {
+    "date": "26/12/2023",
+    "author": "Anatol Hooper",
+    "title": "Overcoming centralized governance: How DAOs democratize decision making",
+    "views": "9614",
+    "tags": "DeFi"
+  },
+  {
+    "date": "25/12/2023",
+    "author": "Janina Winter",
+    "title": "Data storage is \u0027the new real estate\u0027 — Interview with FileMarket",
+    "views": "21634",
+    "tags": "DeFi"
+  },
+  {
+    "date": "23/12/2023",
+    "author": "Robert D. Knight",
+    "title": "Key industry figures predict the future of DeFi in 2024",
+    "views": "4720",
+    "tags": "DeFi"
+  },
+  {
+    "date": "29/12/2023",
+    "author": "Onkar Singh",
+    "title": "Turing completeness in blockchain, explained",
+    "views": "",
+    "tags": "Ethereum"
+  },
+  {
+    "date": "29/12/2023",
+    "author": "Ezra Reguerra",
+    "title": "Solana flips Ethereum in Google search interest: Data",
+    "views": "2103",
+    "tags": "Ethereum"
+  },
+  {
+    "date": "29/12/2023",
+    "author": "Brayden Lindrea",
+    "title": "Vitalik Buterin wants to ‘make Ethereum cypherpunk again’",
+    "views": "5466",
+    "tags": "Ethereum"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Marcel Pechman",
+    "title": "3 reasons why Ethereum (ETH) price nearly broke the $2.5K resistance this week",
+    "views": "4872",
+    "tags": "Ethereum"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Elisha Owusu Akyaw",
+    "title": "Hashing It Out: 2024 narratives — Layer-2 networks",
+    "views": "1176",
+    "tags": "Ethereum"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Martin Young",
+    "title": "Vitalik Buterin proposes to make Ethereum PoS ‘lighter and simpler’",
+    "views": "4620",
+    "tags": "Ethereum"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Brayden Lindrea",
+    "title": "Nifty News: Trump cashing out NFT earnings, Ordinals debate goes to ‘shit’ and more",
+    "views": "3709",
+    "tags": "Ethereum"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Tom Mitchelhill",
+    "title": "‘Revenge of the ETH’ — Is Ethereum’s 9% jump the start of something big?",
+    "views": "7827",
+    "tags": "Ethereum"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Tom Blackstone",
+    "title": "Ledger Live tracks users, says app developer and privacy advocate",
+    "views": "5799",
+    "tags": "Ethereum"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Serge Egon Ostman",
+    "title": "Here’s what happened in crypto today",
+    "views": "4340",
+    "tags": "Ethereum"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Rakesh Upadhyay",
+    "title": "Price analysis 12/27: BTC, ETH, SOL, BNB, XRP, ADA, AVAX, DOGE, DOT, MATIC",
+    "views": "6191",
+    "tags": "Ethereum"
+  },
+  {
+    "date": "26/12/2023",
+    "author": "Serkan Keskin",
+    "title": "New protocol launches for cross-chain trading of inscription tokens",
+    "views": "10019",
+    "tags": "Ethereum"
+  },
+  {
+    "date": "26/12/2023",
+    "author": "Savannah Fortis",
+    "title": "The buzz of 2023: Top 10 most popular news stories of the year",
+    "views": "2418",
+    "tags": "Ethereum"
+  },
+  {
+    "date": "26/12/2023",
+    "author": "Helen Partz",
+    "title": "Tether mints $1B USDT for ‘inventory replenish’ — CEO Paolo Ardoino",
+    "views": "4952",
+    "tags": "Ethereum"
+  },
+  {
+    "date": "25/12/2023",
+    "author": "David Attlee",
+    "title": "Ethereum ETFs pushed to May, Bitcoin ETFs approval in January: Law Decoded, Dec. 18–25",
+    "views": "13078",
+    "tags": "Ethereum"
+  }
 ]

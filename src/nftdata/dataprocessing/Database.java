@@ -16,13 +16,4 @@ public class Database {
     public static ObservableList<Tweet> itemsTwitter = FXCollections.observableArrayList();
     public static ObservableList<Cointelegraph> itemsCointelegraph  = FXCollections.observableArrayList();
     public static ObservableList<Decrypt> itemsDecrypt  = FXCollections.observableArrayList();
-
-    public static void main(String[] args) {
-        ReadData.readRaribleData();
-        ReadData.readBinanceData();
-        ReadData.readOpenseaData();
-        ReadData.readTweetData();
-        ReadData.readDecryptData();
-        ReadData.readCointelegraphData();
-    }
 }

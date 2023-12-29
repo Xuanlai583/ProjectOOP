@@ -222,7 +222,7 @@ public class MainScreenController {
         colLikesTwitter.setCellValueFactory(new PropertyValueFactory<Tweet, String>("like"));
         colViewsTwitter.setCellValueFactory(new PropertyValueFactory<Tweet, String>("view"));
         colHashtagsTwitter.setCellValueFactory(new PropertyValueFactory<Tweet, String>("hashtag"));
-        tblTwitter.setItems(itemsTwitter);
+//        tblTwitter.setItems(itemsTwitter);
         tblTwitter.setItems(tweetFilteredList);
 
         //Cointelegraph
@@ -231,7 +231,7 @@ public class MainScreenController {
         colTitleCointelegraph.setCellValueFactory(new PropertyValueFactory<Cointelegraph, String>("title"));
         colViewsCointelegraph.setCellValueFactory(new PropertyValueFactory<Cointelegraph, String>("view"));
         colTagsCointelegraph.setCellValueFactory(new PropertyValueFactory<Cointelegraph, String>("hashtag"));
-        tblCointelegraph.setItems(itemsCointelegraph);
+//        tblCointelegraph.setItems(itemsCointelegraph);
         tblCointelegraph.setItems(cointelegraphFilteredList);
 
         //Decrypt
@@ -239,7 +239,7 @@ public class MainScreenController {
         colAuthorDecrypt.setCellValueFactory(new PropertyValueFactory<Decrypt, String>("author"));
         colDateDecrypt.setCellValueFactory(new PropertyValueFactory<Decrypt, String>("date"));
         colTagsDecrypt.setCellValueFactory(new PropertyValueFactory<Decrypt, String>("hashtag"));
-        tblDecrypt.setItems(itemsDecrypt);
+//        tblDecrypt.setItems(itemsDecrypt);
         tblDecrypt.setItems(decryptFilteredList);
 
         //BinanceNFT
@@ -251,7 +251,7 @@ public class MainScreenController {
         colPriceChangeBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("priceChange"));
         colOwnersBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("owner"));
         colItemsBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("item"));
-        tblBinance.setItems(itemsBinanceNFT);
+//        tblBinance.setItems(itemsBinanceNFT);
         tblBinance.setItems(binanceNFTFilteredList);
 
         //OpenSeaNFT
@@ -261,14 +261,14 @@ public class MainScreenController {
         colCollectionOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("collection"));
         colSalesOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("sale"));
         colFloorPriceOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("price"));
-        tblOpenSea.setItems(itemsOpenseaNFT);
+//        tblOpenSea.setItems(itemsOpenseaNFT);
         tblOpenSea.setItems(openseaNFTFilteredList);
 
         //RaribleNFT
         colRankingRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("rank"));
         colNameRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("collection"));
         colFloorPriceRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("price"));
-        tblRarible.setItems(itemsRaribleNFT);
+//        tblRarible.setItems(itemsRaribleNFT);
         tblRarible.setItems(raribleNFTFilteredList);
 
         //Searchbox

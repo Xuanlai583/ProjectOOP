@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import nftdata.dataprocessing.ReadData;
 import nftdata.dataprocessing.datacollector.BinanceDataCollector;
+import nftdata.dataprocessing.datacollector.CointelegraphDataCollector;
 import nftdata.dataprocessing.datacollector.TwitterDataCollector;
 import screen.controller.MainScreenController;
 
@@ -28,8 +29,9 @@ public class User extends Application {
 
     public static void main(String[] args) {
         //Get data
-        TwitterDataCollector.twitterDataCollector();
-        BinanceDataCollector.binanceDataCollector();
+//        TwitterDataCollector.twitterDataCollector();
+//        BinanceDataCollector.binanceDataCollector();
+        CointelegraphDataCollector.cointelegraphDataCollector();
 
 
         //Read data from JSON file

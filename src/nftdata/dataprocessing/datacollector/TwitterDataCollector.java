@@ -60,9 +60,7 @@ public class TwitterDataCollector extends DataCollector{
 
                 for (WebElement postElement : postElements) {
                     String author = postElement.findElement(By.xpath(".//span[@class=\"css-1qaijid r-bcqeeo r-qvutc0 r-poiln3\"]")).getText();
-                    String inputDate = postElement.findElement(By.xpath(".//time")).getAttribute("datetime").substring(0, 10);
-                    LocalDate dateFormat = LocalDate.parse(inputDate, DateTimeFormatter.ISO_LOCAL_DATE);
-                    String date = dateFormat.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+                    String date = dateFormat(postElement.findElement(By.xpath(".//time")).getAttribute("datetime").substring(0, 10));
                     String replies = postElement.findElement(By.xpath(".//div[@data-testid=\"reply\"]")).getText();
                     String reposts = postElement.findElement(By.xpath(".//div[@data-testid=\"retweet\"]")).getText();
                     String likes = postElement.findElement(By.xpath(".//div[@data-testid=\"like\"]")).getText();
