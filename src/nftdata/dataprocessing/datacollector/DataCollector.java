@@ -20,6 +20,7 @@ import java.util.regex.Pattern;
 
 public class DataCollector {
     public static final String SEARCH_HASHTAG = "#NFT";
+    public static final int MAX_ELEMENTS = 100;
     public static final int SCROLL_TURNS = 10;
 
     //Extract Hashtags
@@ -34,13 +35,25 @@ public class DataCollector {
         return hashtagsStringBuilder.toString().trim();
     }
 
-    //Scroll Page
-    static void scrollDown(WebDriver driver) {
+    //Scroll to end Page
+    static void endPageScrollDown(WebDriver driver) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    //Scroll by pixels
+    static void openseaScrollDown(WebDriver driver, int pixels){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        String script = "window.scrollBy(0, arguments[0]);";
+        js.executeScript(script, pixels);
+        try {
+            Thread.sleep(5000);
+        }catch (InterruptedException e){
             e.printStackTrace();
         }
     }
@@ -61,7 +74,10 @@ public class DataCollector {
     static WebDriver openBrowser(){
         System.setProperty("webdriver.edge.driver", "browserDrivers/msedgedriver.exe");
         EdgeOptions options = new EdgeOptions();
-        options.addArguments("--start-maximized ", "--disable-extensions");
+        options.addArguments("--disable-extensions");
+        options.addArguments("--start-maximized");
+//        options.addArguments("--window-size=1920,1080");
+//        options.addArguments("--headless");
         WebDriver driver = new EdgeDriver(options);
         return driver;
     }

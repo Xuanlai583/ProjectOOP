@@ -42,7 +42,8 @@ public class TwitterDataCollector extends DataCollector{
 
             //Data Collect
             JSONArray jsonArray = new JSONArray();
-            for (int i = 0; i < SCROLL_TURNS; i++) {
+            int elementCount = 0;
+            while (elementCount < MAX_ELEMENTS) {
                 List<WebElement> postElements = driver.findElements(By.xpath("//article[@data-testid=\"tweet\"]"));
 
                 for (WebElement postElement : postElements) {
@@ -69,9 +70,10 @@ public class TwitterDataCollector extends DataCollector{
                     tweetObject.put("hashtags", hashtags);
 
                     jsonArray.add(tweetObject);
+                    elementCount++;
                 }
 
-                scrollDown(driver);
+                endPageScrollDown(driver);
             }
 
             //Export JSON

@@ -1,0 +1,63 @@
+package nftdata.dataprocessing.datacollector;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
+
+public class OpenseaDataCollector extends DataCollector{
+    public static void openseaDataCollector(){
+        WebDriver driver = openBrowser();
+        try{
+            driver.get("https://opensea.io/rankings");
+            Thread.sleep(5000);
+
+            //Data Collect
+            boolean[] visited = new boolean[101];
+            JSONArray jsonArray = new JSONArray();
+            for (int i = 0; i < 9; i++){
+                List<WebElement> openseaElements = driver.findElements(By.xpath("//*[@id=\"main\"]/main/div/div/div[3]/div/div[4]/div"));
+
+                for(WebElement openseaElement : openseaElements) {
+                    String rank = openseaElement.findElement(By.xpath(".//div/a/div[1]/div[1]/span/div")).getText();
+                    int rankInt = Integer.parseInt(rank);
+                    if(!visited[rankInt]) {
+                        visited[rankInt] = true;
+                        String collection = openseaElement.findElement(By.xpath(".//div/a/div[1]/div[3]/div/div/span/div")).getText();
+                        String volume = openseaElement.findElement(By.xpath(".//div/a/div[2]/div/span/div")).getText();
+                        String change;
+                        try {
+                            change = openseaElement.findElement(By.xpath(".//div/a/div[3]/span/div")).getText();
+                        } catch (org.openqa.selenium.NoSuchElementException e) {
+                            change = "--";
+                        }
+                        String floorPrice = openseaElement.findElement(By.xpath(".//div/a/div[4]/div/span/div")).getText();
+                        String sales = openseaElement.findElement(By.xpath(".//div/a/div[5]/span/div")).getText();
+
+                        JSONObject openseaObject = new JSONObject();
+                        openseaObject.put("rank", rank);
+                        openseaObject.put("collection", collection);
+                        openseaObject.put("volume", volume);
+                        openseaObject.put("change", change);
+                        openseaObject.put("floor price", floorPrice);
+                        openseaObject.put("sales", sales);
+                        jsonArray.add(openseaObject);
+                    }
+                }
+                openseaScrollDown(driver, 1000);
+            }
+
+            //Export JSON
+            exportJSON(jsonArray, "opensea.json");
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }finally {
+            driver.quit();
+        }
+    }
+
+
+}

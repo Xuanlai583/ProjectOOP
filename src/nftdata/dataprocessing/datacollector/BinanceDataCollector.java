@@ -13,7 +13,7 @@ public class BinanceDataCollector extends DataCollector{
         WebDriver driver = openBrowser();
         int count = 1;
         try{
-            driver.get("https://www.binance.com/en/nft/ranking?tab=trend");
+            driver.get("https://www.binance.com/en/nft/ranking");
             Thread.sleep(5000);
 
             //Data Collect
