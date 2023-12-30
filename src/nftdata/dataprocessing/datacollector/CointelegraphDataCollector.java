@@ -33,7 +33,7 @@ public class CointelegraphDataCollector extends DataCollector{
         dataCollect(driver, ethereumTag, jsonArray, "Ethereum");
 
         //JSON File Create
-        exportJSON(jsonArray, "src/nftdata/datacollection/cointelegraph.json");
+        exportJSON(jsonArray, "cointelegraph.json");
 
         driver.quit();
     }

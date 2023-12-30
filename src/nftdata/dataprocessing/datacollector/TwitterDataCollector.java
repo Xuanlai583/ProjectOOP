@@ -22,12 +22,12 @@ public class TwitterDataCollector extends DataCollector{
             usernameInput.sendKeys(Keys.RETURN);
             Thread.sleep(5000);
 
-            WebElement userCheckInput = driver.findElement(By.xpath("//input[@autocomplete=\"on\"]"));
-            if (userCheckInput != null) {
+            try {
+                WebElement userCheckInput = driver.findElement(By.xpath("//input[@autocomplete=\"on\"]"));
                 userCheckInput.sendKeys("@cf61885");
                 userCheckInput.sendKeys(Keys.RETURN);
                 Thread.sleep(5000);
-            }
+            } catch (org.openqa.selenium.ElementNotInteractableException ignored){}
 
             WebElement passwordInput = driver.findElement(By.xpath("//input[@autocomplete=\"current-password\"]"));
             passwordInput.sendKeys("@cf61885");
@@ -75,7 +75,7 @@ public class TwitterDataCollector extends DataCollector{
             }
 
             //Export JSON
-            exportJSON(jsonArray, "src/nftdata/datacollection/twitter.json");
+            exportJSON(jsonArray, "twitter.json");
 
         }catch (InterruptedException e){
             e.printStackTrace();

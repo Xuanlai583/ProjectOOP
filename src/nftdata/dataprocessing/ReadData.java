@@ -16,9 +16,10 @@ import java.util.Iterator;
 import static nftdata.dataprocessing.Database.*;
 
 public class ReadData {
+    private static final String DATA_PATH = "datacollection/";
     public static void readRaribleData() {
         JSONParser jsonParser = new JSONParser();
-        try (FileReader reader = new FileReader("src/nftdata/datacollection/rarible.json")) {
+        try (FileReader reader = new FileReader(DATA_PATH + "rarible.json")) {
             // Đọc và parse file JSON thành một đối tượng JSONArray
             Object obj = jsonParser.parse(reader);
             JSONArray jsonArray = (JSONArray) obj;
@@ -42,7 +43,7 @@ public class ReadData {
 
     public static void readBinanceData() {
         JSONParser jsonParser = new JSONParser();
-        try (FileReader reader = new FileReader("src/nftdata/datacollection/binance.json")) {
+        try (FileReader reader = new FileReader(DATA_PATH + "binance.json")) {
             // Đọc và parse file JSON thành một đối tượng JSONArray
             Object obj = jsonParser.parse(reader);
             JSONArray jsonArray = (JSONArray) obj;
@@ -73,7 +74,7 @@ public class ReadData {
 
     public static void readOpenseaData() {
         JSONParser jsonParser = new JSONParser();
-        try (FileReader reader = new FileReader("src/nftdata/datacollection/opensea.json")) {
+        try (FileReader reader = new FileReader(DATA_PATH + "opensea.json")) {
             // Đọc và parse file JSON thành một đối tượng JSONArray
             Object obj = jsonParser.parse(reader);
             JSONArray jsonArray = (JSONArray) obj;
@@ -98,7 +99,7 @@ public class ReadData {
 
     public static void readTweetData() {
         JSONParser jsonParser = new JSONParser();
-        try (FileReader reader = new FileReader("src/nftdata/datacollection/twitter.json")) {
+        try (FileReader reader = new FileReader(DATA_PATH + "twitter.json")) {
             // Đọc và parse file JSON thành một đối tượng JSONArray
             Object obj = jsonParser.parse(reader);
             JSONArray jsonArray = (JSONArray) obj;
@@ -124,7 +125,7 @@ public class ReadData {
 
     public static void readDecryptData() {
         JSONParser jsonParser = new JSONParser();
-        try (FileReader reader = new FileReader("src/nftdata/datacollection/decrypt.json")) {
+        try (FileReader reader = new FileReader(DATA_PATH + "decrypt.json")) {
             // Đọc và parse file JSON thành một đối tượng JSONArray
             Object obj = jsonParser.parse(reader);
             JSONArray jsonArray = (JSONArray) obj;
@@ -147,7 +148,7 @@ public class ReadData {
 
     public static void readCointelegraphData() {
         JSONParser jsonParser = new JSONParser();
-        try (FileReader reader = new FileReader("src/nftdata/datacollection/cointelegraph.json")) {
+        try (FileReader reader = new FileReader(DATA_PATH + "cointelegraph.json")) {
             // Đọc và parse file JSON thành một đối tượng JSONArray
             Object obj = jsonParser.parse(reader);
             JSONArray jsonArray = (JSONArray) obj;

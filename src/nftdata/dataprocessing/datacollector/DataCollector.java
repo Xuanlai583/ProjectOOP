@@ -19,7 +19,7 @@ import java.util.regex.Pattern;
 
 public class DataCollector {
     public static final String SEARCH_HASHTAG = "#NFT";
-    public static int SCROLL_TURNS = 10;
+    public static final int SCROLL_TURNS = 10;
 
     //Extract Hashtags
     static String extractHashtags(WebElement postElement) {
@@ -60,10 +60,10 @@ public class DataCollector {
     }
 
     //Export JSON
-    static void exportJSON(JSONArray jsonArray, String path){
+    static void exportJSON(JSONArray jsonArray, String filename){
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String formattedJson = gson.toJson(JsonParser.parseString(jsonArray.toString()));
-        try (FileWriter fileWriter = new FileWriter(path)) {
+        try (FileWriter fileWriter = new FileWriter("datacollection/" + filename)) {
             fileWriter.write(formattedJson);
         } catch (IOException e) {
             e.printStackTrace();

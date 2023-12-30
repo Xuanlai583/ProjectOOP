@@ -50,7 +50,7 @@ public class BinanceDataCollector extends DataCollector{
                 jsonArray.add(binanceObject);
             }
             //JSON File Create
-            exportJSON(jsonArray, "src/nftdata/datacollection/binance.json");
+            exportJSON(jsonArray, "binance.json");
 
         }catch (InterruptedException e){
             e.printStackTrace();
