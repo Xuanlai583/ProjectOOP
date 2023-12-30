@@ -14,6 +14,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -46,8 +47,14 @@ public class DataCollector {
 
     //Format Date
     static String dateFormat(String inputDate){
-        LocalDate dateFormat = LocalDate.parse(inputDate, DateTimeFormatter.ISO_LOCAL_DATE);
-        return dateFormat.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+        LocalDate date;
+        String outputFormat = "dd/MM/yyyy";
+        try {
+            date = LocalDate.parse(inputDate, DateTimeFormatter.ofPattern("yyyy-MM-dd", Locale.ENGLISH));
+        } catch (Exception e) {
+            date = LocalDate.parse(inputDate, DateTimeFormatter.ofPattern("MMM dd, yyyy", Locale.ENGLISH));
+        }
+        return date.format(DateTimeFormatter.ofPattern(outputFormat));
     }
 
     //Open Browser

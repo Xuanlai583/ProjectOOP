@@ -7,6 +7,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import nftdata.dataprocessing.ReadData;
 import nftdata.datastorage.nft.BinanceNFT;
 import nftdata.datastorage.nft.OpenseaNFT;
 import nftdata.datastorage.nft.RaribleNFT;
@@ -278,6 +279,14 @@ public class MainScreenController {
                 showFilteredResult(newValue);
             }
         });
+
+        //Read data from JSON file
+        ReadData.readRaribleData();
+        ReadData.readBinanceData();
+        ReadData.readOpenseaData();
+        ReadData.readTweetData();
+        ReadData.readDecryptData();
+        ReadData.readCointelegraphData();
     }
 
     private void ChangeSource(String sourceName, TableView<?> nextTable){

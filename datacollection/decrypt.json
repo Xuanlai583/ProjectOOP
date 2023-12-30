@@ -1,1113 +1,680 @@
 [
-	{
-		"title":"Elon Musk Says 'Not Your Keys, Not Your Wallet' in Butchered Attempt at Bitcoin Mantra",
-		"author":"Sander Lutz",
-		"date":"08/12/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"Got $1 Million in Bitcoin or Tether? El Salvador Will Give You a 'Freedom Visa'",
-		"author":"Mat Di Salvo",
-		"date":"08/12/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"Amazon Prime Is Giving Out Free Items for NFT Game ‘Champions Ascension’",
-		"author":"Andrew Hayward",
-		"date":"08/12/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"Ethereum Layer-2 Starknet Reveals STRK Token Airdrop",
-		"author":"Sander Lutz",
-		"date":"08/12/2023",
-		"tags":"DeFi"
-	},
-	{
-		"title":"Animoca Brands Boosts 'Mocaverse' Funding to $31.88 Million With Dapper, Polygon Onboard",
-		"author":"Andrew Hayward",
-		"date":"08/12/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"HODL: VanEck Bitcoin ETF Uses Laser-Eyed Lingo for Ticker",
-		"author":"Mat Di Salvo",
-		"date":"08/12/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"Novel Wallet Is a Book That Hides Your Bitcoin",
-		"author":"Stephen Graves",
-		"date":"08/12/2023",
-		"tags":"Technology"
-	},
-	{
-		"title":"Binance Withdraws Abu Dhabi Investment Fund Licence Application",
-		"author":"Stephen Graves",
-		"date":"08/12/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"Elizabeth Warren: Update Bank Secrecy Act to Address Crypto 'Threat'",
-		"author":"Stephen Graves",
-		"date":"08/12/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"US Judge Bans Changpeng ‘CZ’ Zhao from Leaving the Country",
-		"author":"Decrypt Staff",
-		"date":"08/12/2023",
-		"tags":"Law and Order"
-	},
-	{
-		"title":"Early Bitcoin Ordinals Art Sells for Record $450,000",
-		"author":"Jason Nelson",
-		"date":"08/12/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"Microsoft May Be Working On an AI Edition of Windows",
-		"author":"Jose Antonio Lanz",
-		"date":"08/12/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"Jito Airdrop Hands Out $225 Million to Solana Users",
-		"author":"Sander Lutz",
-		"date":"07/12/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"Apple Unveils Open-Source Path for AI Development on Its Silicon Chips",
-		"author":"Jose Antonio Lanz",
-		"date":"07/12/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"Reebok Follows Nike Into Digital Fashion and Gaming, With an AI Twist",
-		"author":"Sander Lutz",
-		"date":"07/12/2023",
-		"tags":"NFTs"
-	},
-	{
-		"title":"Meme Coins Dogecoin, SHIB Slip—But Solana's BONK Continues to Soar",
-		"author":"Mat Di Salvo",
-		"date":"07/12/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"Ronin and Beam Gaming Tokens Surge, Outpacing Bitcoin and Ethereum",
-		"author":"Andrew Hayward",
-		"date":"07/12/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"Gamers Can Now Livestream to Twitter via Streamlabs",
-		"author":"Kate Irwin",
-		"date":"07/12/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"Montenegro Set to Extradite Terra Co-Founder Do Kwon to US: Report",
-		"author":"Stephen Graves",
-		"date":"07/12/2023",
-		"tags":"Law and Order"
-	},
-	{
-		"title":"Auction House Sotheby's Announces First Sale of Bitcoin Ordinals Collection",
-		"author":"Stephen Graves",
-		"date":"07/12/2023",
-		"tags":"NFTs"
-	},
-	{
-		"title":"Robinhood Crypto Launches in EU With 'Crypto Back' Bitcoin Rewards Program",
-		"author":"Stephen Graves",
-		"date":"07/12/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"Rising Bitcoin Fees Prompt Renewed Battle Over Ordinals, BRC-20 Tokens",
-		"author":"Jason Nelson",
-		"date":"07/12/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"Don’t ‘AI Wash’ Investment Pitches: SEC Chair Gary Gensler",
-		"author":"Jason Nelson",
-		"date":"07/12/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"Meta Adds AI Across Its Apps, Launches Standalone Image Generator",
-		"author":"Jose Antonio Lanz",
-		"date":"07/12/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"Coinbase Set to List Jito Following Airdrop of Solana Token",
-		"author":"Mat Di Salvo",
-		"date":"07/12/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"Merit Circle Brings Immutable zkEVM Into Beam Crypto Gaming Ecosystem",
-		"author":"Kate Irwin",
-		"date":"06/12/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"Crypto Stock Short Sellers Have Lost $2.6 Billion Since Bitcoin Bull Run Began",
-		"author":"Sander Lutz",
-		"date":"06/12/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"How To AI: Best AI Tools for Image Generation",
-		"author":"Jose Antonio Lanz",
-		"date":"06/12/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"'Buy BTC': Viral Leaked GTA 6 Game Trailer Shills Bitcoin",
-		"author":"Andrew Hayward",
-		"date":"06/12/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"JP Morgan CEO Jamie Dimon Says Feds Should 'Close Down' Bitcoin",
-		"author":"Mat Di Salvo",
-		"date":"06/12/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"FaZe Clan Founder Banks Says Ethereum Is 'Large Percentage' of His Net Worth",
-		"author":"Kate Irwin",
-		"date":"06/12/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"Bitcoin Flips Tesla, Meta, and BTC Hater Buffett's Berkshire Hathaway",
-		"author":"Sander Lutz",
-		"date":"06/12/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"Bitcoin Is Surging—Is It Up Only From Here?",
-		"author":"Mat Di Salvo",
-		"date":"06/12/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"Beyond Bard: Google Launches Gemini, a Multimodal AI to Challenge ChatGPT",
-		"author":"Jose Antonio Lanz",
-		"date":"06/12/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"Crypto Gaming Platform Portal Adds Rockstar Co-Founder Amid Airdrop Frenzy",
-		"author":"Kate Irwin",
-		"date":"06/12/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"Dogecoin Marks 10th Anniversary, Hits $0.10 For First Time in a Year",
-		"author":"Decrypt Staff",
-		"date":"06/12/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"Tech Titans Assemble: IBM and Meta Lead 50+ Organizations in New AI Alliance",
-		"author":"Jason Nelson",
-		"date":"06/12/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"GTA 6 Preview: Everything You Need to Know About the New Grand Theft Auto",
-		"author":"Kate Irwin",
-		"date":"06/12/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"Flying High: Why Bitcoin Fans Are Buzzing About Hitting $42,069",
-		"author":"Sander Lutz",
-		"date":"05/12/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"A Wonderful Afterlife? AI Recreates Jimmy Stewart's Voice for Holiday Story",
-		"author":"Jason Nelson",
-		"date":"05/12/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"Send a Selfie to See Porn? UK Ponders Ways to Age-Gate Adult Sites",
-		"author":"Jose Antonio Lanz",
-		"date":"05/12/2023",
-		"tags":"Law and Order"
-	},
-	{
-		"title":"SEC Is Talking to Bitcoin ETF Contenders—Here’s What It's Likely Saying",
-		"author":"Stacy Elliott",
-		"date":"05/12/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"Amazon Prime Is Giving Out Free Card Packs for NFT Game 'Gods Unchained'",
-		"author":"Andrew Hayward",
-		"date":"05/12/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"SEC Delays Grayscale Ethereum ETF, Confirms Receipt of BlackRock ETH Fund",
-		"author":"Ryan Ozawa",
-		"date":"05/12/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"Ethereum NFT Creators Scramble to Secure Projects From Thirdweb Vulnerability",
-		"author":"Andrew Hayward",
-		"date":"05/12/2023",
-		"tags":"NFTs"
-	},
-	{
-		"title":"X.AI, Elon Musk's AI Play, Files for $1 Billion Equity Offering",
-		"author":"Ryan Ozawa",
-		"date":"05/12/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"Binance CEO Richard Teng: Compliance Controls Were 'Inadequate'",
-		"author":"Stephen Graves",
-		"date":"05/12/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"5 Biggest Reveals From the GTA 6 Trailer",
-		"author":"Kate Irwin",
-		"date":"05/12/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"BlackRock Bitcoin ETF Receives $100,000 in Seed Funding",
-		"author":"Mat Di Salvo",
-		"date":"05/12/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"Best in Show? Solana's BONK Joins Dogecoin and SHIB as Top Dog Coins",
-		"author":"Sander Lutz",
-		"date":"05/12/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"Helium Mobile Service That Lets Users Earn Crypto Expands Across US",
-		"author":"Andrew Hayward",
-		"date":"05/12/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"Meme Coin Trading in Full Frenzy as Pepe Pops 26% to Hit $666M Market Cap",
-		"author":"Mat Di Salvo",
-		"date":"05/12/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"Ethereum DEX Matcha Aims to Make It Easier to Trade Assets Across Chains",
-		"author":"Reza Jafery",
-		"date":"05/12/2023",
-		"tags":"DeFi"
-	},
-	{
-		"title":"Lore Machine AI Tool for Film and TV Writers Claims a ‘Bullet-Proof Use Case’",
-		"author":"Jason Nelson",
-		"date":"05/12/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"New York Regulator: Crypto ‘Lends Itself to Illicit Finance’",
-		"author":"Stephen Graves",
-		"date":"05/12/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"Chinese Tech Giant Alibaba Shows Off AI That Can ‘Animate Anyone’",
-		"author":"Jose Antonio Lanz",
-		"date":"05/12/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"AI Still Isn't as Smart as Your Dog: Top Meta Scientist",
-		"author":"Jose Antonio Lanz",
-		"date":"05/12/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"AI Chatbot Jailbreaks Reveal Private Data from OpenAI and Amazon",
-		"author":"Jason Nelson",
-		"date":"05/12/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"Grand Theft Auto 6 Officially Revealed—Watch the First Trailer",
-		"author":"Andrew Hayward",
-		"date":"04/12/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"Gamers Are Paying Big Bucks for Square Enix NFT Characters Like 'Egg' and 'Starvation'",
-		"author":"Kate Irwin",
-		"date":"04/12/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"Is NFT Winter Over? Prices Climb as Bitcoin and Ethereum Surge",
-		"author":"Sander Lutz",
-		"date":"04/12/2023",
-		"tags":"NFTs"
-	},
-	{
-		"title":"BONK Won't Stop: Solana Meme Coin Sets Another All-Time High",
-		"author":"Mat Di Salvo",
-		"date":"04/12/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"Notorious B.I.G. Immortalized in Ethereum Metaverse Game The Sandbox",
-		"author":"Kate Irwin",
-		"date":"04/12/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"Bitcoin Funds Bloated With Cash as Investors Rush In",
-		"author":"Mat Di Salvo",
-		"date":"04/12/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"Bitcoin ORDI Token Sets All-Time High, Up 549% in One Month",
-		"author":"Andrew Hayward",
-		"date":"04/12/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"AppsFlyer and Spindl Partner to Bridge the Gap Between Mobile and Web3 Marketing Data",
-		"author":"Decrypt Staff",
-		"date":"04/12/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"Ethereum, Dogecoin and Bitcoin Cash Are Benefiting From BTC's Rally",
-		"author":"Mat Di Salvo",
-		"date":"04/12/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"Bitcoin Rally Propels El Salvador's Holdings Into Profit, Says President",
-		"author":"Stephen Graves",
-		"date":"04/12/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"Coinbase CEO: Bitcoin 'May Be Key to Extending Western Civilization'",
-		"author":"Stephen Graves",
-		"date":"04/12/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"Bitcoin Blasts Past $41,000 as $166 Million in Shorts Liquidated",
-		"author":"Decrypt Staff",
-		"date":"04/12/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"Bitcoin Hits $40,000 for First Time Since April 2022",
-		"author":"Andrew Hayward",
-		"date":"03/12/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"This Week on Crypto Twitter: Revenge of the Meme Coins",
-		"author":"Sander Lutz",
-		"date":"03/12/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"Every Game on Ethereum Scaler Immutable in the Epic Games Store",
-		"author":"Kate Irwin",
-		"date":"03/12/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"This Week in Coins: Bitcoin Continues Surge, Meme Coin Mania on Legendary Investor's Death",
-		"author":"Mat Di Salvo",
-		"date":"02/12/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"Israel Taps AI for Airstrike Targeting, Doubling the Number of Potential Sites",
-		"author":"Jason Nelson",
-		"date":"02/12/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"Nvidia-Backed Startup Together AI Raises $102.5 Million",
-		"author":"Jason Nelson",
-		"date":"02/12/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"Sports and Web3 Collide During Sporting Crypto Social NYC Edition",
-		"author":"Eric Chen",
-		"date":"01/12/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"Is Bitcoin Poised for Another Bull Run? Experts Weigh In",
-		"author":"Mat Di Salvo",
-		"date":"01/12/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"Jupiter Reveals Airdrop Allocations for Solana DeFi Users",
-		"author":"Sander Lutz",
-		"date":"01/12/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"Grayscale: Bitcoin ETF Approval Is a 'Matter of When, Not If'",
-		"author":"Stacy Elliott",
-		"date":"01/12/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"Ethereum Gaming NFT Marketplace Aqua Shuts Down Citing Slow Industry Growth",
-		"author":"Kate Irwin",
-		"date":"01/12/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"5 Questions with SCENE: Phil Mohun",
-		"author":"Sander Lutz",
-		"date":"01/12/2023",
-		"tags":"NFTs"
-	},
-	{
-		"title":"AI Image Generators Hit ‘Turbo’ Speeds: SDXL and LCM Edge Near Real-Time Creation",
-		"author":"Jose Antonio Lanz",
-		"date":"01/12/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"'Go Fuck Yourself': Elon Musk Outburst Inspires Slew of Meme Coins",
-		"author":"Andrew Hayward",
-		"date":"01/12/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"Bitcoin Is Booming—You Can Earn More by Playing These Free Games",
-		"author":"Andrew Hayward",
-		"date":"01/12/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"Surprise: 'Cyberpunk 2077' Is Getting a Big Update With Romance and Transit Options",
-		"author":"Jason Nelson",
-		"date":"01/12/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"Bitcoin ETF Approval Window Opens Soon—Here Are the Dates to Watch",
-		"author":"Stacy Elliott",
-		"date":"01/12/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"Ethereum Sidechain Ronin Adds Binance Pay to Wallet as 'Pixels' Game Surges",
-		"author":"Kate Irwin",
-		"date":"01/12/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"Bitcoin Hits $39K as Bullish ETF Optimism Boosts Crypto Market",
-		"author":"Mat Di Salvo",
-		"date":"01/12/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"Coinbase CEO: Future AI ‘Agents’ Will Transact in Crypto",
-		"author":"Stephen Graves",
-		"date":"01/12/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"Coinbase Has No Plans to Launch Base Token: CEO Brian Armstrong",
-		"author":"Stephen Graves",
-		"date":"01/12/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"Moons Surge Double-Digits as Reddit Renounces Contract, Burns 98,000 Tokens",
-		"author":"Stephen Graves",
-		"date":"01/12/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"‘League of Legends’ Trailer Scandal: It Wasn’t AI, We Just Messed Up, Says Riot Games",
-		"author":"Jason Nelson",
-		"date":"01/12/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"Bitcoin Rolls Into December Above $38,000",
-		"author":"Ryan Ozawa",
-		"date":"01/12/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"Can AI Help Solve the Climate Crisis?",
-		"author":"Jason Nelson",
-		"date":"01/12/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"Cristiano Ronaldo Sued for $1 Billion Over Binance NFT Promotion",
-		"author":"Decrypt Staff",
-		"date":"01/12/2023",
-		"tags":"NFTs"
-	},
-	{
-		"title":"Munger Was Right: Meme Coin That Generated Millions Off Bitcoin Hater's Death Implodes",
-		"author":"Sander Lutz",
-		"date":"30/11/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"Here's What's Coming to Xbox Game Pass",
-		"author":"Kate Irwin",
-		"date":"30/11/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"Circle Denies Links to Terrorist Financing and Justin Sun",
-		"author":"Decrypt Staff",
-		"date":"30/11/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"RIP Henry Kissinger: So What's the Best Meme Coin?",
-		"author":"Sander Lutz",
-		"date":"30/11/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"'Mysterious Whale' Is Accumulating Millions in Bitcoin—Or Is It?",
-		"author":"Jason Nelson",
-		"date":"30/11/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"Sanctioned Bitcoin Mixer Blender Relaunched as Sinbad—It’s Been Sanctioned Again",
-		"author":"Mat Di Salvo",
-		"date":"30/11/2023",
-		"tags":"Law and Order"
-	},
-	{
-		"title":"Nintendo Switch 2 Preview: Everything You Need to Know",
-		"author":"Andrew Hayward",
-		"date":"30/11/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"KyberSwap Hacker Demands Company Control in Unhinged On-Chain Ransom Letter",
-		"author":"Sander Lutz",
-		"date":"30/11/2023",
-		"tags":"DeFi"
-	},
-	{
-		"title":"Bored Apes Hit Roblox Thanks to Universal’s NFT Band Kingship",
-		"author":"Andrew Hayward",
-		"date":"30/11/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"Coinbase Law Enforcement Requests Have Tripled in Just Three Years",
-		"author":"Stacy Elliott",
-		"date":"30/11/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"Xbox Game Pass Is Coming to PlayStation and Nintendo—If Microsoft Has Its Way",
-		"author":"Andrew Hayward",
-		"date":"30/11/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"MicroStrategy Bought $593 Million More Bitcoin in November",
-		"author":"Mat Di Salvo",
-		"date":"30/11/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"Coinbase CEO Is ‘Pretty Optimistic’ on Bitcoin ETF Approval",
-		"author":"Stephen Graves",
-		"date":"30/11/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"Ubisoft-Backed Horizon Launches Sequence Builder to Make Crypto Game Dev Easier",
-		"author":"Kate Irwin",
-		"date":"30/11/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"Bitcoin Miner AntPool to Refund Record-Breaking $3 Million Transaction Fee",
-		"author":"Decrypt Staff",
-		"date":"30/11/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"You Can Earn Bitcoin by Playing PC Shooter ‘Splitgate’—Here's How",
-		"author":"Andrew Hayward",
-		"date":"30/11/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"Sam Altman Retakes Helm at OpenAI with Microsoft on the Board",
-		"author":"Jason Nelson",
-		"date":"30/11/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"FTX Cleared to Sell $873 Million in Grayscale Bitcoin Trust Shares and Other Holdings",
-		"author":"Andrew Hayward",
-		"date":"30/11/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"Esports Giant Team Liquid Reveals Collab With NFT Game Illuvium",
-		"author":"Kate Irwin",
-		"date":"30/11/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"Amazon Amps Up Its AI Arsenal With an Image Generator to Take On Adobe and Stable Diffusion",
-		"author":"Jose Antonio Lanz",
-		"date":"30/11/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"The ‘Make It More’ ChatGPT Trend—And How to Play Along at Home",
-		"author":"Jose Antonio Lanz",
-		"date":"29/11/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"Stability AI in Turmoil, CEO Under Pressure as Possible Sale Looms",
-		"author":"Jason Nelson",
-		"date":"29/11/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"Bored People on the Internet Are Using AI to Animate Memes",
-		"author":"Jose Antonio Lanz",
-		"date":"29/11/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"PlayStation Plus: Latest Free PS5 Games to Download",
-		"author":"Andrew Hayward",
-		"date":"29/11/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"Crypto Sponsorships Are Back? University of Miami Strikes Deal With Helium Mobile",
-		"author":"Andrew Hayward",
-		"date":"29/11/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"Another Bitcoin ETF Hopeful Enters the Race",
-		"author":"Stacy Elliott",
-		"date":"29/11/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"You Can Soon Play Grand Theft Auto Games on Netflix—Here's How",
-		"author":"Kate Irwin",
-		"date":"29/11/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"Charlie Munger Meme Coin Pumps 31,000% After Bitcoin Hater's Death",
-		"author":"Sander Lutz",
-		"date":"29/11/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"Coinbase CEO: We Asked the SEC for Feedback, All We Got Was a Lawsuit",
-		"author":"Stephen Graves",
-		"date":"29/11/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"Solana Gets Some Shine: Ethereum Rival Rallies Again",
-		"author":"Mat Di Salvo",
-		"date":"29/11/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"Bitcoin Mining Could 'Mitigate' Climate Change: Cornell Study",
-		"author":"Stephen Graves",
-		"date":"29/11/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"'District 9' Director's Shooter 'Off the Grid' Launches Mobile Game Amid Avalanche Subnet Rollout",
-		"author":"Kate Irwin",
-		"date":"29/11/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"Bitcoin Ordinals Marketplace Bioniq Launches—On Internet Computer",
-		"author":"Andrew Hayward",
-		"date":"29/11/2023",
-		"tags":"NFTs"
-	},
-	{
-		"title":"Pika Wows in Debut as AI Video Generator Takes Aim at Tech Giants",
-		"author":"Jose Antonio Lanz",
-		"date":"29/11/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"Portal Airdrop Is Coming—How to Farm the Gaming Token",
-		"author":"Andrew Hayward",
-		"date":"29/11/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"Solana Is Soaring—You Can Earn More by Playing These Games",
-		"author":"Andrew Hayward",
-		"date":"28/11/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"‘Rat Poison’: Cantankerous Bitcoin Critic Charlie Munger Dies at 99",
-		"author":"Ryan Ozawa",
-		"date":"28/11/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"Bitcoin Will Hit $100K in 2024, Predicts Standard Chartered—Again",
-		"author":"Mat Di Salvo",
-		"date":"28/11/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"All Dogs Can Go to Heaven—Later: FDA Advances Longevity Drug for Big Dogs",
-		"author":"Jason Nelson",
-		"date":"28/11/2023",
-		"tags":"Health"
-	},
-	{
-		"title":"Shrapnel Game Studio Founders Say Majority Shareholder Is Staging a Coup",
-		"author":"Kate Irwin",
-		"date":"28/11/2023",
-		"tags":"Law and Order"
-	},
-	{
-		"title":"Amazon Launches Q: A ChatGPT AI Competitor for Businesses",
-		"author":"Jose Antonio Lanz",
-		"date":"28/11/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"Coinbase Stock Is Soaring—What Does That Mean for Crypto?",
-		"author":"Stacy Elliott",
-		"date":"28/11/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"Starfield Isn't Actually Boring, Game Maker Weirdly Explains in User Review Comments",
-		"author":"Kate Irwin",
-		"date":"28/11/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"Coinbase Might Be Forced to Share Your Bitcoin Trading Data With the CFTC",
-		"author":"Sander Lutz",
-		"date":"28/11/2023",
-		"tags":"Law and Order"
-	},
-	{
-		"title":"Bitcoin Turns Bullish Again Amid Dovish Fed Forecast",
-		"author":"Mat Di Salvo",
-		"date":"28/11/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"Solana's Mad Lads Top Bored Apes in Daily NFT Sales as Prices Surge",
-		"author":"Andrew Hayward",
-		"date":"28/11/2023",
-		"tags":"NFTs"
-	},
-	{
-		"title":"Solana Token Pyth Pumps Following $77 Million Airdrop for DeFi Users",
-		"author":"Mat Di Salvo",
-		"date":"28/11/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"Ethereum’s Vitalik Buterin: If AI Turns on Us 'Even Mars May Not Be Safe'",
-		"author":"Jason Nelson",
-		"date":"28/11/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"How to AI: Best AI Tools for Students",
-		"author":"Jason Nelson",
-		"date":"28/11/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"Cardano Founder Charles Hoskinson: Bitcoin Gets ‘Complete Pass’ From SEC",
-		"author":"Stephen Graves",
-		"date":"28/11/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"BitMEX Founder Arthur Hayes: U.S. Treatment of CZ, Binance ‘Absurd’",
-		"author":"Stephen Graves",
-		"date":"28/11/2023",
-		"tags":"Law and Order"
-	},
-	{
-		"title":"AI Can Fix Your DeFi Smart Contracts, Researchers Claim",
-		"author":"Jose Antonio Lanz",
-		"date":"28/11/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"Gaming Tokens Keep Rising as Axie Infinity, Ronin, and Illuvium Pump",
-		"author":"Andrew Hayward",
-		"date":"27/11/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"Where in the World Is Hex Founder Richard Heart?",
-		"author":"Sander Lutz",
-		"date":"27/11/2023",
-		"tags":"Law and Order"
-	},
-	{
-		"title":"Pudgy Penguins Release Exclusive Walmart 'Influencer Box' for Cyber Monday",
-		"author":"Andrew Hayward",
-		"date":"27/11/2023",
-		"tags":"NFTs"
-	},
-	{
-		"title":"Former Binance CEO CZ Can’t Leave US Until Court Decides If He’s a Flight Risk",
-		"author":"Stacy Elliott",
-		"date":"27/11/2023",
-		"tags":"Law and Order"
-	},
-	{
-		"title":"'Blade Runner' Director Ridley Scott Calls AI a 'Technical Hydrogen Bomb'",
-		"author":"Jason Nelson",
-		"date":"27/11/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"Bitcoin ETF Hope Pushes Crypto Fund Investments to $1.5 Billion",
-		"author":"Stacy Elliott",
-		"date":"27/11/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"'Symbiogenesis' Launch Date Revealed as Square Enix Gives Out Free NFTs",
-		"author":"Andrew Hayward",
-		"date":"27/11/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"Bitcoin Hovers Near Yearly High as Halving and ETF Loom",
-		"author":"Sander Lutz",
-		"date":"27/11/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"Jito Reveals JTO Airdrop for Solana DeFi Users—Here's Who Can Claim",
-		"author":"Kate Irwin",
-		"date":"27/11/2023",
-		"tags":"DeFi"
-	},
-	{
-		"title":"CEO Richard Teng Says He's Committed to 'the Binance Way' After CZ's Guilty Plea",
-		"author":"Andrew Hayward",
-		"date":"27/11/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"Magic Eden Launches Cross-Chain NFT and Crypto Wallet for Bitcoin, Ethereum, Solana, and Polygon",
-		"author":"Kate Irwin",
-		"date":"27/11/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"Bybit Woos Holders of Rival Crypto Cards With Rewards Program",
-		"author":"Decrypt Staff",
-		"date":"27/11/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"Terra Ecosystem's LUNA, LUNC Surge By Double-Digits",
-		"author":"Decrypt Staff",
-		"date":"27/11/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"ATOM Slips 4% as Founder Pushes for Cosmos Fork After Inflation Vote",
-		"author":"Decrypt Staff",
-		"date":"27/11/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"Illuvium Preview: Everything You Need to Know About the NFT Games",
-		"author":"Kate Irwin",
-		"date":"26/11/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"Paradigm Says Ethereum Layer-2 Blast Launch 'Crossed Lines' as Users Lock Up $535 Million",
-		"author":"Andrew Hayward",
-		"date":"26/11/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"Biggest Video Games Releasing in December 2023",
-		"author":"Andrew Hayward",
-		"date":"26/11/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"This Week on Crypto Twitter: Another One Bites the Dust",
-		"author":"Sander Lutz",
-		"date":"26/11/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"This Week in Coins: Bitcoin Hits 18-Month High After Sleepy Week, Ethereum Rallies",
-		"author":"Mat Di Salvo",
-		"date":"25/11/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"Ethereum Layer-2 Blast Has $400 Million Locked in Just 4 Days, Despite Concerns",
-		"author":"Mat Di Salvo",
-		"date":"24/11/2023",
-		"tags":"DeFi"
-	},
-	{
-		"title":"MicroStrategy Stock Hits Nearly Two-Year High",
-		"author":"Ryan Ozawa",
-		"date":"24/11/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"Role of AI on the Battlefield Debated as Putin Stakes New Policy Position",
-		"author":"Jason Nelson",
-		"date":"24/11/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"EU's Anti-Bitcoin Central Bank Head Lagarde Admits Son Lost Big on Crypto",
-		"author":"Sander Lutz",
-		"date":"24/11/2023",
-		"tags":"Law and Order"
-	},
-	{
-		"title":"A Pseudonymous Longevity Guru Doxxed Himself—What's Next?",
-		"author":"Jason Nelson",
-		"date":"24/11/2023",
-		"tags":"Health"
-	},
-	{
-		"title":"What is Q* and Q-Learning? OpenAI Could Have Imploded Over AI Fears",
-		"author":"Jose Antonio Lanz",
-		"date":"24/11/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"Axie Infinity Starts Giving NFT Owners Commercial Rights as Official Merch Drops",
-		"author":"Kate Irwin",
-		"date":"24/11/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"Inverse Cramer? Bitcoin Doomer Turns Bullish as Crypto Hits $38,000",
-		"author":"Sander Lutz",
-		"date":"24/11/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"Coinbase Stock Hits 18-Month High Alongside Bitcoin and Ethereum",
-		"author":"Mat Di Salvo",
-		"date":"24/11/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"Here’s When 'Final Fantasy' Maker Square Enix Is Dropping NFTs for its Ethereum Game",
-		"author":"Andrew Hayward",
-		"date":"24/11/2023",
-		"tags":"Gaming"
-	},
-	{
-		"title":"Bitcoin Surges Above $38,000 as BTC and Ethereum Hit 18-Month Highs",
-		"author":"Mat Di Salvo",
-		"date":"24/11/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"Terra Co-Founder Do Kwon's Extradition Approved by Montenegro Court",
-		"author":"Stephen Graves",
-		"date":"24/11/2023",
-		"tags":"Law and Order"
-	},
-	{
-		"title":"BLUR Up 30% Following Season 2 Airdrop, Binance Listing",
-		"author":"Decrypt Staff",
-		"date":"24/11/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"Has Nayib Bukele’s Big Bitcoin Bet Borne Fruit?",
-		"author":"Mat Di Salvo",
-		"date":"23/11/2023",
-		"tags":"Business"
-	},
-	{
-		"title":"This Turkey Day in Coins: BTC, ETH, and DOGE Sit Stuffed",
-		"author":"Mat Di Salvo",
-		"date":"23/11/2023",
-		"tags":"Markets"
-	},
-	{
-		"title":"Amid Mainstream Boom, AI Skeptics Say the Tech is Overhyped",
-		"author":"Decrypt Staff",
-		"date":"23/11/2023",
-		"tags":"Artificial Intelligence"
-	},
-	{
-		"title":"Bitcoin Sender Overpays Record-Breaking $3 Million Transaction Fee",
-		"author":"Mat Di Salvo",
-		"date":"23/11/2023",
-		"tags":"Coins"
-	},
-	{
-		"title":"The Biggest Nintendo Games Still Coming Before the Switch 2",
-		"author":"Andrew Hayward",
-		"date":"23/11/2023",
-		"tags":"Gaming"
-	}
-	
+  {
+    "date": "29/12/2023",
+    "author": "Andrew Hayward",
+    "title": "Gamers Bash Xbox for Controversial Art Apparently Made by AI",
+    "tags": "Coins"
+  },
+  {
+    "date": "29/12/2023",
+    "author": "Stephen Graves",
+    "title": "Vitalik Buterin: Web3 Vision Has \u0027Faded\u0027 Due to Rising Transaction Fees",
+    "tags": "Technology"
+  },
+  {
+    "date": "29/12/2023",
+    "author": "Decrypt Staff",
+    "title": "Avalanche Foundation to Invest in Meme Coin Collection",
+    "tags": "Coins"
+  },
+  {
+    "date": "29/12/2023",
+    "author": "Jose Antonio Lanz",
+    "title": "AI Ernie Bot from Baidu Reaches 100 Million Users in China",
+    "tags": "Artificial Intelligence"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Sander Lutz",
+    "title": "Judge Sides With SEC Over Do Kwon, Says UST, LUNA Are Securities",
+    "tags": "Law and Order"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Sander Lutz",
+    "title": "India Will Block Binance, Kraken, and Other Exchanges in Crypto Crackdown",
+    "tags": "Law and Order"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Stacy Elliott",
+    "title": "$14 Billion in Bitcoin Options Expire Tomorrow—Here’s Why It Matters",
+    "tags": "Business"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Mat Di Salvo",
+    "title": "Bitcoin Traders May Be Lining Up to \u0027Sell the News\u0027 on ETF Approval",
+    "tags": "Markets"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Andrew Hayward",
+    "title": "Blast Deposits Top $1.1 Billion Ahead of Ethereum L2 Launch and Airdrop",
+    "tags": "Business"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Mat Di Salvo",
+    "title": "Solana Dips Below $100 as Meme Coin Trading Reverses Course",
+    "tags": "Markets"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Stephen Graves",
+    "title": "Cathie Wood\u0027s ARK Sells Remaining GBTC Shares, Buys $100M in Bitcoin Futures ETF",
+    "tags": "Business"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Decrypt Staff",
+    "title": "PancakeSwap\u0027s CAKE Jumps 7% on Proposal to Slash Token Supply by 300 Million",
+    "tags": "Markets"
+  },
+  {
+    "date": "28/12/2023",
+    "author": "Sander Lutz",
+    "title": "Trump Dumps Millions in Ethereum After Disastrous NFT Redux",
+    "tags": "NFTs"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Jason Nelson",
+    "title": "The Biggest Space Stories of 2023",
+    "tags": "Space"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Sander Lutz",
+    "title": "The Biggest Crypto Airdrops of 2023",
+    "tags": "DeFi"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Mat Di Salvo",
+    "title": "Brakes on Bonk: Solana Meme Coin Down 56% From All-Time High",
+    "tags": "Coins"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Andrew Hayward",
+    "title": "Game On: The Hottest Upcoming Gaming Token Airdrops",
+    "tags": "Coins"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Jose Antonio Lanz",
+    "title": "OpenAI Trained AI Models on Copyrighted Work, Says NYT Lawsuit",
+    "tags": "Artificial Intelligence"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Andrew Hayward",
+    "title": "PlayStation Plus: Latest Free PS5 Games to Download",
+    "tags": "Gaming"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Mat Di Salvo",
+    "title": "Ethereum Jumps, But the Real Winners Are Optimism, Arbitrum, and Polygon",
+    "tags": "Markets"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Andrew Hayward",
+    "title": "Xai Gaming Token Airdrop Delayed—Here\u0027s When It\u0027s Coming",
+    "tags": "Coins"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Mat Di Salvo",
+    "title": "MicroStrategy Boosts Its Bitcoin Holdings to $8 Billion",
+    "tags": "Business"
+  },
+  {
+    "date": "27/12/2023",
+    "author": "Andrew Hayward",
+    "title": "Got a Solana Saga Before They Sold Out? Here Are All the Airdrops You Can Claim",
+    "tags": "Coins"
+  },
+  {
+    "date": "26/12/2023",
+    "author": "Jason Nelson",
+    "title": "‘We’re Living Longer, But We’re Living Longer, Sicker’: Rejuve CEO",
+    "tags": "Health"
+  },
+  {
+    "date": "26/12/2023",
+    "author": "Jose Antonio Lanz",
+    "title": "Microsoft Slips Standalone Copilot AI App Into Android Store",
+    "tags": "Artificial Intelligence"
+  },
+  {
+    "date": "26/12/2023",
+    "author": "Sander Lutz",
+    "title": "Barry Silbert Out as Grayscale Chairman While Bitcoin ETF Decision Looms",
+    "tags": "Business"
+  },
+  {
+    "date": "26/12/2023",
+    "author": "Decrypt Staff",
+    "title": "Solana Cools Slightly as Bitcoin and Ethereum See Prices Slump",
+    "tags": "Coins"
+  },
+  {
+    "date": "26/12/2023",
+    "author": "Mat Di Salvo",
+    "title": "Biggest Crypto Exploits and Hacks of 2023",
+    "tags": "Law and Order"
+  },
+  {
+    "date": "25/12/2023",
+    "author": "Andrew Hayward",
+    "title": "NFT Gag Gifts: From Rugrats to Stoner Cats (and Trump Too)",
+    "tags": "NFTs"
+  },
+  {
+    "date": "24/12/2023",
+    "author": "Decrypt Staff",
+    "title": "Socrates Beginner\u0027s Guide: The \u0027Cultural Nexus\u0027 Offering Debate-to-Earn Rewards",
+    "tags": "Gaming"
+  },
+  {
+    "date": "24/12/2023",
+    "author": "Sander Lutz",
+    "title": "This Week on Crypto Twitter: New Dog, Old Tricks",
+    "tags": "Coins"
+  },
+  {
+    "date": "23/12/2023",
+    "author": "Jason Nelson, Andrew Hayward",
+    "title": "Solana Smashes Past $100 for First Time Since April 2022",
+    "tags": "Coins"
+  },
+  {
+    "date": "23/12/2023",
+    "author": "Andrew Hayward",
+    "title": "\u0027Minecraft\u0027 Cracked Down on Crypto and NFTs—But Worldcoin Integration Is Fine, Microsoft Says",
+    "tags": "Gaming"
+  },
+  {
+    "date": "23/12/2023",
+    "author": "Mat Di Salvo",
+    "title": "This Week in Coins: Solana Surge, Bitcoin Boom, and Meme Coin Mania",
+    "tags": "Coins"
+  },
+  {
+    "date": "23/12/2023",
+    "author": "Kate Irwin",
+    "title": "Xai Gaming Network Announces Airdrop on Arbitrum—Here\u0027s Who\u0027s Eligible",
+    "tags": "Gaming"
+  },
+  {
+    "date": "22/12/2023",
+    "author": "Stacy Elliott",
+    "title": "This Might Be the Last Hurdle for Bitcoin ETF Approval",
+    "tags": "Business"
+  },
+  {
+    "date": "22/12/2023",
+    "author": "Kate Irwin",
+    "title": "South Korean Game Publisher Wemade Launches $100 Million Blockchain Investment Fund",
+    "tags": "Gaming"
+  },
+  {
+    "date": "22/12/2023",
+    "author": "Sander Lutz",
+    "title": "Solana Cancels Saga Orders After Selling Phones It Didn\u0027t Have",
+    "tags": "Business"
+  },
+  {
+    "date": "22/12/2023",
+    "author": "Kate Irwin",
+    "title": "Insomniac Games Breaks Silence on \u0027Extremely Distressing\u0027 Bitcoin Ransom Hack",
+    "tags": "Gaming"
+  },
+  {
+    "date": "22/12/2023",
+    "author": "Mat Di Salvo",
+    "title": "Ethereum Pops 4% as Solana Nips at Its Heels",
+    "tags": "Markets"
+  },
+  {
+    "date": "22/12/2023",
+    "author": "Andrew Hayward",
+    "title": "Amazon Is Giving Away Free Gaming NFTs—Here\u0027s How to Claim",
+    "tags": "Gaming"
+  },
+  {
+    "date": "22/12/2023",
+    "author": "Jason Nelson",
+    "title": "Satoshi, Not Satoshi: Craig Wright UK Case Inches Further Forward",
+    "tags": "Coins"
+  },
+  {
+    "date": "21/12/2023",
+    "author": "Jason Nelson",
+    "title": "Bitcoin Ordinals Critic Caves as Jack Dorsey-Backed Ocean Mining Pool Flips on Inscriptions",
+    "tags": "NFTs"
+  },
+  {
+    "date": "21/12/2023",
+    "author": "Jose Antonio Lanz",
+    "title": "New MidJourney V6 Release Upgrades Visuals and Tackles Text Generation (Mostly)",
+    "tags": "Artificial Intelligence"
+  },
+  {
+    "date": "21/12/2023",
+    "author": "Stacy Elliott",
+    "title": "3AC Liquidators Freeze $1.4 Billion From Founders",
+    "tags": "Law and Order"
+  },
+  {
+    "date": "21/12/2023",
+    "author": "Sander Lutz",
+    "title": "Meme Coin Mania Helps Push Solana DeFi Volume Over Ethereum for First Time",
+    "tags": "DeFi"
+  },
+  {
+    "date": "21/12/2023",
+    "author": "Mat Di Salvo",
+    "title": "Solana Up 12% and Dogwifhat Surges as Bitcoin Dips Under $44K",
+    "tags": "Markets"
+  },
+  {
+    "date": "21/12/2023",
+    "author": "Stephen Graves",
+    "title": "Animoca Brands CEO: Open Metaverse will Enable DeFi-Style \u0027Vampiric Attacks\u0027 By Web3 Games",
+    "tags": "Gaming"
+  },
+  {
+    "date": "21/12/2023",
+    "author": "Andrew Hayward",
+    "title": "MoonPay Launches Streamlined Checkout Tool for Buying NFTs",
+    "tags": "Business"
+  },
+  {
+    "date": "21/12/2023",
+    "author": "Jason Nelson",
+    "title": "Claude AI Creator Anthropic to Raise $750 Million in New Funding: Report",
+    "tags": "Artificial Intelligence"
+  },
+  {
+    "date": "20/12/2023",
+    "author": "Kate Irwin",
+    "title": "Every Game on Ethereum Scaler Immutable in the Epic Games Store",
+    "tags": "Gaming"
+  },
+  {
+    "date": "20/12/2023",
+    "author": "Andrew Hayward",
+    "title": "Saga Blockchain Launches ‘Play-to-Airdrop’ Game Tournaments—Here\u0027s How to Earn",
+    "tags": "Gaming"
+  },
+  {
+    "date": "20/12/2023",
+    "author": "Stacy Elliott",
+    "title": "Cathie Wood’s ARK Dumps $245M in Coinbase, Grayscale Bitcoin Trust Shares in Last 30 Days",
+    "tags": "Business"
+  },
+  {
+    "date": "20/12/2023",
+    "author": "Jason Nelson",
+    "title": "AI Training Data Included Child Sexual Abuse Material, Say Stanford Researchers",
+    "tags": "Artificial Intelligence"
+  },
+  {
+    "date": "20/12/2023",
+    "author": "Sander Lutz",
+    "title": "Phantom Wallet Adoption Shows Bitcoin Is No Longer \u0027Stagnant Uncle of Crypto\u0027",
+    "tags": "Technology"
+  },
+  {
+    "date": "20/12/2023",
+    "author": "Jose Antonio Lanz",
+    "title": "Art of Confusion: Humans Prefer ‘Real’ Art to AI Art, But Struggle to Tell the Difference",
+    "tags": "Artificial Intelligence"
+  },
+  {
+    "date": "20/12/2023",
+    "author": "Kate Irwin",
+    "title": "Immutable Hits 20-Month High as Gaming Tokens Outpace Bitcoin Gains",
+    "tags": "Coins"
+  },
+  {
+    "date": "20/12/2023",
+    "author": "Decrypt Staff",
+    "title": "Web3War is Shaking up Crypto Gaming With ‘Skill-to-Earn’ Rewards",
+    "tags": "Gaming"
+  },
+  {
+    "date": "20/12/2023",
+    "author": "Andrew Hayward",
+    "title": "Solana Flips XRP as SOL Hits Another Yearly High",
+    "tags": "Markets"
+  },
+  {
+    "date": "20/12/2023",
+    "author": "Mat Di Salvo",
+    "title": "Bitcoin Breaks Above $44K as Market Braces for Potential ETF",
+    "tags": "Markets"
+  },
+  {
+    "date": "20/12/2023",
+    "author": "Stephen Graves",
+    "title": "Ledger to Disable Blind Signing on Dapps by June 2024",
+    "tags": "Technology"
+  },
+  {
+    "date": "20/12/2023",
+    "author": "Jason Nelson",
+    "title": "AI Art Banned from Magic: The Gathering After Controversial Ads",
+    "tags": "Artificial Intelligence"
+  },
+  {
+    "date": "20/12/2023",
+    "author": "Stephen Graves",
+    "title": "BlackRock, Nasdaq Meet SEC Again to Discuss Spot Bitcoin ETF",
+    "tags": "Business"
+  },
+  {
+    "date": "19/12/2023",
+    "author": "Kate Irwin",
+    "title": "\u0027Gods Unchained\u0027 Returns to Epic Games Store After Play-to-Earn Policy Change",
+    "tags": "Gaming"
+  },
+  {
+    "date": "19/12/2023",
+    "author": "Mat Di Salvo",
+    "title": "Bitcoin Halving Has Miners Prepping as Marathon Aims to Beef Up Rigs",
+    "tags": "Business"
+  },
+  {
+    "date": "19/12/2023",
+    "author": "Andrew Hayward",
+    "title": "Portal Airdrop Set for January as Gaming Token Nears Launch",
+    "tags": "Gaming"
+  },
+  {
+    "date": "19/12/2023",
+    "author": "Andrew Hayward",
+    "title": "Immutable Debuts Passport Gaming Wallet in \u0027Gods Unchained\u0027 and More",
+    "tags": "Coins"
+  },
+  {
+    "date": "19/12/2023",
+    "author": "Sander Lutz",
+    "title": "Did You Trade Ethereum NFTs in the Last Two Years? You Can Claim This Airdrop",
+    "tags": "Coins"
+  },
+  {
+    "date": "19/12/2023",
+    "author": "Kate Irwin",
+    "title": "Hackers Leak Insomniac\u0027s \u0027X-Men\u0027 Game After Bitcoin Ransom Demand",
+    "tags": "Gaming"
+  },
+  {
+    "date": "19/12/2023",
+    "author": "Sander Lutz",
+    "title": "Shiba Inu Team Seeks to Launch SHIB Domains for Websites and Email",
+    "tags": "Business"
+  },
+  {
+    "date": "19/12/2023",
+    "author": "Mat Di Salvo",
+    "title": "Terra Founder Do Kwon Avoids Extradition to US—For Now",
+    "tags": "Law and Order"
+  },
+  {
+    "date": "19/12/2023",
+    "author": "Andrew Hayward",
+    "title": "BONK Goes Bust? Solana Meme Coin Plunges 44% After Setting All-Time High",
+    "tags": "Coins"
+  },
+  {
+    "date": "19/12/2023",
+    "author": "Stacy Elliott",
+    "title": "BlackRock Makes Key Changes to Bitcoin ETF Ahead of Expected Launch",
+    "tags": "Business"
+  },
+  {
+    "date": "19/12/2023",
+    "author": "Stephen Graves",
+    "title": "Elizabeth Warren: Crypto Industry Lobbyists \u0027Undermine\u0027 Anti-Terrorism Efforts",
+    "tags": "Business"
+  },
+  {
+    "date": "19/12/2023",
+    "author": "Stephen Graves",
+    "title": "Court Approves $2.7 Billion Binance-CFTC Settlement, CZ to Pay $150 Million Fine",
+    "tags": "Law and Order"
+  },
+  {
+    "date": "19/12/2023",
+    "author": "Jose Antonio Lanz",
+    "title": "Twitter Faces EU Inquiry Over Failing to Moderate Illegal Content and Disinformation",
+    "tags": "Business"
+  },
+  {
+    "date": "18/12/2023",
+    "author": "Kate Irwin",
+    "title": "Ubisoft\u0027s \u0027Champions Tactics\u0027 Ethereum NFTs Generate Millions After Free Mint",
+    "tags": "Gaming"
+  },
+  {
+    "date": "18/12/2023",
+    "author": "Decrypt Staff",
+    "title": "UK Builds Digital Securities Sandbox to Test New Technolgies",
+    "tags": "Law and Order"
+  },
+  {
+    "date": "18/12/2023",
+    "author": "Kate Irwin",
+    "title": "Solana Game \u0027Aurory\u0027 Suffers $830K Exploit, Disables Arbitrum Bridge",
+    "tags": "Gaming"
+  },
+  {
+    "date": "18/12/2023",
+    "author": "Stacy Elliott",
+    "title": "Bitwise Is First to Bitcoin ETF Ad Race With ‘Most Interesting Man in the World’",
+    "tags": "Business"
+  },
+  {
+    "date": "18/12/2023",
+    "author": "Mat Di Salvo",
+    "title": "Bitcoin Fees Continue to Surge Thanks to Ordinal Mania",
+    "tags": "Business"
+  },
+  {
+    "date": "18/12/2023",
+    "author": "Sander Lutz",
+    "title": "The Next BONK? Solana Meme Coin Dogwifhat Pumps 2,000X in a Month",
+    "tags": "Coins"
+  },
+  {
+    "date": "18/12/2023",
+    "author": "Mat Di Salvo",
+    "title": "Bitcoin Funds See \u0027Profit-Taking\u0027 Dip, But Investors Still Like Solana",
+    "tags": "Markets"
+  },
+  {
+    "date": "18/12/2023",
+    "author": "Stephen Graves",
+    "title": "Helium Tokens Surge Amid Network Expansion, Solana Saga BONK Mania",
+    "tags": "Markets"
+  },
+  {
+    "date": "18/12/2023",
+    "author": "Decrypt Staff",
+    "title": "Bitcoin Slips Below $41,000 as Crypto Price Rally Cools",
+    "tags": "Markets"
+  },
+  {
+    "date": "17/12/2023",
+    "author": "Sander Lutz",
+    "title": "This Week on Crypto Twitter: BONK Simply Won’t Quit",
+    "tags": "Coins"
+  },
+  {
+    "date": "16/12/2023",
+    "author": "Andrew Hayward",
+    "title": "The Biggest Games Coming Out in 2024",
+    "tags": "Gaming"
+  },
+  {
+    "date": "16/12/2023",
+    "author": "Mat Di Salvo",
+    "title": "This Week in Coins: Bonk Continues Surge With Solana Hype, Bitcoin Dips",
+    "tags": "Coins"
+  },
+  {
+    "date": "16/12/2023",
+    "author": "Jose Antonio Lanz",
+    "title": "Voice Generating Startup Resemble AI Promises to Restore Old Audio",
+    "tags": "Artificial Intelligence"
+  },
+  {
+    "date": "15/12/2023",
+    "author": "Jason Nelson",
+    "title": "Not That Grok: Musician Grimes and OpenAI Launch Plush Toy with AI Inside",
+    "tags": "Artificial Intelligence"
+  },
+  {
+    "date": "15/12/2023",
+    "author": "Sander Lutz",
+    "title": "Jupiter Airdrop Set for January With a Billion JUP for Solana DeFi Users",
+    "tags": "DeFi"
+  },
+  {
+    "date": "15/12/2023",
+    "author": "Andrew Hayward",
+    "title": "Solana Weighs Demand for Saga Phones After Sellout Amid BONK Boom",
+    "tags": "Business"
+  },
+  {
+    "date": "15/12/2023",
+    "author": "Jose Antonio Lanz",
+    "title": "Chinese Tech Giant Alibaba Unveils New AI Video Tool",
+    "tags": "Artificial Intelligence"
+  },
+  {
+    "date": "15/12/2023",
+    "author": "Kate Irwin",
+    "title": "Twitch Walks Back Changes After Surge in Nudity: \u0027We Went Too Far\u0027",
+    "tags": "Gaming"
+  },
+  {
+    "date": "15/12/2023",
+    "author": "Mat Di Salvo",
+    "title": "Coinbase Plans to Challenge SEC Denial of Crypto Rulemaking Petition",
+    "tags": "Law and Order"
+  },
+  {
+    "date": "15/12/2023",
+    "author": "Sander Lutz",
+    "title": "Ethereum Scaler Arbitrum Suffers Outage—And Inscriptions Are to Blame",
+    "tags": "Technology"
+  },
+  {
+    "date": "15/12/2023",
+    "author": "Stephen Graves",
+    "title": "Gary Gensler: SEC \u0027Taking a New Look\u0027 at Bitcoin ETF Applications",
+    "tags": "Business"
+  },
+  {
+    "date": "15/12/2023",
+    "author": "Mat Di Salvo",
+    "title": "BONK Spikes 101% Amid Solana Saga Sales Frenzy to Claim Airdrop",
+    "tags": "Coins"
+  },
+  {
+    "date": "15/12/2023",
+    "author": "Reza Jafery",
+    "title": "SocialFi Startup Reach Aims to Improve Crypto Twitter With Anti-Bot Protocol",
+    "tags": "Business"
+  },
+  {
+    "date": "15/12/2023",
+    "author": "Stephen Graves",
+    "title": "SafeMoon Files for Bankruptcy, SFM Token Crashes 50% to All-Time Low",
+    "tags": "Business"
+  },
+  {
+    "date": "15/12/2023",
+    "author": "Andrew Hayward",
+    "title": "Casio Drops Virtual G-Shock Watches as Ethereum NFTs—With Exclusive Perks",
+    "tags": "NFTs"
+  },
+  {
+    "date": "15/12/2023",
+    "author": "Jason Nelson",
+    "title": "Vatican Says AI Is the ‘Highest-Stakes Gamble of Our Future’",
+    "tags": "Artificial Intelligence"
+  },
+  {
+    "date": "15/12/2023",
+    "author": "Jose Antonio Lanz",
+    "title": "Grindr Dating App Adds an AI ‘Wingman’ to Help Users Find Love",
+    "tags": "Artificial Intelligence"
+  },
+  {
+    "date": "14/12/2023",
+    "author": "Andrew Hayward",
+    "title": "Solana Devs Got a BONK Airdrop Worth $300 Last Christmas—It\u0027s Now Worth $500,000",
+    "tags": "Coins"
+  },
+  {
+    "date": "14/12/2023",
+    "author": "Jose Antonio Lanz",
+    "title": "Instagram Adds Generative AI That Swaps Image Backgrounds",
+    "tags": "Artificial Intelligence"
+  },
+  {
+    "date": "14/12/2023",
+    "author": "Sander Lutz",
+    "title": "Native Bitcoin Staking on Ethereum and Solana Could Soon Be a Reality",
+    "tags": "Coins"
+  },
+  {
+    "date": "14/12/2023",
+    "author": "Decrypt Staff",
+    "title": "Solana DeFi Hacker Pleads Guilty in First-Ever Smart Contract Fraud Conviction",
+    "tags": "Law and Order"
+  },
+  {
+    "date": "14/12/2023",
+    "author": "Jason Nelson",
+    "title": "Did Michael Cohen Let AI Write His Legal Briefs?",
+    "tags": "Artificial Intelligence"
+  },
+  {
+    "date": "14/12/2023",
+    "author": "Andrew Hayward",
+    "title": "Solana\u0027s BONK Becomes 69th Largest Coin as Market Cap Tops $1 Billion",
+    "tags": "Coins"
+  },
+  {
+    "date": "14/12/2023",
+    "author": "Kate Irwin",
+    "title": "Farcana Raises $10 Million for NFT Esports Shooter That Pays Out Bitcoin",
+    "tags": "Gaming"
+  },
+  {
+    "date": "14/12/2023",
+    "author": "Stacy Elliott",
+    "title": "How a Single Phishing Link Unleashed Chaos on Crypto",
+    "tags": "Business"
+  },
+  {
+    "date": "14/12/2023",
+    "author": "Mat Di Salvo",
+    "title": "Bitcoin and Ethereum Rebound From Wallet Hack Wobble",
+    "tags": "Markets"
+  },
+  {
+    "date": "14/12/2023",
+    "author": "Andrew Hayward",
+    "title": "Nintendo Switch 2 Preview: Everything You Need to Know",
+    "tags": "Gaming"
+  }
 ]
