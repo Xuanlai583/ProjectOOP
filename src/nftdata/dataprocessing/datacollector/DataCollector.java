@@ -92,4 +92,24 @@ public class DataCollector {
             e.printStackTrace();
         }
     }
+
+    //Convert value
+    static String valueConvert(String input) {
+        if(input.isEmpty()){
+            return "--";
+        }else {
+            double result;
+            if (input.toUpperCase().endsWith("K")) {
+                String numericPart = input.substring(0, input.length() - 1);
+                result = Double.parseDouble(numericPart) * 1000;
+            } else if (input.toUpperCase().endsWith("M")) {
+                String numericPart = input.substring(0, input.length() - 1);
+                result = Double.parseDouble(numericPart) * 1e6;
+            } else {
+                result = Double.parseDouble(input);
+            }
+            String formatedResult = String.format("%.0f", result);
+            return formatedResult;
+        }
+    }
 }

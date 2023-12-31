@@ -12,7 +12,7 @@ public class RaribleDataCollector extends DataCollector{
     public static void raribleDataCollector(){
         WebDriver driver = openBrowser();
         try{
-            driver.get("https://rarible.com/explore/all/collections?period=H1");
+            driver.get("https://rarible.com/explore/all/collections");
             Thread.sleep(8000);
 
             //Data Collect
@@ -28,28 +28,26 @@ public class RaribleDataCollector extends DataCollector{
                     if(!visited[rankInt]) {
                         visited[rankInt] = true;
                         String collection = raribleElement.findElement(By.xpath(".//a/div/div/div[2]/a/div/div[2]/span")).getText();
-                        String floorPrice = raribleElement.findElement(By.xpath(".//a/div/div/div[3]/span")).getText();
-                        String floorChange;
-                        try {
-                            floorChange = raribleElement.findElement(By.xpath(".//a/div/div/div[4]/span/span")).getText();
-                        }catch (org.openqa.selenium.NoSuchElementException e){
-                            floorChange = "—";
-                        }
                         String volume = raribleElement.findElement(By.xpath(".//a/div/div/div[5]/span")).getText();
                         String volumeChange = raribleElement.findElement(By.xpath(".//a/div/div/div[6]/span")).getText();
-                        String items = raribleElement.findElement(By.xpath(".//a/div/div/div[7]/span")).getText();
-                        String owners = raribleElement.findElement(By.xpath(".//a/div/div/div[8]/span")).getText();
+                        String floorPrice = raribleElement.findElement(By.xpath(".//a/div/div/div[3]/span")).getText();
+                        String floorChange = raribleElement.findElement(By.xpath(".//a/div/div/div[4]/span")).getText();
+                        String owners = valueConvert(raribleElement.findElement(By.xpath(".//a/div/div/div[8]/span")).getText());
+                        String items = valueConvert(raribleElement.findElement(By.xpath(".//a/div/div/div[7]/span")).getText());
+                        if(floorPrice.equals("—")) floorPrice = "--";
+                        if(floorChange.equals("—")) floorChange = "--";
+                        if(volumeChange.equals("—")) volumeChange = "--";
 
                         //JSON Object
                         JSONObject raribleObject = new JSONObject();
                         raribleObject.put("rank", rank);
                         raribleObject.put("collection", collection);
-                        raribleObject.put("floor price", floorPrice);
-                        raribleObject.put("floor change", floorChange);
                         raribleObject.put("volume", volume);
                         raribleObject.put("volume change", volumeChange);
-                        raribleObject.put("items", items);
+                        raribleObject.put("floor price", floorPrice);
+                        raribleObject.put("floor change", floorChange);
                         raribleObject.put("owners", owners);
+                        raribleObject.put("items", items);
 
                         jsonArray.add(raribleObject);
 

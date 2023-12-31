@@ -28,22 +28,34 @@ public class OpenseaDataCollector extends DataCollector{
                         visited[rankInt] = true;
                         String collection = openseaElement.findElement(By.xpath(".//div/a/div[1]/div[3]/div/div/span/div")).getText();
                         String volume = openseaElement.findElement(By.xpath(".//div/a/div[2]/div/span/div")).getText();
-                        String change;
+                        String volumeChange;
                         try {
-                            change = openseaElement.findElement(By.xpath(".//div/a/div[3]/span/div")).getText();
+                            volumeChange = openseaElement.findElement(By.xpath(".//div/a/div[3]/span/div")).getText();
                         } catch (org.openqa.selenium.NoSuchElementException e) {
-                            change = "--";
+                            volumeChange = "--";
                         }
                         String floorPrice = openseaElement.findElement(By.xpath(".//div/a/div[4]/div/span/div")).getText();
                         String sales = openseaElement.findElement(By.xpath(".//div/a/div[5]/span/div")).getText();
+                        String owners = openseaElement.findElement(By.xpath(".//div/a/div[6]/div[2]/div/span")).getText().replaceAll("[^0-9,]", "").replaceAll(",", "").trim();
+                        String items;
+                        try{
+                            String itemsString = openseaElement.findElement(By.xpath(".//div/a/div[7]/div[2]/div/span")).getText();
+                            String[] parts = itemsString.split("\\s+of\\s+");
+                            items = (parts[1].replaceAll(",", "")).trim();
+                        } catch (org.openqa.selenium.NoSuchElementException e) {
+                            items = "--";
+                        }
+                        if(floorPrice.equals("—")) floorPrice = "--";
 
                         JSONObject openseaObject = new JSONObject();
                         openseaObject.put("rank", rank);
                         openseaObject.put("collection", collection);
                         openseaObject.put("volume", volume);
-                        openseaObject.put("change", change);
+                        openseaObject.put("volume change", volumeChange);
                         openseaObject.put("floor price", floorPrice);
                         openseaObject.put("sales", sales);
+                        openseaObject.put("owners", owners);
+                        openseaObject.put("items", items);
                         jsonArray.add(openseaObject);
                     }
                 }

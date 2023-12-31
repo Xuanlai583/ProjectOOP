@@ -29,11 +29,16 @@ public class ReadData {
             while (iterator.hasNext()) {
                 JSONObject jsonObject = iterator.next();
                 // Lấy thông tin từ mỗi đối tượng
-                String ranking = (String) jsonObject.get("ranking");
-                String name = (String) jsonObject.get("name");
+                String rank = (String) jsonObject.get("rank");
+                String collection = (String) jsonObject.get("collection");
+                String volume = (String) jsonObject.get("volume");
+                String volumeChange = (String) jsonObject.get("volume change");
                 String floorPrice = (String) jsonObject.get("floor price");
+                String floorChange = (String) jsonObject.get("floor change");
+                String owners = (String) jsonObject.get("owners");
+                String items = (String) jsonObject.get("items");
 
-                RaribleNFT newRNFT = new RaribleNFT(name, ranking, floorPrice);
+                RaribleNFT newRNFT = new RaribleNFT(rank, collection, volume, volumeChange, floorPrice, floorChange, owners, items);
                 itemsRaribleNFT.add(newRNFT);
             }
         } catch (Exception e) {
@@ -52,19 +57,16 @@ public class ReadData {
             Iterator<JSONObject> iterator = jsonArray.iterator();
             while (iterator.hasNext()) {
                 JSONObject jsonObject = iterator.next();
-                String ranking = (String) jsonObject.get("rank");
-                String name = (String) jsonObject.get("collection");
+                String rank = (String) jsonObject.get("rank");
+                String collection = (String) jsonObject.get("collection");
                 String volume = (String) jsonObject.get("volume");
                 String volumeChange = (String) jsonObject.get("volume change");
                 String floorPrice = (String) jsonObject.get("floor price");
-                String priceChange = (String) jsonObject.get("price change");
-                Object ownersObj = jsonObject.get("owners");
-                String owner = (ownersObj != null) ? ownersObj.toString() : "";
-                Object itemObj = jsonObject.get("items");
-                String item = (itemObj != null) ? itemObj.toString() : "";
+                String floorChange = (String) jsonObject.get("floor change");
+                String owners = (String) jsonObject.get("owners");
+                String items = (String) jsonObject.get("items");
 
-
-                BinanceNFT newBNFT = new BinanceNFT(name, ranking, floorPrice, volume, volumeChange, priceChange, owner, item);
+                BinanceNFT newBNFT = new BinanceNFT(rank, collection, volume, volumeChange, floorPrice, floorChange, owners, items);
                 itemsBinanceNFT.add(newBNFT);
             }
         } catch (Exception e) {
@@ -83,13 +85,15 @@ public class ReadData {
             Iterator<JSONObject> iterator = jsonArray.iterator();
             while (iterator.hasNext()) {
                 JSONObject jsonObject = iterator.next();
-                String volume = (String) jsonObject.get("volume");
                 String rank = (String) jsonObject.get("rank");
-                String change = (String) jsonObject.get("change");
-                String name = (String) jsonObject.get("collection");
-                String sales = (String) jsonObject.get("sales");
+                String collection = (String) jsonObject.get("collection");
+                String volume = (String) jsonObject.get("volume");
+                String volumeChange = (String) jsonObject.get("volume change");
                 String floorPrice = (String) jsonObject.get("floor price");
-                OpenseaNFT newONFT = new OpenseaNFT(name, rank, floorPrice, volume, change, sales);
+                String sales = (String) jsonObject.get("sales");
+                String owners = (String) jsonObject.get("owners");
+                String items = (String) jsonObject.get("items");
+                OpenseaNFT newONFT = new OpenseaNFT(rank, collection, volume, volumeChange, floorPrice, sales, owners, items);
                 itemsOpenseaNFT.add(newONFT);
             }
         } catch (Exception e) {

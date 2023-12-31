@@ -32,9 +32,9 @@ public class BinanceDataCollector extends DataCollector{
                 String volume = collectionElement.findElement(By.xpath(".//div[@class=\"css-79h90x\"]")).getText();
                 String volumeChange = collectionElement.findElement(By.xpath(".//div[@class=\"css-xs8nuv\"]")).getText().replace("\n", "").trim();
                 String floorPrice = collectionElement.findElement(By.xpath(".//div[@class=\"css-1j59jpm\"]")).getText();
-                String priceChange = collectionElement.findElement(By.xpath(".//div[@class=\"css-87rt9h\"]")).getText().replace("\n", "").trim();
-                String owners = collectionElement.findElement(By.xpath(".//div[@class=\"css-15n6x8q\"][1]")).getText();
-                String items = collectionElement.findElement(By.xpath(".//div[@class=\"css-15n6x8q\"][2]")).getText();
+                String floorChange = collectionElement.findElement(By.xpath(".//div[@class=\"css-87rt9h\"]")).getText().replace("\n", "").trim();
+                String owners = collectionElement.findElement(By.xpath(".//div[@class=\"css-15n6x8q\"][1]")).getText().replace(",","").trim();
+                String items = collectionElement.findElement(By.xpath(".//div[@class=\"css-15n6x8q\"][2]")).getText().replace(",","").trim();
 
                 //JSON Object
                 JSONObject binanceObject = new JSONObject();
@@ -43,7 +43,7 @@ public class BinanceDataCollector extends DataCollector{
                 binanceObject.put("volume", volume);
                 binanceObject.put("volume change", volumeChange);
                 binanceObject.put("floor price", floorPrice);
-                binanceObject.put("price change", priceChange);
+                binanceObject.put("floor change", floorChange);
                 binanceObject.put("owners", owners);
                 binanceObject.put("items", items);
 
