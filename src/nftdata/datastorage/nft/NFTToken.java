@@ -24,12 +24,12 @@ public class NFTToken {
         this.price = price;
     }
 
-    @Override
-    public String toString() {
-        return "NFTToken{" + '\n'+
-                "Rank: " + this.getRank() + '\n' +
-                "Collection: " + this.getCollection() + '\n' +
-                "Price: " + this.getPrice() + '\n' +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "NFTToken{" + '\n'+
+//                "Rank: " + this.getRank() + '\n' +
+//                "Collection: " + this.getCollection() + '\n' +
+//                "Price: " + this.getPrice() + '\n' +
+//                '}';
+//    }
 }

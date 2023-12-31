@@ -47,7 +47,7 @@ public class DataCollector {
     }
 
     //Scroll by pixels
-    static void openseaScrollDown(WebDriver driver, int pixels){
+    static void pixelScrollDown(WebDriver driver, int pixels){
         JavascriptExecutor js = (JavascriptExecutor) driver;
         String script = "window.scrollBy(0, arguments[0]);";
         js.executeScript(script, pixels);

@@ -22,12 +22,12 @@ public class Post {
         this.hashtag = hashtag;
     }
 
-    @Override
-    public String toString() {
-        return "Post{" + '\n'+
-                "Author: " + this.getAuthor() + '\n' +
-                "Date: " + this.getDate() + '\n' +
-                "Hashtag: " + this.getHashtag() + '\n' +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "Post{" + '\n'+
+//                "Author: " + this.getAuthor() + '\n' +
+//                "Date: " + this.getDate() + '\n' +
+//                "Hashtag: " + this.getHashtag() + '\n' +
+//                '}';
+//    }
 }

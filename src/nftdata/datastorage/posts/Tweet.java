@@ -30,16 +30,16 @@ public class Tweet extends Post {
         this.view = view;
     }
 
-    @Override
-    public String toString() {
-        return "Tweet{" + '\n' +
-                "Author: " + this.getAuthor() + '\n' +
-                "Date: " + this.getDate() + '\n' +
-                "Reply: " + this.getReply() +'\n' +
-                "Retweet: " + this.getRetweet() + '\n' +
-                "Like: " + this.getLike() + '\n' +
-                "View: " + this.getView() + '\n' +
-                ", Hashtag='" + this.getHashtag() + '\'' +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "Tweet{" + '\n' +
+//                "Author: " + this.getAuthor() + '\n' +
+//                "Date: " + this.getDate() + '\n' +
+//                "Reply: " + this.getReply() +'\n' +
+//                "Retweet: " + this.getRetweet() + '\n' +
+//                "Like: " + this.getLike() + '\n' +
+//                "View: " + this.getView() + '\n' +
+//                ", Hashtag='" + this.getHashtag() + '\'' +
+//                '}';
+//    }
 }

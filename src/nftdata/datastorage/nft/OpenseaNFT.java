@@ -24,15 +24,15 @@ public class OpenseaNFT extends  NFTToken{
         this.sale = sale;
     }
 
-    @Override
-    public String toString() {
-        return "OpenseaNFT{" +'\n' +
-                "Rank: " + this.getRank() + '\n' +
-                "Collection: " + this.getCollection() + '\n' +
-                "Volume: " + this.getVolume() + '\n' +
-                "Change: " + this.getChange() + '\n' +
-                "Price: " + this.getPrice() + '\n' +
-                "Sale: " + this.getSale() + '\n' +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "OpenseaNFT{" +'\n' +
+//                "Rank: " + this.getRank() + '\n' +
+//                "Collection: " + this.getCollection() + '\n' +
+//                "Volume: " + this.getVolume() + '\n' +
+//                "Change: " + this.getChange() + '\n' +
+//                "Price: " + this.getPrice() + '\n' +
+//                "Sale: " + this.getSale() + '\n' +
+//                '}';
+//    }
 }

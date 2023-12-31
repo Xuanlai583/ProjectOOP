@@ -13,13 +13,13 @@ public class Blog extends Post {
     }
 
 //    Method
-    @Override
-    public String toString() {
-        return "Blog{" + '\n' +
-                "Title: " + this.getTitle() + '\n' +
-                "Author: " + this.getAuthor() + '\n' +
-                "Date: " + this.getDate() +'\n' +
-                "Hashtag: " + this.getHashtag() + '\n' +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "Blog{" + '\n' +
+//                "Title: " + this.getTitle() + '\n' +
+//                "Author: " + this.getAuthor() + '\n' +
+//                "Date: " + this.getDate() +'\n' +
+//                "Hashtag: " + this.getHashtag() + '\n' +
+//                '}';
+//    }
 }

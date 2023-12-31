@@ -47,7 +47,7 @@ public class OpenseaDataCollector extends DataCollector{
                         jsonArray.add(openseaObject);
                     }
                 }
-                openseaScrollDown(driver, 1000);
+                pixelScrollDown(driver, 1000);
             }
 
             //Export JSON

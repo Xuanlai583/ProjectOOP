@@ -36,17 +36,17 @@ public class BinanceNFT extends NFTToken {
         this.item = item;
     }
 
-    @Override
-    public String toString() {
-        return "BinanceNFT{" + '\n' +
-                "Rank: " + this.getRank() + '\n' +
-                "Collection: " + this.getCollection() + '\n' +
-                "Volume: " + this.getVolume() + '\n' +
-                "Volume change: " + this.getVolumeChange() + '\n' +
-                "Price: " + this.getPrice() + '\n' +
-                "Price change:  " + this.getPriceChange() + '\n' +
-                "Owner: " + this.getOwner() + '\n' +
-                "Item: " + this.getItem() + '\n' +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "BinanceNFT{" + '\n' +
+//                "Rank: " + this.getRank() + '\n' +
+//                "Collection: " + this.getCollection() + '\n' +
+//                "Volume: " + this.getVolume() + '\n' +
+//                "Volume change: " + this.getVolumeChange() + '\n' +
+//                "Price: " + this.getPrice() + '\n' +
+//                "Price change:  " + this.getPriceChange() + '\n' +
+//                "Owner: " + this.getOwner() + '\n' +
+//                "Item: " + this.getItem() + '\n' +
+//                '}';
+//    }
 }
