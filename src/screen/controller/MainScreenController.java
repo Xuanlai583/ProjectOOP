@@ -4,9 +4,17 @@ import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.transformation.FilteredList;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 import nftdata.dataprocessing.ReadData;
 import nftdata.datastorage.nft.BinanceNFT;
 import nftdata.datastorage.nft.OpenseaNFT;
@@ -14,6 +22,8 @@ import nftdata.datastorage.nft.RaribleNFT;
 import nftdata.datastorage.posts.Cointelegraph;
 import nftdata.datastorage.posts.Decrypt;
 import nftdata.datastorage.posts.Tweet;
+
+import java.io.IOException;
 
 import static nftdata.dataprocessing.Database.*;
 
@@ -196,22 +206,40 @@ public class MainScreenController {
 
     @FXML
     void btnUpdatePressed(ActionEvent event) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/screen/view/UpdateBox.fxml"));
+            Parent root = fxmlLoader.load();
 
+            Stage updateBoxStage = new Stage();
+            updateBoxStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+                @Override
+                public void handle(WindowEvent event) {
+                    updateBoxStage.close();
+                }
+            });
+            updateBoxStage.setScene(new Scene(root));
+            updateBoxStage.setTitle("Update");
+            UpdateBoxController updateBoxController = fxmlLoader.getController();
+            updateBoxController.setSubStage(updateBoxStage);
+            updateBoxStage.showAndWait();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
     void menuItemBinanceChoose(ActionEvent event) {
-        ChangeSource("Binance", tblBinance);
+        changeSource("Binance", tblBinance);
     }
 
     @FXML
     void menuItemCointelegraphChoose(ActionEvent event) {
-        ChangeSource("Cointelegraph", tblCointelegraph);
+        changeSource("Cointelegraph", tblCointelegraph);
     }
 
     @FXML
     void menuItemDecryptChoose(ActionEvent event) {
-        ChangeSource("Decrypt", tblDecrypt);
+        changeSource("Decrypt", tblDecrypt);
     }
 
     @FXML
@@ -221,17 +249,17 @@ public class MainScreenController {
 
     @FXML
     void menuItemOpenSeaChoose(ActionEvent event) {
-        ChangeSource("OpenSea", tblOpenSea);
+        changeSource("OpenSea", tblOpenSea);
     }
 
     @FXML
     void menuItemRaribleChoose(ActionEvent event) {
-        ChangeSource("Rarible", tblRarible);
+        changeSource("Rarible", tblRarible);
     }
 
     @FXML
     void menuItemTwitterChoose(ActionEvent event) {
-        ChangeSource("Twitter", tblTwitter);
+        changeSource("Twitter", tblTwitter);
     }
 
     @FXML
@@ -317,7 +345,7 @@ public class MainScreenController {
         ReadData.readCointelegraphData();
     }
 
-    private void ChangeSource(String sourceName, TableView<?> nextTable){
+    private void changeSource(String sourceName, TableView<?> nextTable){
         menuButtonSource.setText(sourceName);
         curTable.setVisible(false);
         nextTable.setVisible(true);
