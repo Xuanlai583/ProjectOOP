@@ -7,6 +7,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import nftdata.dataprocessing.ReadData;
 import nftdata.datastorage.nft.BinanceNFT;
 import nftdata.datastorage.nft.OpenseaNFT;
 import nftdata.datastorage.nft.RaribleNFT;
@@ -51,13 +52,13 @@ public class MainScreenController {
     private TableColumn<Tweet, String> colAuthorTwitter;
 
     @FXML
-    private TableColumn<OpenseaNFT, String> colChangeOpenSea;
-
-    @FXML
     private TableColumn<BinanceNFT, String> colCollectionBinance;
 
     @FXML
     private TableColumn<OpenseaNFT, String> colCollectionOpenSea;
+
+    @FXML
+    private TableColumn<RaribleNFT, String> colCollectionRarible;
 
     @FXML
     private TableColumn<Cointelegraph, String> colDateCointelegraph;
@@ -67,6 +68,12 @@ public class MainScreenController {
 
     @FXML
     private TableColumn<Tweet, String> colDateTwitter;
+
+    @FXML
+    private TableColumn<BinanceNFT, String> colFloorChangeBinance;
+
+    @FXML
+    private TableColumn<RaribleNFT, String> colFloorChangeRarible;
 
     @FXML
     private TableColumn<BinanceNFT, String> colFloorPriceBinance;
@@ -84,25 +91,31 @@ public class MainScreenController {
     private TableColumn<BinanceNFT, String> colItemsBinance;
 
     @FXML
+    private TableColumn<OpenseaNFT, String> colItemsOpenSea;
+
+    @FXML
+    private TableColumn<RaribleNFT, String> colItemsRarible;
+
+    @FXML
     private TableColumn<Tweet, String> colLikesTwitter;
-
-    @FXML
-    private TableColumn<RaribleNFT, String> colNameRarible;
-
-    @FXML
-    private TableColumn<BinanceNFT, String> colOrdinalNumBinance;
-
-    @FXML
-    private TableColumn<OpenseaNFT, String> colOrdinalNumOpenSea;
 
     @FXML
     private TableColumn<BinanceNFT, String> colOwnersBinance;
 
     @FXML
-    private TableColumn<BinanceNFT, String> colPriceChangeBinance;
+    private TableColumn<OpenseaNFT, String> colOwnersOpenSea;
 
     @FXML
-    private TableColumn<RaribleNFT, String> colRankingRarible;
+    private TableColumn<RaribleNFT, String> colOwnersRarible;
+
+    @FXML
+    private TableColumn<BinanceNFT, String> colRankBinance;
+
+    @FXML
+    private TableColumn<OpenseaNFT, String> colRankOpenSea;
+
+    @FXML
+    private TableColumn<RaribleNFT, String> colRankRarible;
 
     @FXML
     private TableColumn<Tweet, String> colRepliesTwitter;
@@ -138,7 +151,16 @@ public class MainScreenController {
     private TableColumn<BinanceNFT, String> colVolumeChangeBinance;
 
     @FXML
+    private TableColumn<OpenseaNFT, String> colVolumeChangeOpenSea;
+
+    @FXML
+    private TableColumn<RaribleNFT, String> colVolumeChangeRarible;
+
+    @FXML
     private TableColumn<OpenseaNFT, String> colVolumeOpenSea;
+
+    @FXML
+    private TableColumn<RaribleNFT, String> colVolumeRarible;
 
     @FXML
     private MenuButton menuButtonSearch;
@@ -243,31 +265,38 @@ public class MainScreenController {
         tblDecrypt.setItems(decryptFilteredList);
 
         //BinanceNFT
-        colOrdinalNumBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("rank"));
+        colRankBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("rank"));
         colCollectionBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("collection"));
         colVolumeBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("volume"));
         colVolumeChangeBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("volumeChange"));
-        colFloorPriceBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("price"));
-        colPriceChangeBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("priceChange"));
-        colOwnersBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("owner"));
-        colItemsBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("item"));
+        colFloorPriceBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("floorPrice"));
+        colFloorChangeBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("floorChange"));
+        colOwnersBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("owners"));
+        colItemsBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("items"));
 //        tblBinance.setItems(itemsBinanceNFT);
         tblBinance.setItems(binanceNFTFilteredList);
 
         //OpenSeaNFT
-        colVolumeOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("volume"));
-        colOrdinalNumOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("rank"));
-        colChangeOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("change"));
+        colRankOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("rank"));
         colCollectionOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("collection"));
-        colSalesOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("sale"));
-        colFloorPriceOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("price"));
+        colVolumeOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("volume"));
+        colVolumeChangeOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("volumeChange"));
+        colFloorPriceOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("floorPrice"));
+        colSalesOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("sales"));
+        colOwnersOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("owners"));
+        colItemsOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("items"));
 //        tblOpenSea.setItems(itemsOpenseaNFT);
         tblOpenSea.setItems(openseaNFTFilteredList);
 
         //RaribleNFT
-        colRankingRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("rank"));
-        colNameRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("collection"));
-        colFloorPriceRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("price"));
+        colRankRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("rank"));
+        colCollectionRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("collection"));
+        colVolumeRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("volume"));
+        colVolumeChangeRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("volumeChange"));
+        colFloorPriceRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("floorPrice"));
+        colFloorChangeRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("floorChange"));
+        colOwnersRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("owners"));
+        colItemsRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("items"));
 //        tblRarible.setItems(itemsRaribleNFT);
         tblRarible.setItems(raribleNFTFilteredList);
 
@@ -278,6 +307,14 @@ public class MainScreenController {
                 showFilteredResult(newValue);
             }
         });
+
+        //Read data from JSON file
+        ReadData.readRaribleData();
+        ReadData.readBinanceData();
+        ReadData.readOpenseaData();
+        ReadData.readTweetData();
+        ReadData.readDecryptData();
+        ReadData.readCointelegraphData();
     }
 
     private void ChangeSource(String sourceName, TableView<?> nextTable){

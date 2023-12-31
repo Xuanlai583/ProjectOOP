@@ -21,13 +21,4 @@ public class Post {
         this.date = date;
         this.hashtag = hashtag;
     }
-
-    @Override
-    public String toString() {
-        return "Post{" + '\n'+
-                "Author: " + this.getAuthor() + '\n' +
-                "Date: " + this.getDate() + '\n' +
-                "Hashtag: " + this.getHashtag() + '\n' +
-                '}';
-    }
 }

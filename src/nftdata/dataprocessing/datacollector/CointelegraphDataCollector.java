@@ -33,7 +33,7 @@ public class CointelegraphDataCollector extends DataCollector{
         dataCollect(driver, ethereumTag, jsonArray, "Ethereum");
 
         //JSON File Create
-        exportJSON(jsonArray, "src/nftdata/datacollection/cointelegraph.json");
+        exportJSON(jsonArray, "cointelegraph.json");
 
         driver.quit();
     }
@@ -55,7 +55,7 @@ public class CointelegraphDataCollector extends DataCollector{
                 try {
                     views = blogElement.findElement(By.xpath(".//span[@class=\"post-card-inline__stats-item\"]")).getText().substring(1);
                 }catch (org.openqa.selenium.NoSuchElementException e){
-                    views = "";
+                    views = "--";
                 }
 
                 JSONObject cointelegraphObject = new JSONObject();

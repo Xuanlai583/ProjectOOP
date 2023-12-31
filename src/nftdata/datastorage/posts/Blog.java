@@ -11,15 +11,4 @@ public class Blog extends Post {
         super(author, date, hashtag);
         this.title=title;
     }
-
-//    Method
-    @Override
-    public String toString() {
-        return "Blog{" + '\n' +
-                "Title: " + this.getTitle() + '\n' +
-                "Author: " + this.getAuthor() + '\n' +
-                "Date: " + this.getDate() +'\n' +
-                "Hashtag: " + this.getHashtag() + '\n' +
-                '}';
-    }
 }

@@ -16,9 +16,10 @@ import java.util.Iterator;
 import static nftdata.dataprocessing.Database.*;
 
 public class ReadData {
+    private static final String DATA_PATH = "datacollection/";
     public static void readRaribleData() {
         JSONParser jsonParser = new JSONParser();
-        try (FileReader reader = new FileReader("src/nftdata/datacollection/rarible.json")) {
+        try (FileReader reader = new FileReader(DATA_PATH + "rarible.json")) {
             // Đọc và parse file JSON thành một đối tượng JSONArray
             Object obj = jsonParser.parse(reader);
             JSONArray jsonArray = (JSONArray) obj;
@@ -28,11 +29,16 @@ public class ReadData {
             while (iterator.hasNext()) {
                 JSONObject jsonObject = iterator.next();
                 // Lấy thông tin từ mỗi đối tượng
-                String ranking = (String) jsonObject.get("ranking");
-                String name = (String) jsonObject.get("name");
+                String rank = (String) jsonObject.get("rank");
+                String collection = (String) jsonObject.get("collection");
+                String volume = (String) jsonObject.get("volume");
+                String volumeChange = (String) jsonObject.get("volume change");
                 String floorPrice = (String) jsonObject.get("floor price");
+                String floorChange = (String) jsonObject.get("floor change");
+                String owners = (String) jsonObject.get("owners");
+                String items = (String) jsonObject.get("items");
 
-                RaribleNFT newRNFT = new RaribleNFT(name, ranking, floorPrice);
+                RaribleNFT newRNFT = new RaribleNFT(rank, collection, volume, volumeChange, floorPrice, floorChange, owners, items);
                 itemsRaribleNFT.add(newRNFT);
             }
         } catch (Exception e) {
@@ -42,7 +48,7 @@ public class ReadData {
 
     public static void readBinanceData() {
         JSONParser jsonParser = new JSONParser();
-        try (FileReader reader = new FileReader("src/nftdata/datacollection/binance.json")) {
+        try (FileReader reader = new FileReader(DATA_PATH + "binance.json")) {
             // Đọc và parse file JSON thành một đối tượng JSONArray
             Object obj = jsonParser.parse(reader);
             JSONArray jsonArray = (JSONArray) obj;
@@ -51,19 +57,16 @@ public class ReadData {
             Iterator<JSONObject> iterator = jsonArray.iterator();
             while (iterator.hasNext()) {
                 JSONObject jsonObject = iterator.next();
-                String ranking = (String) jsonObject.get("rank");
-                String name = (String) jsonObject.get("collection");
+                String rank = (String) jsonObject.get("rank");
+                String collection = (String) jsonObject.get("collection");
                 String volume = (String) jsonObject.get("volume");
                 String volumeChange = (String) jsonObject.get("volume change");
                 String floorPrice = (String) jsonObject.get("floor price");
-                String priceChange = (String) jsonObject.get("price change");
-                Object ownersObj = jsonObject.get("owners");
-                String owner = (ownersObj != null) ? ownersObj.toString() : "";
-                Object itemObj = jsonObject.get("items");
-                String item = (itemObj != null) ? itemObj.toString() : "";
+                String floorChange = (String) jsonObject.get("floor change");
+                String owners = (String) jsonObject.get("owners");
+                String items = (String) jsonObject.get("items");
 
-
-                BinanceNFT newBNFT = new BinanceNFT(name, ranking, floorPrice, volume, volumeChange, priceChange, owner, item);
+                BinanceNFT newBNFT = new BinanceNFT(rank, collection, volume, volumeChange, floorPrice, floorChange, owners, items);
                 itemsBinanceNFT.add(newBNFT);
             }
         } catch (Exception e) {
@@ -73,7 +76,7 @@ public class ReadData {
 
     public static void readOpenseaData() {
         JSONParser jsonParser = new JSONParser();
-        try (FileReader reader = new FileReader("src/nftdata/datacollection/opensea.json")) {
+        try (FileReader reader = new FileReader(DATA_PATH + "opensea.json")) {
             // Đọc và parse file JSON thành một đối tượng JSONArray
             Object obj = jsonParser.parse(reader);
             JSONArray jsonArray = (JSONArray) obj;
@@ -82,13 +85,15 @@ public class ReadData {
             Iterator<JSONObject> iterator = jsonArray.iterator();
             while (iterator.hasNext()) {
                 JSONObject jsonObject = iterator.next();
-                String volume = (String) jsonObject.get("volume");
                 String rank = (String) jsonObject.get("rank");
-                String change = (String) jsonObject.get("change");
-                String name = (String) jsonObject.get("collection");
-                String sales = (String) jsonObject.get("sales");
+                String collection = (String) jsonObject.get("collection");
+                String volume = (String) jsonObject.get("volume");
+                String volumeChange = (String) jsonObject.get("volume change");
                 String floorPrice = (String) jsonObject.get("floor price");
-                OpenseaNFT newONFT = new OpenseaNFT(name, rank, floorPrice, volume, change, sales);
+                String sales = (String) jsonObject.get("sales");
+                String owners = (String) jsonObject.get("owners");
+                String items = (String) jsonObject.get("items");
+                OpenseaNFT newONFT = new OpenseaNFT(rank, collection, volume, volumeChange, floorPrice, sales, owners, items);
                 itemsOpenseaNFT.add(newONFT);
             }
         } catch (Exception e) {
@@ -98,7 +103,7 @@ public class ReadData {
 
     public static void readTweetData() {
         JSONParser jsonParser = new JSONParser();
-        try (FileReader reader = new FileReader("src/nftdata/datacollection/twitter.json")) {
+        try (FileReader reader = new FileReader(DATA_PATH + "twitter.json")) {
             // Đọc và parse file JSON thành một đối tượng JSONArray
             Object obj = jsonParser.parse(reader);
             JSONArray jsonArray = (JSONArray) obj;
@@ -124,7 +129,7 @@ public class ReadData {
 
     public static void readDecryptData() {
         JSONParser jsonParser = new JSONParser();
-        try (FileReader reader = new FileReader("src/nftdata/datacollection/decrypt.json")) {
+        try (FileReader reader = new FileReader(DATA_PATH + "decrypt.json")) {
             // Đọc và parse file JSON thành một đối tượng JSONArray
             Object obj = jsonParser.parse(reader);
             JSONArray jsonArray = (JSONArray) obj;
@@ -147,7 +152,7 @@ public class ReadData {
 
     public static void readCointelegraphData() {
         JSONParser jsonParser = new JSONParser();
-        try (FileReader reader = new FileReader("src/nftdata/datacollection/cointelegraph.json")) {
+        try (FileReader reader = new FileReader(DATA_PATH + "cointelegraph.json")) {
             // Đọc và parse file JSON thành một đối tượng JSONArray
             Object obj = jsonParser.parse(reader);
             JSONArray jsonArray = (JSONArray) obj;

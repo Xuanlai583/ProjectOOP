@@ -22,12 +22,12 @@ public class TwitterDataCollector extends DataCollector{
             usernameInput.sendKeys(Keys.RETURN);
             Thread.sleep(5000);
 
-            WebElement userCheckInput = driver.findElement(By.xpath("//input[@autocomplete=\"on\"]"));
-            if (userCheckInput != null) {
+            try {
+                WebElement userCheckInput = driver.findElement(By.xpath("//input[@autocomplete=\"on\"]"));
                 userCheckInput.sendKeys("@cf61885");
                 userCheckInput.sendKeys(Keys.RETURN);
                 Thread.sleep(5000);
-            }
+            } catch (org.openqa.selenium.ElementNotInteractableException ignored){}
 
             WebElement passwordInput = driver.findElement(By.xpath("//input[@autocomplete=\"current-password\"]"));
             passwordInput.sendKeys("@cf61885");
@@ -42,20 +42,21 @@ public class TwitterDataCollector extends DataCollector{
 
             //Data Collect
             JSONArray jsonArray = new JSONArray();
-            for (int i = 0; i < SCROLL_TURNS; i++) {
+            int elementCount = 0;
+            while (elementCount < MAX_ELEMENTS) {
                 List<WebElement> postElements = driver.findElements(By.xpath("//article[@data-testid=\"tweet\"]"));
 
                 for (WebElement postElement : postElements) {
                     String author = postElement.findElement(By.xpath(".//span[@class=\"css-1qaijid r-bcqeeo r-qvutc0 r-poiln3\"]")).getText();
                     String date = dateFormat(postElement.findElement(By.xpath(".//time")).getAttribute("datetime").substring(0, 10));
-                    String replies = postElement.findElement(By.xpath(".//div[@data-testid=\"reply\"]")).getText();
-                    String reposts = postElement.findElement(By.xpath(".//div[@data-testid=\"retweet\"]")).getText();
-                    String likes = postElement.findElement(By.xpath(".//div[@data-testid=\"like\"]")).getText();
+                    String replies = valueConvert(postElement.findElement(By.xpath(".//div[@data-testid=\"reply\"]")).getText());
+                    String reposts = valueConvert(postElement.findElement(By.xpath(".//div[@data-testid=\"retweet\"]")).getText());
+                    String likes = valueConvert(postElement.findElement(By.xpath(".//div[@data-testid=\"like\"]")).getText());
                     String views;
                     try {
-                        views = postElement.findElement(By.xpath("(.//div[@class=\"css-175oi2r r-xoduu5 r-1udh08x\"])[4]")).getText();
+                        views = valueConvert(postElement.findElement(By.xpath("(.//div[@class=\"css-175oi2r r-xoduu5 r-1udh08x\"])[4]")).getText());
                     }catch (org.openqa.selenium.NoSuchElementException e){
-                        views = "";
+                        views = "--";
                     }
                     String hashtags = extractHashtags(postElement);
 
@@ -69,13 +70,14 @@ public class TwitterDataCollector extends DataCollector{
                     tweetObject.put("hashtags", hashtags);
 
                     jsonArray.add(tweetObject);
+                    elementCount++;
                 }
 
-                scrollDown(driver);
+                endPageScrollDown(driver);
             }
 
             //Export JSON
-            exportJSON(jsonArray, "src/nftdata/datacollection/twitter.json");
+            exportJSON(jsonArray, "twitter.json");
 
         }catch (InterruptedException e){
             e.printStackTrace();
