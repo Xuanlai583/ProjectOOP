@@ -209,7 +209,6 @@ public class MainScreenController {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/screen/view/UpdateBox.fxml"));
             Parent root = fxmlLoader.load();
-
             Stage updateBoxStage = new Stage();
             updateBoxStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
                 @Override

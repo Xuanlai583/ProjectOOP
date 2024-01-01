@@ -18,7 +18,8 @@ public class OpenseaDataCollector extends DataCollector{
             //Data Collect
             boolean[] visited = new boolean[101];
             JSONArray jsonArray = new JSONArray();
-            for (int i = 0; i < 9; i++){
+            int elementCount = 0;
+            while(elementCount < MAX_ELEMENTS){
                 List<WebElement> openseaElements = driver.findElements(By.xpath("//*[@id=\"main\"]/main/div/div/div[3]/div/div[4]/div"));
 
                 for(WebElement openseaElement : openseaElements) {
@@ -57,9 +58,11 @@ public class OpenseaDataCollector extends DataCollector{
                         openseaObject.put("owners", owners);
                         openseaObject.put("items", items);
                         jsonArray.add(openseaObject);
+
+                        elementCount++;
                     }
                 }
-                pixelScrollDown(driver, 1000);
+                pixelScrollDown(driver, 700);
             }
 
             //Export JSON

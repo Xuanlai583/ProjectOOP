@@ -76,6 +76,7 @@ public class DataCollector {
         EdgeOptions options = new EdgeOptions();
         options.addArguments("--disable-extensions");
         options.addArguments("--start-maximized");
+        options.addArguments("--force-device-scale-factor=1");
 //        options.addArguments("--window-size=1920,1080");
 //        options.addArguments("--headless");
         WebDriver driver = new EdgeDriver(options);

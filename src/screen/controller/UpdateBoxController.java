@@ -7,6 +7,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.MenuButton;
 import javafx.stage.Stage;
+import nftdata.dataprocessing.Database;
 import nftdata.dataprocessing.ReadData;
 import nftdata.dataprocessing.datacollector.*;
 
@@ -62,58 +63,49 @@ public class UpdateBoxController {
 
     private void updateSource(){
         String sourceName = menuButtonSource.getText();
-        Platform.runLater(() -> {
-            Alert waitAlert = showWaitAlert();
-            waitAlert.show();
-        });
         switch (sourceName){
             case "Twitter":
                 TwitterDataCollector.twitterDataCollector();
+                Database.clearData("Twitter");
                 ReadData.readTweetData();
                 break;
             case "Decrypt":
                 DecryptDataCollector.decryptDataCollector();
+                Database.clearData("Decrypt");
                 ReadData.readDecryptData();
                 break;
             case "Cointelegraph":
                 CointelegraphDataCollector.cointelegraphDataCollector();
+                Database.clearData("Cointelegraph");
                 ReadData.readCointelegraphData();
                 break;
             case "OpenSea":
                 OpenseaDataCollector.openseaDataCollector();
+                Database.clearData("OpenSea");
                 ReadData.readOpenseaData();
                 break;
             case "Binance":
                 BinanceDataCollector.binanceDataCollector();
+                Database.clearData("Binance");
                 ReadData.readBinanceData();
                 break;
             case "Rarible":
                 RaribleDataCollector.raribleDataCollector();
+                Database.clearData("Rarible");
                 ReadData.readRaribleData();
                 break;
         }
-        Platform.runLater(() -> {
-            Alert waitAlert = showWaitAlert();
-            waitAlert.close();
-            showSuccessAlert();
-        });
+            Alert successAlert = showSuccessAlert();
+            successAlert.showAndWait();
+
     }
 
-    private Alert showWaitAlert() {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Please Wait");
-        alert.setHeaderText(null);
-        alert.setContentText("Updating data... Please wait.");
-        alert.show();
-        return alert;
-    }
-
-    private void showSuccessAlert() {
+    private Alert showSuccessAlert() {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Success");
         alert.setHeaderText(null);
         alert.setContentText("Data updated successfully!");
         alert.getButtonTypes().setAll(ButtonType.OK);
-        alert.showAndWait();
+        return alert;
     }
 }
