@@ -6,9 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import nftdata.dataprocessing.ReadData;
-import nftdata.dataprocessing.datacollector.BinanceDataCollector;
-import nftdata.dataprocessing.datacollector.CointelegraphDataCollector;
-import nftdata.dataprocessing.datacollector.TwitterDataCollector;
+import nftdata.dataprocessing.datacollector.*;
 import screen.controller.MainScreenController;
 
 import java.io.IOException;
@@ -29,18 +27,12 @@ public class User extends Application {
 
     public static void main(String[] args) {
         //Get data
-        TwitterDataCollector.twitterDataCollector();
-        BinanceDataCollector.binanceDataCollector();
-        CointelegraphDataCollector.cointelegraphDataCollector();
-
-
-        //Read data from JSON file
-        ReadData.readRaribleData();
-        ReadData.readBinanceData();
-        ReadData.readOpenseaData();
-        ReadData.readTweetData();
-        ReadData.readDecryptData();
-        ReadData.readCointelegraphData();
+//        TwitterDataCollector.twitterDataCollector();
+//        BinanceDataCollector.binanceDataCollector();
+//        CointelegraphDataCollector.cointelegraphDataCollector();
+//        DecryptDataCollector.decryptDataCollector();
+//        OpenseaDataCollector.openseaDataCollector();
+//        RaribleDataCollector.raribleDataCollector();
         launch(args);
     }
 }

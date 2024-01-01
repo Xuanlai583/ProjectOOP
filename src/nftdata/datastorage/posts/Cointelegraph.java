@@ -15,15 +15,4 @@ public class Cointelegraph extends Blog{
         super(author, date, hashtag, title);
         this.view = view;
     }
-
-    @Override
-    public String toString() {
-        return "Cointelegraph{" + '\n' +
-                "Title: " + this.getTitle() + '\n' +
-                "Author: " + this.getAuthor() + '\n' +
-                "Date: " + this.getDate() +'\n' +
-                "View: " + this.getView() + '\n' +
-                "Hashtag: " + this.getHashtag() + '\n' +
-                '}';
-    }
 }
