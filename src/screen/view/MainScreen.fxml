@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
@@ -50,14 +51,23 @@
                   <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0" spacing="10.0">
                      <children>
                         <Label text="Source" />
+                        <MenuButton fx:id="menuButtonSourceType" mnemonicParsing="false" text="Post/Blog">
+                          <items>
+                            <MenuItem mnemonicParsing="false" onAction="#menuItemPostBlogChoose" text="Post/Blog" />
+                            <MenuItem mnemonicParsing="false" onAction="#menuItemNFTChosse" text="NFT" />
+                          </items>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </MenuButton>
                         <MenuButton fx:id="menuButtonSource" mnemonicParsing="false" text="Twitter">
                           <items>
-                            <MenuItem mnemonicParsing="false" onAction="#menuItemTwitterChoose" text="Twitter" />
-                              <MenuItem mnemonicParsing="false" onAction="#menuItemDecryptChoose" text="Decrypt" />
-                              <MenuItem mnemonicParsing="false" onAction="#menuItemCointelegraphChoose" text="Cointelegraph" />
-                            <MenuItem mnemonicParsing="false" onAction="#menuItemOpenSeaChoose" text="OpenSea" />
-                              <MenuItem mnemonicParsing="false" onAction="#menuItemBinanceChoose" text="Binance" />
-                              <MenuItem mnemonicParsing="false" onAction="#menuItemRaribleChoose" text="Rarible" />
+                            <MenuItem fx:id="menuItemTwitter" mnemonicParsing="false" onAction="#menuItemTwitterChoose" text="Twitter" />
+                              <MenuItem fx:id="menuItemDecrypt" mnemonicParsing="false" onAction="#menuItemDecryptChoose" text="Decrypt" />
+                              <MenuItem fx:id="menuItemCointelegraph" mnemonicParsing="false" onAction="#menuItemCointelegraphChoose" text="Cointelegraph" />
+                            <MenuItem fx:id="menuItemOpenSea" mnemonicParsing="false" onAction="#menuItemOpenSeaChoose" text="OpenSea" visible="false" />
+                              <MenuItem fx:id="menuItemBinance" mnemonicParsing="false" onAction="#menuItemBinanceChoose" text="Binance" visible="false" />
+                              <MenuItem fx:id="menuItemRarible" mnemonicParsing="false" onAction="#menuItemRaribleChoose" text="Rarible" visible="false" />
                           </items>
                         </MenuButton>
                      </children>
@@ -73,11 +83,20 @@
                         <Label text="Serach" />
                         <TextField fx:id="tfSearch" />
                         <Label text="By" />
-                        <MenuButton fx:id="menuButtonSearch" mnemonicParsing="false" text="Hashtag/Tag">
+                        <MenuButton fx:id="menuButtonSearch" mnemonicParsing="false" text="Author">
                           <items>
-                              <MenuItem mnemonicParsing="false" onAction="#menuItemHashtagChoose" text="Hashtag/Tag" />
+                              <MenuItem fx:id="menuItemAuthor" mnemonicParsing="false" onAction="#menuItemAuthorChoose" text="Author" />
+                              <MenuItem fx:id="menuItemTitle" mnemonicParsing="false" onAction="#menuItemTitleChoose" text="Title" />
+                              <MenuItem fx:id="menuItemDate" mnemonicParsing="false" onAction="#menuItemDateChoose" text="Date" />
+                              <MenuItem fx:id="menuItemHashtag" mnemonicParsing="false" onAction="#menuItemHashtagChoose" text="Hashtag/Tag" />
+                              <MenuItem fx:id="menuItemCollection" mnemonicParsing="false" onAction="#menuItemCollectionChoose" text="Collection" visible="false" />
                           </items>
                         </MenuButton>
+                        <DatePicker fx:id="datePicker" promptText="Select" visible="false">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </DatePicker>
                      </children>
                   </HBox>
                </children>
@@ -179,7 +198,7 @@
                   <Insets top="20.0" />
                </padding>
                <children>
-                  <Button fx:id="btnNFTToken" mnemonicParsing="false" onAction="#btnNFTTokenPressed" prefWidth="100.0" text="NFT Token" visible="false" />
+                  <Button fx:id="btnDetails" mnemonicParsing="false" onAction="#btnDetailsPressed" prefWidth="100.0" text="Details" visible="false" />
                </children>
             </HBox>
          </children>
