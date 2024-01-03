@@ -14,6 +14,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import nftdata.dataprocessing.ReadData;
+import nftdata.dataprocessing.datacollector.DataCollector;
 import nftdata.datastorage.nft.BinanceNFT;
 import nftdata.datastorage.nft.OpenseaNFT;
 import nftdata.datastorage.nft.RaribleNFT;
@@ -22,11 +23,15 @@ import nftdata.datastorage.posts.Decrypt;
 import nftdata.datastorage.posts.Tweet;
 
 import java.io.IOException;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Locale;
 
 import static nftdata.dataprocessing.Database.*;
 
 public class MainScreenController {
     private static String curFilter = "Author";
+    private static LocalDate curDatePicker;
     private TableView<?> curTable = new TableView<>();
 
     private FilteredList<Tweet> tweetFilteredList;
@@ -266,38 +271,12 @@ public class MainScreenController {
 
     @FXML
     void menuItemNFTChosse(ActionEvent event) {
-        menuButtonSourceType.setText("NFT");
-        menuItemTwitter.setVisible(false);
-        menuItemDecrypt.setVisible(false);
-        menuItemCointelegraph.setVisible(false);
-        menuItemOpenSea.setVisible(true);
-        menuItemBinance.setVisible(true);
-        menuItemRarible.setVisible(true);
-        menuItemHashtag.setVisible(false);
-        menuItemAuthor.setVisible(false);
-        menuItemTitle.setVisible(false);
-        menuItemDate.setVisible(false);
-        menuItemCollection.setVisible(true);
-        changeSource("OpenSea", tblOpenSea);
-        changeFilterBy("Collection");
+        changeSourceType("NFT");
     }
 
     @FXML
     void menuItemPostBlogChoose(ActionEvent event) {
-        menuButtonSourceType.setText("Post/Blog");
-        menuItemTwitter.setVisible(true);
-        menuItemDecrypt.setVisible(true);
-        menuItemCointelegraph.setVisible(true);
-        menuItemOpenSea.setVisible(false);
-        menuItemBinance.setVisible(false);
-        menuItemRarible.setVisible(false);
-        menuItemHashtag.setVisible(true);
-        menuItemAuthor.setVisible(true);
-        menuItemTitle.setVisible(true);
-        menuItemDate.setVisible(true);
-        menuItemCollection.setVisible(false);
-        changeSource("Twitter", tblTwitter);
-        changeFilterBy("Author");
+        changeSourceType("Post/Blog");
     }
 
     @FXML
@@ -367,7 +346,6 @@ public class MainScreenController {
         colLikesTwitter.setCellValueFactory(new PropertyValueFactory<Tweet, String>("like"));
         colViewsTwitter.setCellValueFactory(new PropertyValueFactory<Tweet, String>("view"));
         colHashtagsTwitter.setCellValueFactory(new PropertyValueFactory<Tweet, String>("hashtag"));
-//        tblTwitter.setItems(itemsTwitter);
         tblTwitter.setItems(tweetFilteredList);
 
         //Cointelegraph
@@ -376,7 +354,6 @@ public class MainScreenController {
         colTitleCointelegraph.setCellValueFactory(new PropertyValueFactory<Cointelegraph, String>("title"));
         colViewsCointelegraph.setCellValueFactory(new PropertyValueFactory<Cointelegraph, String>("view"));
         colTagsCointelegraph.setCellValueFactory(new PropertyValueFactory<Cointelegraph, String>("hashtag"));
-//        tblCointelegraph.setItems(itemsCointelegraph);
         tblCointelegraph.setItems(cointelegraphFilteredList);
 
         //Decrypt
@@ -384,7 +361,6 @@ public class MainScreenController {
         colAuthorDecrypt.setCellValueFactory(new PropertyValueFactory<Decrypt, String>("author"));
         colDateDecrypt.setCellValueFactory(new PropertyValueFactory<Decrypt, String>("date"));
         colTagsDecrypt.setCellValueFactory(new PropertyValueFactory<Decrypt, String>("hashtag"));
-//        tblDecrypt.setItems(itemsDecrypt);
         tblDecrypt.setItems(decryptFilteredList);
 
         //BinanceNFT
@@ -396,7 +372,6 @@ public class MainScreenController {
         colFloorChangeBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("floorChange"));
         colOwnersBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("owners"));
         colItemsBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("items"));
-//        tblBinance.setItems(itemsBinanceNFT);
         tblBinance.setItems(binanceNFTFilteredList);
 
         //OpenSeaNFT
@@ -408,7 +383,6 @@ public class MainScreenController {
         colSalesOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("sales"));
         colOwnersOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("owners"));
         colItemsOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("items"));
-//        tblOpenSea.setItems(itemsOpenseaNFT);
         tblOpenSea.setItems(openseaNFTFilteredList);
 
         //RaribleNFT
@@ -420,7 +394,6 @@ public class MainScreenController {
         colFloorChangeRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("floorChange"));
         colOwnersRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("owners"));
         colItemsRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("items"));
-//        tblRarible.setItems(itemsRaribleNFT);
         tblRarible.setItems(raribleNFTFilteredList);
 
         //Searchbox
@@ -429,6 +402,12 @@ public class MainScreenController {
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
                 showFilteredResult(newValue);
             }
+        });
+
+        //Date Picker
+        datePicker.valueProperty().addListener((observable, oldValue, newValue) -> {
+            curDatePicker = newValue;
+            showFilteredResult("Date");
         });
 
         //Read data from JSON file
@@ -451,29 +430,30 @@ public class MainScreenController {
         String filterText = string.toLowerCase();
         switch (curFilter){
             case "Author":
-            tweetFilteredList.setPredicate(item -> item.getAuthor().toLowerCase().contains(filterText));
-            decryptFilteredList.setPredicate(item -> item.getAuthor().toLowerCase().contains(filterText));
-            cointelegraphFilteredList.setPredicate(item -> item.getAuthor().toLowerCase().contains(filterText));
-            break;
+                tweetFilteredList.setPredicate(item -> item.getAuthor().toLowerCase().contains(filterText));
+                decryptFilteredList.setPredicate(item -> item.getAuthor().toLowerCase().contains(filterText));
+                cointelegraphFilteredList.setPredicate(item -> item.getAuthor().toLowerCase().contains(filterText));
+                break;
             case "Title":
-            decryptFilteredList.setPredicate(item -> item.getTitle().toLowerCase().contains(filterText));
-            cointelegraphFilteredList.setPredicate(item -> item.getTitle().toLowerCase().contains(filterText));
-            break;
+                decryptFilteredList.setPredicate(item -> item.getTitle().toLowerCase().contains(filterText));
+                cointelegraphFilteredList.setPredicate(item -> item.getTitle().toLowerCase().contains(filterText));
+                break;
             case "Date":
-            tweetFilteredList.setPredicate(item -> item.getDate().toLowerCase().contains(filterText));
-            decryptFilteredList.setPredicate(item -> item.getDate().toLowerCase().contains(filterText));
-            cointelegraphFilteredList.setPredicate(item -> item.getDate().toLowerCase().contains(filterText));
-            break;
+                String formatDate = curDatePicker.format(DateTimeFormatter.ofPattern("dd/MM/yyyy", Locale.ENGLISH));
+                tweetFilteredList.setPredicate(item -> item.getDate().toLowerCase().contains(formatDate));
+                decryptFilteredList.setPredicate(item -> item.getDate().toLowerCase().contains(formatDate));
+                cointelegraphFilteredList.setPredicate(item -> item.getDate().toLowerCase().contains(formatDate));
+                break;
             case "Hashtag/Tag":
-            tweetFilteredList.setPredicate(item -> item.getHashtag().toLowerCase().contains(filterText));
-            decryptFilteredList.setPredicate(item -> item.getHashtag().toLowerCase().contains(filterText));
-            cointelegraphFilteredList.setPredicate(item -> item.getHashtag().toLowerCase().contains(filterText));
-            break;
+                tweetFilteredList.setPredicate(item -> item.getHashtag().toLowerCase().contains(filterText));
+                decryptFilteredList.setPredicate(item -> item.getHashtag().toLowerCase().contains(filterText));
+                cointelegraphFilteredList.setPredicate(item -> item.getHashtag().toLowerCase().contains(filterText));
+                break;
             case "Collection":
-            openseaNFTFilteredList.setPredicate(item -> item.getCollection().toLowerCase().contains(filterText));
-            binanceNFTFilteredList.setPredicate(item -> item.getCollection().toLowerCase().contains(filterText));
-            raribleNFTFilteredList.setPredicate(item -> item.getCollection().toLowerCase().contains(filterText));
-            break;
+                openseaNFTFilteredList.setPredicate(item -> item.getCollection().toLowerCase().contains(filterText));
+                binanceNFTFilteredList.setPredicate(item -> item.getCollection().toLowerCase().contains(filterText));
+                raribleNFTFilteredList.setPredicate(item -> item.getCollection().toLowerCase().contains(filterText));
+                break;
         }
     }
 
@@ -481,11 +461,50 @@ public class MainScreenController {
         tfSearch.clear();
         menuButtonSearch.setText(filter);
         if(filter.equals("Date")){
+            tfSearch.setVisible(false);
             datePicker.setVisible(true);
         }else{
+            tfSearch.setVisible(true);
             datePicker.setVisible(false);
         }
         curFilter = filter;
+    }
+
+    private void changeSourceType(String sourceType){
+        switch (sourceType){
+            case "NFT":
+                menuButtonSourceType.setText("NFT");
+                menuItemTwitter.setVisible(false);
+                menuItemDecrypt.setVisible(false);
+                menuItemCointelegraph.setVisible(false);
+                menuItemOpenSea.setVisible(true);
+                menuItemBinance.setVisible(true);
+                menuItemRarible.setVisible(true);
+                menuItemHashtag.setVisible(false);
+                menuItemAuthor.setVisible(false);
+                menuItemTitle.setVisible(false);
+                menuItemDate.setVisible(false);
+                menuItemCollection.setVisible(true);
+                changeSource("OpenSea", tblOpenSea);
+                changeFilterBy("Collection");
+                break;
+            case "Post/Blog":
+                menuButtonSourceType.setText("Post/Blog");
+                menuItemTwitter.setVisible(true);
+                menuItemDecrypt.setVisible(true);
+                menuItemCointelegraph.setVisible(true);
+                menuItemOpenSea.setVisible(false);
+                menuItemBinance.setVisible(false);
+                menuItemRarible.setVisible(false);
+                menuItemHashtag.setVisible(true);
+                menuItemAuthor.setVisible(true);
+                menuItemTitle.setVisible(true);
+                menuItemDate.setVisible(true);
+                menuItemCollection.setVisible(false);
+                changeSource("Twitter", tblTwitter);
+                changeFilterBy("Author");
+                break;
+        }
     }
 }
 

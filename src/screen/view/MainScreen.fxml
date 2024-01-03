@@ -81,8 +81,6 @@
                      </padding>
                      <children>
                         <Label text="Serach" />
-                        <TextField fx:id="tfSearch" />
-                        <Label text="By" />
                         <MenuButton fx:id="menuButtonSearch" mnemonicParsing="false" text="Author">
                           <items>
                               <MenuItem fx:id="menuItemAuthor" mnemonicParsing="false" onAction="#menuItemAuthorChoose" text="Author" />
@@ -92,11 +90,12 @@
                               <MenuItem fx:id="menuItemCollection" mnemonicParsing="false" onAction="#menuItemCollectionChoose" text="Collection" visible="false" />
                           </items>
                         </MenuButton>
-                        <DatePicker fx:id="datePicker" promptText="Select" visible="false">
-                           <HBox.margin>
-                              <Insets left="10.0" />
-                           </HBox.margin>
-                        </DatePicker>
+                        <StackPane prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="tfSearch" />
+                              <DatePicker fx:id="datePicker" promptText="Select" visible="false" />
+                           </children>
+                        </StackPane>
                      </children>
                   </HBox>
                </children>
