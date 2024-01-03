@@ -26,13 +26,6 @@ public class User extends Application {
     }
 
     public static void main(String[] args) {
-        //Get data
-//        TwitterDataCollector.twitterDataCollector();
-//        BinanceDataCollector.binanceDataCollector();
-//        CointelegraphDataCollector.cointelegraphDataCollector();
-//        DecryptDataCollector.decryptDataCollector();
-//        OpenseaDataCollector.openseaDataCollector();
-//        RaribleDataCollector.raribleDataCollector();
         launch(args);
     }
 }
