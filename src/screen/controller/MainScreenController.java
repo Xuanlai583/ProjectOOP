@@ -439,7 +439,13 @@ public class MainScreenController {
                 cointelegraphFilteredList.setPredicate(item -> item.getTitle().toLowerCase().contains(filterText));
                 break;
             case "Date":
-                String formatDate = curDatePicker.format(DateTimeFormatter.ofPattern("dd/MM/yyyy", Locale.ENGLISH));
+                String tempFormatDate;
+                try {
+                    tempFormatDate = curDatePicker.format(DateTimeFormatter.ofPattern("dd/MM/yyyy", Locale.ENGLISH));
+                }catch (NullPointerException e){
+                    tempFormatDate = "";
+                }
+                String formatDate =tempFormatDate;
                 tweetFilteredList.setPredicate(item -> item.getDate().toLowerCase().contains(formatDate));
                 decryptFilteredList.setPredicate(item -> item.getDate().toLowerCase().contains(formatDate));
                 cointelegraphFilteredList.setPredicate(item -> item.getDate().toLowerCase().contains(formatDate));
@@ -459,6 +465,7 @@ public class MainScreenController {
 
     private void changeFilterBy(String filter){
         tfSearch.clear();
+        datePicker.setValue(null);
         menuButtonSearch.setText(filter);
         if(filter.equals("Date")){
             tfSearch.setVisible(false);
