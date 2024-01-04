@@ -56,7 +56,7 @@ public class TwitterDataCollector extends DataCollector{
                     try {
                         views = valueConvert(postElement.findElement(By.xpath("(.//div[@class=\"css-175oi2r r-xoduu5 r-1udh08x\"])[4]")).getText());
                     }catch (org.openqa.selenium.NoSuchElementException e){
-                        views = "--";
+                        views = "0";
                     }
                     String hashtags = extractHashtags(postElement);
 

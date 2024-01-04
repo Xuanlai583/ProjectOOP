@@ -3,6 +3,7 @@ package screen.controller;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.transformation.FilteredList;
+import javafx.collections.transformation.SortedList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -16,6 +17,7 @@ import javafx.stage.WindowEvent;
 import nftdata.dataprocessing.ReadData;
 import nftdata.dataprocessing.datacollector.DataCollector;
 import nftdata.datastorage.nft.BinanceNFT;
+import nftdata.datastorage.nft.NFTTokenComparator;
 import nftdata.datastorage.nft.OpenseaNFT;
 import nftdata.datastorage.nft.RaribleNFT;
 import nftdata.datastorage.posts.Cointelegraph;
@@ -40,6 +42,7 @@ public class MainScreenController {
     private FilteredList<RaribleNFT> raribleNFTFilteredList;
     private FilteredList<OpenseaNFT> openseaNFTFilteredList;
     private FilteredList<BinanceNFT> binanceNFTFilteredList;
+    private SortedList<OpenseaNFT> openseaNFTSortedList;
 
     public MainScreenController() {
         this.tweetFilteredList = new FilteredList<>(itemsTwitter);
@@ -48,6 +51,10 @@ public class MainScreenController {
         this.raribleNFTFilteredList = new FilteredList<>(itemsRaribleNFT);
         this.openseaNFTFilteredList = new FilteredList<>(itemsOpenseaNFT);
         this.binanceNFTFilteredList = new FilteredList<>(itemsBinanceNFT);
+
+        this.openseaNFTSortedList = new SortedList<>(this.openseaNFTFilteredList);
+
+
     }
 
     @FXML
@@ -383,7 +390,13 @@ public class MainScreenController {
         colSalesOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("sales"));
         colOwnersOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("owners"));
         colItemsOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("items"));
-        tblOpenSea.setItems(openseaNFTFilteredList);
+
+        colRankOpenSea.setComparator(new NFTTokenComparator.RankSalesOwnersItemsComparator());
+        colSalesOpenSea.setComparator(new NFTTokenComparator.RankSalesOwnersItemsComparator());
+        colOwnersOpenSea.setComparator(new NFTTokenComparator.RankSalesOwnersItemsComparator());
+        colItemsOpenSea.setComparator(new NFTTokenComparator.RankSalesOwnersItemsComparator());
+        tblOpenSea.setItems(openseaNFTSortedList);
+        openseaNFTSortedList.comparatorProperty().bind(tblOpenSea.comparatorProperty());
 
         //RaribleNFT
         colRankRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("rank"));
