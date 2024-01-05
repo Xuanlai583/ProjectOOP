@@ -33,7 +33,7 @@ public class OpenseaDataCollector extends DataCollector{
                         try {
                             volumeChange = openseaElement.findElement(By.xpath(".//div/a/div[3]/span/div")).getText();
                         } catch (org.openqa.selenium.NoSuchElementException e) {
-                            volumeChange = "--";
+                            volumeChange = "0";
                         }
                         String floorPrice = openseaElement.findElement(By.xpath(".//div/a/div[4]/div/span/div")).getText();
                         String sales = openseaElement.findElement(By.xpath(".//div/a/div[5]/span/div")).getText();
@@ -44,9 +44,9 @@ public class OpenseaDataCollector extends DataCollector{
                             String[] parts = itemsString.split("\\s+of\\s+");
                             items = (parts[1].replaceAll(",", "")).trim();
                         } catch (org.openqa.selenium.NoSuchElementException e) {
-                            items = "--";
+                            items = "0";
                         }
-                        if(floorPrice.equals("—")) floorPrice = "--";
+                        if(floorPrice.equals("—")) floorPrice = "0";
 
                         JSONObject openseaObject = new JSONObject();
                         openseaObject.put("rank", rank);

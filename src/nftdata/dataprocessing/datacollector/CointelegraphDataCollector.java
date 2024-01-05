@@ -55,7 +55,7 @@ public class CointelegraphDataCollector extends DataCollector{
                 try {
                     views = blogElement.findElement(By.xpath(".//span[@class=\"post-card-inline__stats-item\"]")).getText().substring(1);
                 }catch (org.openqa.selenium.NoSuchElementException e){
-                    views = "--";
+                    views = "0";
                 }
 
                 JSONObject cointelegraphObject = new JSONObject();

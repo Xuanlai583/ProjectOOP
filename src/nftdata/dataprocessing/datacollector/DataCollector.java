@@ -64,8 +64,12 @@ public class DataCollector {
         String outputFormat = "dd/MM/yyyy";
         try {
             date = LocalDate.parse(inputDate, DateTimeFormatter.ofPattern("yyyy-MM-dd", Locale.ENGLISH));
-        } catch (Exception e) {
-            date = LocalDate.parse(inputDate, DateTimeFormatter.ofPattern("MMM dd, yyyy", Locale.ENGLISH));
+        } catch (Exception e1) {
+            try {
+                date = LocalDate.parse(inputDate, DateTimeFormatter.ofPattern("MMM dd, yyyy", Locale.ENGLISH));
+            } catch (Exception e2){
+                date = LocalDate.parse(inputDate, DateTimeFormatter.ofPattern("MMM d, yyyy", Locale.ENGLISH));
+            }
         }
         return date.format(DateTimeFormatter.ofPattern(outputFormat));
     }
@@ -97,7 +101,7 @@ public class DataCollector {
     //Convert value
     static String valueConvert(String input) {
         if(input.isEmpty()){
-            return "--";
+            return "0";
         }else {
             double result;
             if (input.toUpperCase().endsWith("K")) {

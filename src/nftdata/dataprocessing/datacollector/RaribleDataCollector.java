@@ -34,9 +34,9 @@ public class RaribleDataCollector extends DataCollector{
                         String floorChange = raribleElement.findElement(By.xpath(".//a/div/div/div[4]/span")).getText();
                         String owners = valueConvert(raribleElement.findElement(By.xpath(".//a/div/div/div[8]/span")).getText());
                         String items = valueConvert(raribleElement.findElement(By.xpath(".//a/div/div/div[7]/span")).getText());
-                        if(floorPrice.equals("—")) floorPrice = "--";
-                        if(floorChange.equals("—")) floorChange = "--";
-                        if(volumeChange.equals("—")) volumeChange = "--";
+                        if(floorPrice.equals("—")) floorPrice = "0";
+                        if(floorChange.equals("—")) floorChange = "0";
+                        if(volumeChange.equals("—")) volumeChange = "0";
 
                         //JSON Object
                         JSONObject raribleObject = new JSONObject();

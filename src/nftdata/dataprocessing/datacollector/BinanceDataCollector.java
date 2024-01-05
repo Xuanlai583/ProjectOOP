@@ -35,6 +35,12 @@ public class BinanceDataCollector extends DataCollector{
                 String floorChange = collectionElement.findElement(By.xpath(".//div[@class=\"css-87rt9h\"]")).getText().replace("\n", "").trim();
                 String owners = collectionElement.findElement(By.xpath(".//div[@class=\"css-15n6x8q\"][1]")).getText().replace(",","").trim();
                 String items = collectionElement.findElement(By.xpath(".//div[@class=\"css-15n6x8q\"][2]")).getText().replace(",","").trim();
+                if (volume.equals("--")) volume = "0";
+                if (volumeChange.equals("--")) volumeChange = "0";
+                if (floorPrice.equals("--")) floorPrice = "0";
+                if (floorChange.equals("--")) floorChange = "0";
+                if (owners.equals("--")) owners = "0";
+                if (items.equals("--")) items = "0";
 
                 //JSON Object
                 JSONObject binanceObject = new JSONObject();
