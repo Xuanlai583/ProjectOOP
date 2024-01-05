@@ -395,6 +395,8 @@ public class MainScreenController {
         colSalesOpenSea.setComparator(new NFTTokenComparator.RankSalesOwnersItemsComparator());
         colOwnersOpenSea.setComparator(new NFTTokenComparator.RankSalesOwnersItemsComparator());
         colItemsOpenSea.setComparator(new NFTTokenComparator.RankSalesOwnersItemsComparator());
+        colVolumeOpenSea.setComparator(new NFTTokenComparator.PriceComparator());
+        colFloorPriceOpenSea.setComparator(new NFTTokenComparator.PriceComparator());
         tblOpenSea.setItems(openseaNFTSortedList);
         openseaNFTSortedList.comparatorProperty().bind(tblOpenSea.comparatorProperty());
 
