@@ -14,6 +14,7 @@ public class NFTTokenComparator{
         private final double MATIC_TO_ETH = 0.00038033;
         private final double PRIME_TO_ETH = 0.0042;
         private final double AVAX_TO_ETH = 0.01604829;
+        private final double SAND_TO_ETH = 0.00023009;
         @Override
         public int compare(String o1, String o2){
             Double price1 = currencyConvert(o1);
@@ -41,6 +42,7 @@ public class NFTTokenComparator{
                     case "MATIC" -> price * MATIC_TO_ETH;
                     case "PRIME" -> price * PRIME_TO_ETH;
                     case "AVAX" -> price * AVAX_TO_ETH;
+                    case "SAND" -> price * SAND_TO_ETH;
                     default -> price;
                 };
                 return price;

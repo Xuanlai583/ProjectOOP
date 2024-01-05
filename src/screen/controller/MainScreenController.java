@@ -22,6 +22,7 @@ import nftdata.datastorage.nft.OpenseaNFT;
 import nftdata.datastorage.nft.RaribleNFT;
 import nftdata.datastorage.posts.Cointelegraph;
 import nftdata.datastorage.posts.Decrypt;
+import nftdata.datastorage.posts.PostsComparator;
 import nftdata.datastorage.posts.Tweet;
 
 import java.io.IOException;
@@ -42,9 +43,12 @@ public class MainScreenController {
     private FilteredList<RaribleNFT> raribleNFTFilteredList;
     private FilteredList<OpenseaNFT> openseaNFTFilteredList;
     private FilteredList<BinanceNFT> binanceNFTFilteredList;
+    private SortedList<Tweet> tweetSortedList;
+    private SortedList<Decrypt> decryptSortedList;
+    private SortedList<Cointelegraph> cointelegraphSortedList;
+    private SortedList<RaribleNFT> raribleNFTSortedList;
     private SortedList<OpenseaNFT> openseaNFTSortedList;
     private SortedList<BinanceNFT> binanceNFTSortedList;
-    private SortedList<RaribleNFT> raribleNFTSortedList;
 
     public MainScreenController() {
         this.tweetFilteredList = new FilteredList<>(itemsTwitter);
@@ -53,10 +57,13 @@ public class MainScreenController {
         this.raribleNFTFilteredList = new FilteredList<>(itemsRaribleNFT);
         this.openseaNFTFilteredList = new FilteredList<>(itemsOpenseaNFT);
         this.binanceNFTFilteredList = new FilteredList<>(itemsBinanceNFT);
-
+        //Set up SortedList for ObservableList to enable sorting
+        this.tweetSortedList = new SortedList<>(this.tweetFilteredList);
+        this.decryptSortedList = new SortedList<>(this.decryptFilteredList);
+        this.cointelegraphSortedList = new SortedList<>(this.cointelegraphFilteredList);
+        this.raribleNFTSortedList = new SortedList<>(this.raribleNFTFilteredList);
         this.openseaNFTSortedList = new SortedList<>(this.openseaNFTFilteredList);
         this.binanceNFTSortedList = new SortedList<>(this.binanceNFTFilteredList);
-        this.raribleNFTSortedList = new SortedList<>(this.raribleNFTFilteredList);
     }
 
     @FXML
@@ -355,7 +362,14 @@ public class MainScreenController {
         colLikesTwitter.setCellValueFactory(new PropertyValueFactory<Tweet, String>("like"));
         colViewsTwitter.setCellValueFactory(new PropertyValueFactory<Tweet, String>("view"));
         colHashtagsTwitter.setCellValueFactory(new PropertyValueFactory<Tweet, String>("hashtag"));
-        tblTwitter.setItems(tweetFilteredList);
+        //Set Comparator for Column
+        colDateTwitter.setComparator(new PostsComparator.DateComparator());
+        colRepliesTwitter.setComparator(new PostsComparator.numStatComparator());
+        colRepostsTwitter.setComparator(new PostsComparator.numStatComparator());
+        colLikesTwitter.setComparator(new PostsComparator.numStatComparator());
+        colViewsTwitter.setComparator(new PostsComparator.numStatComparator());
+        tblTwitter.setItems(tweetSortedList);
+        tweetSortedList.comparatorProperty().bind(tblTwitter.comparatorProperty());
 
         //Cointelegraph
         colDateCointelegraph.setCellValueFactory(new PropertyValueFactory<Cointelegraph, String>("date"));
@@ -363,14 +377,21 @@ public class MainScreenController {
         colTitleCointelegraph.setCellValueFactory(new PropertyValueFactory<Cointelegraph, String>("title"));
         colViewsCointelegraph.setCellValueFactory(new PropertyValueFactory<Cointelegraph, String>("view"));
         colTagsCointelegraph.setCellValueFactory(new PropertyValueFactory<Cointelegraph, String>("hashtag"));
-        tblCointelegraph.setItems(cointelegraphFilteredList);
+        //Set Comparator for Column
+        colDateCointelegraph.setComparator(new PostsComparator.DateComparator());
+        colViewsCointelegraph.setComparator(new PostsComparator.numStatComparator());
+        tblCointelegraph.setItems(cointelegraphSortedList);
+        cointelegraphSortedList.comparatorProperty().bind(tblCointelegraph.comparatorProperty());
 
         //Decrypt
         colTitleDecrypt.setCellValueFactory(new PropertyValueFactory<Decrypt, String>("title"));
         colAuthorDecrypt.setCellValueFactory(new PropertyValueFactory<Decrypt, String>("author"));
         colDateDecrypt.setCellValueFactory(new PropertyValueFactory<Decrypt, String>("date"));
         colTagsDecrypt.setCellValueFactory(new PropertyValueFactory<Decrypt, String>("hashtag"));
-        tblDecrypt.setItems(decryptFilteredList);
+        //Set Comparator for Column
+        colDateDecrypt.setComparator(new PostsComparator.DateComparator());
+        tblDecrypt.setItems(decryptSortedList);
+        decryptSortedList.comparatorProperty().bind(tblDecrypt.comparatorProperty());
 
         //BinanceNFT
         colRankBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("rank"));
@@ -381,7 +402,7 @@ public class MainScreenController {
         colFloorChangeBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("floorChange"));
         colOwnersBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("owners"));
         colItemsBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("items"));
-        //Set Comparator for each Column
+        //Set Comparator for Column
         colRankBinance.setComparator(new NFTTokenComparator.RankSalesOwnersItemsComparator());
         colVolumeBinance.setComparator(new NFTTokenComparator.PriceComparator());
         colVolumeChangeBinance.setComparator(new NFTTokenComparator.ChangeComparator());
@@ -403,7 +424,7 @@ public class MainScreenController {
         colSalesOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("sales"));
         colOwnersOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("owners"));
         colItemsOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("items"));
-        //Set Comparator for each Column
+        //Set Comparator for Column
         colRankOpenSea.setComparator(new NFTTokenComparator.RankSalesOwnersItemsComparator());
         colVolumeOpenSea.setComparator(new NFTTokenComparator.PriceComparator());
         colVolumeChangeOpenSea.setComparator(new NFTTokenComparator.ChangeComparator());
@@ -425,7 +446,7 @@ public class MainScreenController {
         colFloorChangeRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("floorChange"));
         colOwnersRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("owners"));
         colItemsRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("items"));
-        //Set Comparator for each Column
+        //Set Comparator for Column
         colRankRarible.setComparator(new NFTTokenComparator.RankSalesOwnersItemsComparator());
         colVolumeRarible.setComparator(new NFTTokenComparator.PriceComparator());
         colVolumeChangeRarible.setComparator(new NFTTokenComparator.ChangeComparator());
@@ -459,6 +480,9 @@ public class MainScreenController {
         ReadData.readTweetData();
         ReadData.readDecryptData();
         ReadData.readCointelegraphData();
+
+        //Other set up
+        menuItemTitle.setVisible(false);
     }
 
     private void changeSource(String sourceName, TableView<?> nextTable){
@@ -466,6 +490,8 @@ public class MainScreenController {
         curTable.setVisible(false);
         nextTable.setVisible(true);
         curTable = nextTable;
+        if(sourceName.equals("Twitter") || menuButtonSourceType.getText().equals("NFT")) menuItemTitle.setVisible(false);
+        else menuItemTitle.setVisible(true);
     }
 
     void showFilteredResult(String string){
