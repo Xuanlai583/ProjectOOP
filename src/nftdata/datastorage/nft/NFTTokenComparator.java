@@ -13,6 +13,7 @@ public class NFTTokenComparator{
     public static class PriceComparator implements Comparator<String>{
         private final double MATIC_TO_ETH = 0.00038033;
         private final double PRIME_TO_ETH = 0.0042;
+        private final double AVAX_TO_ETH = 0.01604829;
         @Override
         public int compare(String o1, String o2){
             Double price1 = currencyConvert(o1);
@@ -39,10 +40,30 @@ public class NFTTokenComparator{
                 price = switch (subStrings[1].toUpperCase()) {
                     case "MATIC" -> price * MATIC_TO_ETH;
                     case "PRIME" -> price * PRIME_TO_ETH;
+                    case "AVAX" -> price * AVAX_TO_ETH;
                     default -> price;
                 };
                 return price;
             }
+        }
+    }
+
+    public static class ChangeComparator implements Comparator<String>{
+        @Override
+        public int compare(String o1, String o2){
+            double percent1 = changeConvert(o1);
+            double percent2 = changeConvert(o2);
+            return Double.compare(percent1, percent2);
+        }
+
+        private double changeConvert(String s){
+            double percent;
+            String sub = s;
+            if(sub.contains(",")) sub = sub.replace(",","").trim();
+            if(sub.contains(" ")) sub = sub.replace(" ", "").trim();
+            if(sub.contains("%")) sub = sub.replace("%", "").trim();
+            percent = Double.parseDouble(sub);
+            return percent;
         }
     }
 }

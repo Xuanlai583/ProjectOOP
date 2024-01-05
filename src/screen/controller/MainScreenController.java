@@ -43,6 +43,8 @@ public class MainScreenController {
     private FilteredList<OpenseaNFT> openseaNFTFilteredList;
     private FilteredList<BinanceNFT> binanceNFTFilteredList;
     private SortedList<OpenseaNFT> openseaNFTSortedList;
+    private SortedList<BinanceNFT> binanceNFTSortedList;
+    private SortedList<RaribleNFT> raribleNFTSortedList;
 
     public MainScreenController() {
         this.tweetFilteredList = new FilteredList<>(itemsTwitter);
@@ -53,8 +55,8 @@ public class MainScreenController {
         this.binanceNFTFilteredList = new FilteredList<>(itemsBinanceNFT);
 
         this.openseaNFTSortedList = new SortedList<>(this.openseaNFTFilteredList);
-
-
+        this.binanceNFTSortedList = new SortedList<>(this.binanceNFTFilteredList);
+        this.raribleNFTSortedList = new SortedList<>(this.raribleNFTFilteredList);
     }
 
     @FXML
@@ -379,7 +381,18 @@ public class MainScreenController {
         colFloorChangeBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("floorChange"));
         colOwnersBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("owners"));
         colItemsBinance.setCellValueFactory(new PropertyValueFactory<BinanceNFT, String>("items"));
-        tblBinance.setItems(binanceNFTFilteredList);
+        //Set Comparator for each Column
+        colRankBinance.setComparator(new NFTTokenComparator.RankSalesOwnersItemsComparator());
+        colVolumeBinance.setComparator(new NFTTokenComparator.PriceComparator());
+        colVolumeChangeBinance.setComparator(new NFTTokenComparator.ChangeComparator());
+        colFloorPriceBinance.setComparator(new NFTTokenComparator.PriceComparator());
+        colFloorChangeBinance.setComparator(new NFTTokenComparator.ChangeComparator());
+        colOwnersBinance.setComparator(new NFTTokenComparator.RankSalesOwnersItemsComparator());
+        colItemsBinance.setComparator(new NFTTokenComparator.RankSalesOwnersItemsComparator());
+        tblBinance.setItems(binanceNFTSortedList);
+        binanceNFTSortedList.comparatorProperty().bind(tblBinance.comparatorProperty());
+        tblBinance.getSortOrder().add(colRankBinance);
+        tblBinance.sort();
 
         //OpenSeaNFT
         colRankOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("rank"));
@@ -390,15 +403,18 @@ public class MainScreenController {
         colSalesOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("sales"));
         colOwnersOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("owners"));
         colItemsOpenSea.setCellValueFactory(new PropertyValueFactory<OpenseaNFT, String>("items"));
-
+        //Set Comparator for each Column
         colRankOpenSea.setComparator(new NFTTokenComparator.RankSalesOwnersItemsComparator());
+        colVolumeOpenSea.setComparator(new NFTTokenComparator.PriceComparator());
+        colVolumeChangeOpenSea.setComparator(new NFTTokenComparator.ChangeComparator());
+        colFloorPriceOpenSea.setComparator(new NFTTokenComparator.PriceComparator());
         colSalesOpenSea.setComparator(new NFTTokenComparator.RankSalesOwnersItemsComparator());
         colOwnersOpenSea.setComparator(new NFTTokenComparator.RankSalesOwnersItemsComparator());
         colItemsOpenSea.setComparator(new NFTTokenComparator.RankSalesOwnersItemsComparator());
-        colVolumeOpenSea.setComparator(new NFTTokenComparator.PriceComparator());
-        colFloorPriceOpenSea.setComparator(new NFTTokenComparator.PriceComparator());
         tblOpenSea.setItems(openseaNFTSortedList);
         openseaNFTSortedList.comparatorProperty().bind(tblOpenSea.comparatorProperty());
+        tblOpenSea.getSortOrder().add(colRankOpenSea);
+        tblOpenSea.sort();
 
         //RaribleNFT
         colRankRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("rank"));
@@ -409,7 +425,18 @@ public class MainScreenController {
         colFloorChangeRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("floorChange"));
         colOwnersRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("owners"));
         colItemsRarible.setCellValueFactory(new PropertyValueFactory<RaribleNFT, String>("items"));
-        tblRarible.setItems(raribleNFTFilteredList);
+        //Set Comparator for each Column
+        colRankRarible.setComparator(new NFTTokenComparator.RankSalesOwnersItemsComparator());
+        colVolumeRarible.setComparator(new NFTTokenComparator.PriceComparator());
+        colVolumeChangeRarible.setComparator(new NFTTokenComparator.ChangeComparator());
+        colFloorPriceRarible.setComparator(new NFTTokenComparator.PriceComparator());
+        colFloorChangeRarible.setComparator(new NFTTokenComparator.ChangeComparator());
+        colOwnersRarible.setComparator(new NFTTokenComparator.RankSalesOwnersItemsComparator());
+        colItemsRarible.setComparator(new NFTTokenComparator.RankSalesOwnersItemsComparator());
+        tblRarible.setItems(raribleNFTSortedList);
+        raribleNFTSortedList.comparatorProperty().bind(tblRarible.comparatorProperty());
+        tblRarible.getSortOrder().add(colRankRarible);
+        tblRarible.sort();
 
         //Searchbox
         tfSearch.textProperty().addListener(new ChangeListener<String>() {
