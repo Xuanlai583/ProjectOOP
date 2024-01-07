@@ -80,7 +80,7 @@
                         <Insets bottom="10.0" top="10.0" />
                      </padding>
                      <children>
-                        <Label text="Serach" />
+                        <Label text="Search" />
                         <MenuButton fx:id="menuButtonSearch" mnemonicParsing="false" text="Author">
                           <items>
                               <MenuItem fx:id="menuItemAuthor" mnemonicParsing="false" onAction="#menuItemAuthorChoose" text="Author" />
